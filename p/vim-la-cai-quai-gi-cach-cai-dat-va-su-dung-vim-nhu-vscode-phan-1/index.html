@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Tìm hiểu Vim là gì, có phải là nước tẩy bồn cầu hay không :v'><title>[Phần 1] Vim là cái quái gì?</title>
+
+<link rel='canonical' href='https://example.com/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='[Phần 1] Vim là cái quái gì?'>
+<meta property='og:description' content='Tìm hiểu Vim là gì, có phải là nước tẩy bồn cầu hay không :v'>
+<meta property='og:url' content='https://example.com/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/'>
+<meta property='og:site_name' content='Lập trình dễ òm.xyz'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='IDE' /><meta property='article:tag' content='Vim' /><meta property='article:published_time' content='2021-06-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-06-12T00:00:00&#43;00:00'/><meta property='og:image' content='https://example.com/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover.png' />
+<meta name="twitter:title" content="[Phần 1] Vim là cái quái gì?">
+<meta name="twitter:description" content="Tìm hiểu Vim là gì, có phải là nước tẩy bồn cầu hay không :v"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://example.com/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover.png' />
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://example.com">Lập trình dễ òm.xyz</a></h1>
+        <h2 class="site-description">Chia sẻ kiến thức và kinh nghiệm lập trình.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/gi%E1%BB%9Bi-thi%E1%BB%87u/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Giới thiệu</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://example.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/">
+                <img src="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover_hue0e6fc9d6f258765cd954a7597dfb97a_379656_800x0_resize_box_2.png"
+                        srcset="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover_hue0e6fc9d6f258765cd954a7597dfb97a_379656_800x0_resize_box_2.png 800w, /p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover_hue0e6fc9d6f258765cd954a7597dfb97a_379656_1600x0_resize_box_2.png 1600w"
+                        width="800" 
+                        height="470" 
+                        loading="lazy"
+                        alt="Featured image of post [Phần 1] Vim là cái quái gì?" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/ide/" >
+                IDE
+            </a>
+        
+            <a href="/categories/vim/" >
+                Vim
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/">[Phần 1] Vim là cái quái gì?</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Tìm hiểu Vim là gì, có phải là nước tẩy bồn cầu hay không :v
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jun 12, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h1 id="vim-là-quái-gì-vậy">Vim là quái gì vậy?</h1>
+<p>Vim là 1 IDE được rất nhiều người sử dụng trên thế giới, Vim có sẵn trên các nền tảng, rất gọn nhẹ, khó sử dụng, nhưng khi đã xài quen rồi thì nghiện luôn 😍</p>
+<p>Vim sau khi cấu hình thì có thể sử dụng như 1 IDE mà các bạn thường sử dụng như VSCode, Sublime Text, Atom&hellip;</p>
+<h1 id="demo-vim-mình-đang-xài">Demo Vim mình đang xài:</h1>
+<h1 id="tại-sao-nên-dùng-vim-để-code">Tại sao nên dùng Vim để code?</h1>
+<ul>
+<li>[Gọn, nhẹ] Xấu cực đỉnh, chính vì thế nên rất gọn nhẹ, thời gian khởi động của Vim cực kì nhanh.</li>
+<li>[Tùy biến] Khả năng tùy biến cực cao, mặc định thì nó khá xấu, nhưng sau khi tùy biến lại thì sẽ rất đẹp.</li>
+<li>[Plugins, Extensions] Rất nhiều, hỗ trợ hầu hết các ngôn ngữ về code highlight và autocomplete, dễ dàng cài đặt và cấu hình.</li>
+<li>[Cộng đồng] Cộng đồng cực lớn, cần gì thì sẽ tìm được hỗ trợ rất nhiều trên mạng, không phải lo.</li>
+<li>[Tốc độ làm việc] Tốc độ làm việc với Vim rất nhanh, tất cả thao tác khi code với Vim đều trên bàn phím, thậm chí không cần đến chuột, nên mọi thứ rất nhanh.</li>
+<li>[Tiện dụng] Dễ dàng chuyển đổi giữa các thiết bị máy tính, giữa các hệ điều hành chỉ cần file <code>.vimrc</code> là xong, rất đơn giản, không cần cài lại thủ công từng plugin sau khi qua môi trường mới.</li>
+<li>[Cảm giác] Cảm giác code với Vim rất ngầu, pro, đỉnh, nên sẽ dễ gây nghiện 🤤, có hứng thú khi code hơn.</li>
+</ul>
+<h3 id="nhược-điểm-của-vim">Nhược điểm của Vim</h3>
+<ul>
+<li>Khó tiếp cận, khó làm quen, đòi hỏi phải có sự kiên nhẫn và quyết tâm cao, nếu không thì rất dễ nản.</li>
+<li>Rất nhiều phím tắt cần phải nhớ, phải tập làm quen nhiều lần mới nhớ được.</li>
+</ul>
+<h1 id="phím-tắt-trong-vim-thường-dùng">Phím tắt trong Vim thường dùng:</h1>
+<ul>
+<li>Di chuyển:
+<ul>
+<li>Dùng 4 phím <code>h,j,k,l</code> để di chuyển <code>qua trái, xuống, lên, qua phải</code></li>
+<li><code>gg</code> để di chuyển nhanh lên dòng số 1</li>
+<li><code>Shift + g</code> để di chuyển xuống dưới cùng của file</li>
+<li><code>^</code> đề về đầu dòng</li>
+<li><code>$</code> để về cuối</li>
+<li><code>w</code> để đi tới 1 từ (word)</li>
+<li><code>b</code> để đi lùi 1 từ</li>
+</ul>
+</li>
+<li>Chế độ <code>Insert</code>:
+<ul>
+<li><code>i</code> để đưa con trỏ về chế độ <code>Insert</code> ngay tại vị trí con trỏ</li>
+<li><code>Shift + A</code> để con trỏ về chế độ <code>Insert</code> ở cuối dòng</li>
+<li><code>a</code> để đưa con trỏ về chế độ <code>Insert</code> tại ngay sau con trỏ 1 ký tự</li>
+</ul>
+</li>
+<li>Chế độ <code>Delete</code>:
+<ul>
+<li><code>dw</code> để delete tới 1 từ</li>
+<li><code>db</code> để delete lùi 1 từ</li>
+<li><code>cw</code> để delete tới 1 từ và đưa con trỏ về chế độ <code>Insert</code></li>
+<li><code>cb</code> để delete lùi 1 từ và đưa con trỏ về chế độ <code>Insert</code></li>
+<li><code>di&quot;</code> xóa tất cả nội dung trong cặp dấu <code>&quot;&quot;</code>, các bạn gõ <code>di</code> và ký tự muốn xóa đến đó nhé: <code>di)</code>, <code>di]</code>
+<ul>
+<li>Ví dụ <code>&quot;Đây là nội dung&quot;</code> thì khi gõ <code>di&quot;</code> thì chỉ còn lại <code>&quot;&quot;</code></li>
+<li>Ví dụ 2: <code>function convert(value: string, convertTo: number) {}</code>, khi trỏ tại chỗ <code>value</code> và gõ <code>di)</code> thì còn lại:
+<code>function convert() {}</code></li>
+</ul>
+</li>
+<li><code>ci&quot;</code> tương tự như <code>di&quot;</code> chỉ khác sau khi xóa thì đưa con trỏ về chế độ <code>Insert</code> luôn nhé.</li>
+</ul>
+</li>
+</ul>
+<p><figure style="flex-grow: 161; flex-basis: 387px">
+		<a href="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png" data-size="3104x1924"><img src="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png"
+				srcset="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_480x0_resize_box_2.png 480w, /p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_1024x0_resize_box_2.png 1024w"
+				width="3104"
+				height="1924"
+				loading="lazy"
+				alt="vim-demo.png">
+		</a>
+		
+		<figcaption>vim-demo.png</figcaption>
+		
+	</figure></p>
+<p>Phần tiếp theo ta sẽ cùng cài đặt Vim package manager để cài đặt plugin này nọ :)</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ide/">IDE</a>
+        
+            <a href="/tags/vim/">Vim</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/">
+        
+        
+            <div class="article-image">
+                <img src="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/">
+        
+        
+            <div class="article-image">
+                <img src="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/">
+        
+        
+            <div class="article-image">
+                <img src="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/">
+        
+        
+            <div class="article-image">
+                <img src="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/">
+        
+        
+            <div class="article-image">
+                <img src="/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Lập trình dễ òm.xyz
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
