@@ -1,25 +1,125 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IDE on Lập Trình Dễ Òm.xyz</title><link>https://laptrinhdeom.github.io/categories/ide/</link><description>Recent content in IDE on Lập Trình Dễ Òm.xyz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/categories/ide/index.xml" rel="self" type="application/rss+xml"/><item><title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid><description>Về terminal thì sao? Khi sử dụng VSCode, chúng ta thường có 1 terminal phía dưới để dễ làm việc hoặc theo dõi log khi code.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IDE on Lập Trình Dễ Òm.xyz</title>
+    <link>https://laptrinhdeom.github.io/categories/ide/</link>
+    <description>Recent content in IDE on Lập Trình Dễ Òm.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/categories/ide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid>
+      <description>Về terminal thì sao? Khi sử dụng VSCode, chúng ta thường có 1 terminal phía dưới để dễ làm việc hoặc theo dõi log khi code.
 Giải pháp trên Vim thì mình có 2 giải pháp:
-Có Floatterm của COC.nvim khá hay, nó là 1 terminal nổi trên vim, khi nào cần thì mở lên gõ, xong thì đóng lại. Dùng tmux, mình thích cách này hơn, dùng tmux chia nhiều khung ra dễ nhìn và thao tác hơn, bản thân tmux chia khung khá thông minh, do đường viền rất nhỏ, nên tận dụng tối đa khả năng hiển thị những thứ cần thiết.</description></item><item><title>[Phần 1] Vim là cái quái gì?</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</guid><description>Vim là quái gì vậy? Vim là 1 IDE được rất nhiều người sử dụng trên thế giới, Vim có sẵn trên các nền tảng, rất gọn nhẹ, khó sử dụng, nhưng khi đã xài quen rồi thì nghiện luôn 😍
+ Có Floatterm của COC.nvim khá hay, nó là 1 terminal nổi trên vim, khi nào cần thì mở lên gõ, xong thì đóng lại. Dùng tmux, mình thích cách này hơn, dùng tmux chia nhiều khung ra dễ nhìn và thao tác hơn, bản thân tmux chia khung khá thông minh, do đường viền rất nhỏ, nên tận dụng tối đa khả năng hiển thị những thứ cần thiết.</description>
+    </item>
+    
+    <item>
+      <title>[Phần 1] Vim là cái quái gì?</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</guid>
+      <description>Vim là quái gì vậy? Vim là 1 IDE được rất nhiều người sử dụng trên thế giới, Vim có sẵn trên các nền tảng, rất gọn nhẹ, khó sử dụng, nhưng khi đã xài quen rồi thì nghiện luôn 😍
 Vim sau khi cấu hình thì có thể sử dụng như 1 IDE mà các bạn thường sử dụng như VSCode, Sublime Text, Atom&amp;hellip;
-Tại sao nên dùng Vim để code?</description></item><item><title>[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</guid><description>Cài đặt Vim để code giống IDE Vim-Plug Vim có rất nhiều Package Manager như:
-Vim Plug Vundle Pathogen Dein.vim Janus Nhưng Vim Plug có vẻ được rất nhiều người sử dụng, có lượt bình chọn khá cao, nên mình cũng xài Vim Plug luôn 🙂
+Tại sao nên dùng Vim để code?</description>
+    </item>
+    
+    <item>
+      <title>[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</guid>
+      <description>Cài đặt Vim để code giống IDE Vim-Plug Vim có rất nhiều Package Manager như:
+ Vim Plug Vundle Pathogen Dein.vim Janus  Nhưng Vim Plug có vẻ được rất nhiều người sử dụng, có lượt bình chọn khá cao, nên mình cũng xài Vim Plug luôn 🙂
 Các lý do nên xài Vim Plug:
-Dễ dàng cài đặt, cấu hình và sử dụng Cài plugin từ bất cứ đâu, có thể từ folder, từ git, từ tên plugin&amp;hellip; Dễ dàng gỡ bỏ plugins mình không cần xài nữa Cài đặt plugin khá nhanh Hỗ trợ 3 hệ điều hành thường sử dụng: Linux, MacOS, Windows Cài đặt Vim Plug: Rất đơn giản, chỉ 1 dòng lệnh curl là cài xong rồi 🤤</description></item><item><title>[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</guid><description>Theme code highlight: [Onedark](https://github.com/joshdick/onedark.vim) Đây là theme code highlight mà mình thấy khá đẹp và thích sử dụng nhất, nó giống với theme trên Atom, nó trông thế này:
-onedark.png
+ Dễ dàng cài đặt, cấu hình và sử dụng Cài plugin từ bất cứ đâu, có thể từ folder, từ git, từ tên plugin&amp;hellip; Dễ dàng gỡ bỏ plugins mình không cần xài nữa Cài đặt plugin khá nhanh Hỗ trợ 3 hệ điều hành thường sử dụng: Linux, MacOS, Windows  Cài đặt Vim Plug: Rất đơn giản, chỉ 1 dòng lệnh curl là cài xong rồi 🤤</description>
+    </item>
+    
+    <item>
+      <title>[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</guid>
+      <description>Theme code highlight: [Onedark](https://github.com/joshdick/onedark.vim) Đây là theme code highlight mà mình thấy khá đẹp và thích sử dụng nhất, nó giống với theme trên Atom, nó trông thế này:
+ onedark.png 
 Cài đặt theme Onedark: Thêm dòng này vào file ~/.vimrc
 vim ~/.vimrc
-call plug#begin() ... Plug https://github.com/joshdick/onedark.vim call plug#end() ... syntax on colorscheme onedark ... Sau đó lưu lại và chạy lệnh này trên terminal, không cần thoát vim nha:</description></item><item><title>[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</guid><description>Theme giao diện: [Vim Airline](https://github.com/vim-airline/vim-airline) Vim airline là plugin để làm cho cửa sổ terminal xài Vim của bạn không bị nhàm chán, nó có những thứ phía dưới như sau:
-vim-airline.png
+call plug#begin() ... Plug https://github.com/joshdick/onedark.vim call plug#end() ... syntax on colorscheme onedark ... Sau đó lưu lại và chạy lệnh này trên terminal, không cần thoát vim nha:</description>
+    </item>
+    
+    <item>
+      <title>[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</guid>
+      <description>Theme giao diện: [Vim Airline](https://github.com/vim-airline/vim-airline) Vim airline là plugin để làm cho cửa sổ terminal xài Vim của bạn không bị nhàm chán, nó có những thứ phía dưới như sau:
+ vim-airline.png 
 Khá đẹp đúng không, cho mình biết được những thông tin như:
-NORMAL: mode của vim hiện tại, có thể là NORMAL, INSERT, VIRSUAL Git branch là gì Tên file hiện tại Ngôn ngữ của file đó là gì Encode của file là gì: utf-8 Phần trăm của con trỏ so với tổng số dòng Số dòng hiện tại / tổng số dòng của file (ln:15/65) Cột của con trỏ đang đứng (col:1) Rồi giờ cài đặt và cấu hình nó nào:</description></item><item><title>[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</guid><description>Sidebar: [NERDTree](https://github.com/preservim/nerdtree) Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ.
+ NORMAL: mode của vim hiện tại, có thể là NORMAL, INSERT, VIRSUAL Git branch là gì Tên file hiện tại Ngôn ngữ của file đó là gì Encode của file là gì: utf-8 Phần trăm của con trỏ so với tổng số dòng Số dòng hiện tại / tổng số dòng của file (ln:15/65) Cột của con trỏ đang đứng (col:1)  Rồi giờ cài đặt và cấu hình nó nào:</description>
+    </item>
+    
+    <item>
+      <title>[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</guid>
+      <description>Sidebar: [NERDTree](https://github.com/preservim/nerdtree) Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ.
 Trong Vim cũng sẽ có sidebar này, và NERDTree là plugin mà được nhiều người xài nhất.
 Nó trông thế này đây:
-nerdtree.png
-Cũng giống mấy cái IDE khác thôi, nhưng mình nói trước cái này sẽ dùng phím để di chuyển nha, chứ không dùng chuột đâu 😅</description></item><item><title>[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</guid><description>Hỗ trợ search file nhanh, giống Ctrl + P trên VSCode: [FZF.vim](https://github.com/junegunn/fzf.vim) Nhu cầu cơ bản của dev là phải search nhanh file cần tìm để đáp ứng code, chứ nhiều khi không thể nhớ đường dẫn vô file đó, nên cần 1 plugin để hỗ trợ nó, nó gọi là FZF, nó giống vầy nè:
-fzf.png
-Gõ Ctrl + P rồi search file y chang bên VSCode nha ✌️</description></item><item><title>[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</guid><description>Language Server Protocol (LSP): VSCode là 1 IDE rất phổ biến, bởi vì nó hỗ trợ rất nhiều ngôn ngữ, cả VSCode và LSP cho VSCode đều do Microsoft phát triển nên cực kỳ ngon rồi.
+ nerdtree.png 
+Cũng giống mấy cái IDE khác thôi, nhưng mình nói trước cái này sẽ dùng phím để di chuyển nha, chứ không dùng chuột đâu 😅</description>
+    </item>
+    
+    <item>
+      <title>[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</guid>
+      <description>Hỗ trợ search file nhanh, giống Ctrl + P trên VSCode: [FZF.vim](https://github.com/junegunn/fzf.vim) Nhu cầu cơ bản của dev là phải search nhanh file cần tìm để đáp ứng code, chứ nhiều khi không thể nhớ đường dẫn vô file đó, nên cần 1 plugin để hỗ trợ nó, nó gọi là FZF, nó giống vầy nè:
+ fzf.png 
+Gõ Ctrl + P rồi search file y chang bên VSCode nha ✌️</description>
+    </item>
+    
+    <item>
+      <title>[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</guid>
+      <description>Language Server Protocol (LSP): VSCode là 1 IDE rất phổ biến, bởi vì nó hỗ trợ rất nhiều ngôn ngữ, cả VSCode và LSP cho VSCode đều do Microsoft phát triển nên cực kỳ ngon rồi.
 Trong Vim cũng có rất nhiều giải pháp cho LSP, sau khi thử vài cái thì mình thấy COC.nvim là hợp lý và mạnh nhất so với mấy cái còn lại.
-Cài đặt [COC.nvim](https://github.com/neoclide/coc.nvim) vim ~/.</description></item><item><title>[Phần 8] Vim là cái quái gì? - Prettier</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</guid><description>Prettier Đây là 1 tính năng mà mình rất thích và rất hay xài trong các dự án, và cũng bắt buộc các thành viên trong công ty xài nó, vì nó tự động format code về cùng 1 định dạng, không cần phải suy nghĩ hoặc làm thủ công nữa, khá hữu ích khi làm việc nhóm nha 😋
-COC.nvim có hỗ trợ prettier extension luôn, đây là cách cài đặt và cấu hình:</description></item><item><title>[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</guid><description>ESLint Vâng, đây là 1 trong những thứ giúp chúng ta làm việc nhóm tốt hơn, đây là 1 extension giúp phân tích và báo warning các lỗi cơ bản trong khi code, giúp quá trình làm việc nhóm đỡ vất vả, đỡ phải xung đột giữa các thành viên trong nhóm.
-ESLint không giúp bạn code nhanh hơn, hay code của bạn chạy nhanh hơn, mà nó giúp code dễ đọc hơn, dễ hiểu hơn, giúp quá trình debug dễ hơn trong tương lai, tránh bớt các bug không đáng có do quá trình code chúng ta mà ra.</description></item></channel></rss>
+Cài đặt [COC.nvim](https://github.com/neoclide/coc.nvim) vim ~/.</description>
+    </item>
+    
+    <item>
+      <title>[Phần 8] Vim là cái quái gì? - Prettier</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</guid>
+      <description>Prettier Đây là 1 tính năng mà mình rất thích và rất hay xài trong các dự án, và cũng bắt buộc các thành viên trong công ty xài nó, vì nó tự động format code về cùng 1 định dạng, không cần phải suy nghĩ hoặc làm thủ công nữa, khá hữu ích khi làm việc nhóm nha 😋
+COC.nvim có hỗ trợ prettier extension luôn, đây là cách cài đặt và cấu hình:</description>
+    </item>
+    
+    <item>
+      <title>[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim</title>
+      <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</guid>
+      <description>ESLint Vâng, đây là 1 trong những thứ giúp chúng ta làm việc nhóm tốt hơn, đây là 1 extension giúp phân tích và báo warning các lỗi cơ bản trong khi code, giúp quá trình làm việc nhóm đỡ vất vả, đỡ phải xung đột giữa các thành viên trong nhóm.
+ESLint không giúp bạn code nhanh hơn, hay code của bạn chạy nhanh hơn, mà nó giúp code dễ đọc hơn, dễ hiểu hơn, giúp quá trình debug dễ hơn trong tương lai, tránh bớt các bug không đáng có do quá trình code chúng ta mà ra.</description>
+    </item>
+    
+  </channel>
+</rss>
