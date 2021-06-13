@@ -6,10 +6,10 @@
         <description>Recent content on Lập trình dễ òm.xyz</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 13 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title>
         <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid>
         <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.png" alt="Featured image of post [Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?" /&gt;&lt;h2 id=&#34;về-terminal-thì-sao&#34;&gt;Về terminal thì sao?&lt;/h2&gt;
@@ -44,7 +44,6 @@
         <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover.png" alt="Featured image of post [Phần 1] Vim là cái quái gì?" /&gt;&lt;h1 id=&#34;vim-là-quái-gì-vậy&#34;&gt;Vim là quái gì vậy?&lt;/h1&gt;
 &lt;p&gt;Vim là 1 IDE được rất nhiều người sử dụng trên thế giới, Vim có sẵn trên các nền tảng, rất gọn nhẹ, khó sử dụng, nhưng khi đã xài quen rồi thì nghiện luôn 😍&lt;/p&gt;
 &lt;p&gt;Vim sau khi cấu hình thì có thể sử dụng như 1 IDE mà các bạn thường sử dụng như VSCode, Sublime Text, Atom&amp;hellip;&lt;/p&gt;
-&lt;h1 id=&#34;demo-vim-mình-đang-xài&#34;&gt;Demo Vim mình đang xài:&lt;/h1&gt;
 &lt;h1 id=&#34;tại-sao-nên-dùng-vim-để-code&#34;&gt;Tại sao nên dùng Vim để code?&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;[Gọn, nhẹ] Xấu cực đỉnh, chính vì thế nên rất gọn nhẹ, thời gian khởi động của Vim cực kì nhanh.&lt;/li&gt;
@@ -97,6 +96,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1 id=&#34;demo-vim-mình-đang-xài&#34;&gt;Demo Vim mình đang xài:&lt;/h1&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 161; flex-basis: 387px&#34;&gt;
 		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png&#34; data-size=&#34;3104x1924&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png&#34;
 				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_1024x0_resize_box_2.png 1024w&#34;
@@ -110,6 +110,7 @@
 		
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Phần tiếp theo ta sẽ cùng cài đặt Vim package manager để cài đặt plugin này nọ :)&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/&#34; &gt;[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -193,6 +194,7 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Phần tiếp theo chúng ta sẽ bắt đầu làm đẹp Vim :v&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/&#34; &gt;[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -231,7 +233,19 @@
 &lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Tận hưởng giao diện thôi nào 😋&lt;/p&gt;
 &lt;p&gt;Phần tiếp theo chúng ta sẽ cài đặt giao diện giống thế này:
-&lt;img src=&#34;https://laptrinhdeom.github.io/vim-airline.png&#34; alt=&#34;vim-airline.png&#34;  /&gt;&lt;/p&gt;
+&lt;figure style=&#34;flex-grow: 4696; flex-basis: 11270px&#34;&gt;
+		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png&#34; data-size=&#34;2348x50&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png&#34;
+				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;2348&#34;
+				height=&#34;50&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;vim-airline.png&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;vim-airline.png&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/&#34; &gt;[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -318,6 +332,7 @@
 &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#extensions#hunks#enabled=0
 &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#extensions#hunks#coc_git = 1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vậy là xong, tận hưởng thành quả nào.&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/&#34; &gt;[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -401,6 +416,7 @@
 		&lt;figcaption&gt;nerdtree-2.png&lt;/figcaption&gt;
 		
 	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/&#34; &gt;[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -458,6 +474,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
 &lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Phần tiếp theo mình sẽ cấu hình cho Vim có thể gợi y code (autocomplete code) như thế nào nhé&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/&#34; &gt;[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -531,7 +548,8 @@ nmap &amp;lt;silent&amp;gt; gr &amp;lt;Plug&amp;gt;&lt;span class=&#34;o&#34;&gt
 endfunction
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;highlight-word-chỗ-con-trỏ-đang-đứng&#34;&gt;Highlight word chỗ con trỏ đang đứng:&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;autocmd CursorHold * silent call CocActionAsync&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;highlight&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/&#34; &gt;[Phần 8] Vim là cái quái gì? - Prettier&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>[Phần 8] Vim là cái quái gì? - Prettier</title>
@@ -589,6 +607,7 @@ endfunction
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Phần tiếp theo chúng ta sẽ cấu hình ESLint để đảm bảo code theo chuẩn, dễ dàng làm việc nhóm nhé.&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/&#34; &gt;[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -606,6 +625,7 @@ endfunction
 &lt;p&gt;Trong list extensions trên mình đã có eslint rồi, nhưng các bạn có thể cài đặt thủ công bằng lệnh này: &lt;code&gt;:CocInstall coc-eslint&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Các bạn có thể tham khảo thêm tại đây: &lt;a class=&#34;link&#34; href=&#34;https://github.com/neoclide/coc-eslint&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/neoclide/coc-eslint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/&#34; &gt;[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         

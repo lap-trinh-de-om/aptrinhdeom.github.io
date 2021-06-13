@@ -6,11 +6,11 @@
     <description>Recent content in Posts on Lập trình dễ òm.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title>
       <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link>
-      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid>
       <description>Về terminal thì sao? Khi sử dụng VSCode, chúng ta thường có 1 terminal phía dưới để dễ làm việc hoặc theo dõi log khi code.
@@ -26,7 +26,7 @@ Giải pháp trên Vim thì mình có 2 giải pháp:
       <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</guid>
       <description>Vim là quái gì vậy? Vim là 1 IDE được rất nhiều người sử dụng trên thế giới, Vim có sẵn trên các nền tảng, rất gọn nhẹ, khó sử dụng, nhưng khi đã xài quen rồi thì nghiện luôn 😍
 Vim sau khi cấu hình thì có thể sử dụng như 1 IDE mà các bạn thường sử dụng như VSCode, Sublime Text, Atom&amp;hellip;
-Demo Vim mình đang xài: Tại sao nên dùng Vim để code?</description>
+Tại sao nên dùng Vim để code?</description>
     </item>
     
     <item>
