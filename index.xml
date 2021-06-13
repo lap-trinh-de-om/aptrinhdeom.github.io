@@ -1,633 +1,502 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Lập Trình Dễ Òm.xyz</title>
-        <link>https://laptrinhdeom.github.io/</link>
-        <description>Recent content on Lập Trình Dễ Òm.xyz</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.png" alt="Featured image of post [Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?" /&gt;&lt;h2 id=&#34;về-terminal-thì-sao&#34;&gt;Về terminal thì sao?&lt;/h2&gt;
-&lt;p&gt;Khi sử dụng VSCode, chúng ta thường có 1 terminal phía dưới để dễ làm việc hoặc theo dõi log khi code.&lt;/p&gt;
-&lt;p&gt;Giải pháp trên Vim thì mình có 2 giải pháp:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Có Floatterm của COC.nvim khá hay, nó là 1 terminal nổi trên vim, khi nào cần thì mở lên gõ, xong thì đóng lại.&lt;/li&gt;
-&lt;li&gt;Dùng tmux, mình thích cách này hơn, dùng tmux chia nhiều khung ra dễ nhìn và thao tác hơn, bản thân tmux chia khung khá thông minh, do đường viền rất nhỏ, nên tận dụng tối đa khả năng hiển thị những thứ cần thiết. Nó trông như vậy:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 161; flex-basis: 387px&#34;&gt;
-		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux.png&#34; data-size=&#34;3104x1924&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux.png&#34;
-				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux_hu245bdc5a230da49d9e3b47f92603733e_880343_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux_hu245bdc5a230da49d9e3b47f92603733e_880343_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;3104&#34;
-				height=&#34;1924&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;tmux.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;tmux.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Nếu màn hình lớn khoảng 24 inch thì chia vậy rất ngon để code đó các bạn 😻&lt;/p&gt;
-&lt;p&gt;Như vậy chúng ta đã hoàn thành toàn bộ cách cấu hình, cài đăt, cấu hình để Vim có thể làm 1 IDE chính để code, và code trên Vim thật sự rất hào hứng, rất vui các bạn ạ, hãy thử nhé :)&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 1] Vim là cái quái gì?</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover.png" alt="Featured image of post [Phần 1] Vim là cái quái gì?" /&gt;&lt;h1 id=&#34;vim-là-quái-gì-vậy&#34;&gt;Vim là quái gì vậy?&lt;/h1&gt;
-&lt;p&gt;Vim là 1 IDE được rất nhiều người sử dụng trên thế giới, Vim có sẵn trên các nền tảng, rất gọn nhẹ, khó sử dụng, nhưng khi đã xài quen rồi thì nghiện luôn 😍&lt;/p&gt;
-&lt;p&gt;Vim sau khi cấu hình thì có thể sử dụng như 1 IDE mà các bạn thường sử dụng như VSCode, Sublime Text, Atom&amp;hellip;&lt;/p&gt;
-&lt;h1 id=&#34;tại-sao-nên-dùng-vim-để-code&#34;&gt;Tại sao nên dùng Vim để code?&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;[Gọn, nhẹ] Xấu cực đỉnh, chính vì thế nên rất gọn nhẹ, thời gian khởi động của Vim cực kì nhanh.&lt;/li&gt;
-&lt;li&gt;[Tùy biến] Khả năng tùy biến cực cao, mặc định thì nó khá xấu, nhưng sau khi tùy biến lại thì sẽ rất đẹp.&lt;/li&gt;
-&lt;li&gt;[Plugins, Extensions] Rất nhiều, hỗ trợ hầu hết các ngôn ngữ về code highlight và autocomplete, dễ dàng cài đặt và cấu hình.&lt;/li&gt;
-&lt;li&gt;[Cộng đồng] Cộng đồng cực lớn, cần gì thì sẽ tìm được hỗ trợ rất nhiều trên mạng, không phải lo.&lt;/li&gt;
-&lt;li&gt;[Tốc độ làm việc] Tốc độ làm việc với Vim rất nhanh, tất cả thao tác khi code với Vim đều trên bàn phím, thậm chí không cần đến chuột, nên mọi thứ rất nhanh.&lt;/li&gt;
-&lt;li&gt;[Tiện dụng] Dễ dàng chuyển đổi giữa các thiết bị máy tính, giữa các hệ điều hành chỉ cần file &lt;code&gt;.vimrc&lt;/code&gt; là xong, rất đơn giản, không cần cài lại thủ công từng plugin sau khi qua môi trường mới.&lt;/li&gt;
-&lt;li&gt;[Cảm giác] Cảm giác code với Vim rất ngầu, pro, đỉnh, nên sẽ dễ gây nghiện 🤤, có hứng thú khi code hơn.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;nhược-điểm-của-vim&#34;&gt;Nhược điểm của Vim&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Khó tiếp cận, khó làm quen, đòi hỏi phải có sự kiên nhẫn và quyết tâm cao, nếu không thì rất dễ nản.&lt;/li&gt;
-&lt;li&gt;Rất nhiều phím tắt cần phải nhớ, phải tập làm quen nhiều lần mới nhớ được.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;phím-tắt-trong-vim-thường-dùng&#34;&gt;Phím tắt trong Vim thường dùng:&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Di chuyển:
-&lt;ul&gt;
-&lt;li&gt;Dùng 4 phím &lt;code&gt;h,j,k,l&lt;/code&gt; để di chuyển &lt;code&gt;qua trái, xuống, lên, qua phải&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gg&lt;/code&gt; để di chuyển nhanh lên dòng số 1&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Shift + g&lt;/code&gt; để di chuyển xuống dưới cùng của file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;^&lt;/code&gt; đề về đầu dòng&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$&lt;/code&gt; để về cuối&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;w&lt;/code&gt; để đi tới 1 từ (word)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;b&lt;/code&gt; để đi lùi 1 từ&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Chế độ &lt;code&gt;Insert&lt;/code&gt;:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;i&lt;/code&gt; để đưa con trỏ về chế độ &lt;code&gt;Insert&lt;/code&gt; ngay tại vị trí con trỏ&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Shift + A&lt;/code&gt; để con trỏ về chế độ &lt;code&gt;Insert&lt;/code&gt; ở cuối dòng&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a&lt;/code&gt; để đưa con trỏ về chế độ &lt;code&gt;Insert&lt;/code&gt; tại ngay sau con trỏ 1 ký tự&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Chế độ &lt;code&gt;Delete&lt;/code&gt;:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;dw&lt;/code&gt; để delete tới 1 từ&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;db&lt;/code&gt; để delete lùi 1 từ&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cw&lt;/code&gt; để delete tới 1 từ và đưa con trỏ về chế độ &lt;code&gt;Insert&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cb&lt;/code&gt; để delete lùi 1 từ và đưa con trỏ về chế độ &lt;code&gt;Insert&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;di&amp;quot;&lt;/code&gt; xóa tất cả nội dung trong cặp dấu &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;, các bạn gõ &lt;code&gt;di&lt;/code&gt; và ký tự muốn xóa đến đó nhé: &lt;code&gt;di)&lt;/code&gt;, &lt;code&gt;di]&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;Ví dụ &lt;code&gt;&amp;quot;Đây là nội dung&amp;quot;&lt;/code&gt; thì khi gõ &lt;code&gt;di&amp;quot;&lt;/code&gt; thì chỉ còn lại &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Ví dụ 2: &lt;code&gt;function convert(value: string, convertTo: number) {}&lt;/code&gt;, khi trỏ tại chỗ &lt;code&gt;value&lt;/code&gt; và gõ &lt;code&gt;di)&lt;/code&gt; thì còn lại:
-&lt;code&gt;function convert() {}&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ci&amp;quot;&lt;/code&gt; tương tự như &lt;code&gt;di&amp;quot;&lt;/code&gt; chỉ khác sau khi xóa thì đưa con trỏ về chế độ &lt;code&gt;Insert&lt;/code&gt; luôn nhé.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;demo-vim-mình-đang-xài&#34;&gt;Demo Vim mình đang xài:&lt;/h1&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 161; flex-basis: 387px&#34;&gt;
-		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png&#34; data-size=&#34;3104x1924&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png&#34;
-				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;3104&#34;
-				height=&#34;1924&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;vim-demo.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;vim-demo.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Phần tiếp theo ta sẽ cùng cài đặt Vim package manager để cài đặt plugin này nọ :)&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/&#34; &gt;[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/cover.png" alt="Featured image of post [Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug" /&gt;&lt;h1 id=&#34;cài-đặt-vim-để-code-giống-ide&#34;&gt;Cài đặt Vim để code giống IDE&lt;/h1&gt;
-&lt;h2 id=&#34;vim-plug&#34;&gt;Vim-Plug&lt;/h2&gt;
-&lt;p&gt;Vim có rất nhiều Package Manager như:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Vim Plug&lt;/li&gt;
-&lt;li&gt;Vundle&lt;/li&gt;
-&lt;li&gt;Pathogen&lt;/li&gt;
-&lt;li&gt;Dein.vim&lt;/li&gt;
-&lt;li&gt;Janus&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nhưng &lt;strong&gt;Vim Plug&lt;/strong&gt; có vẻ được rất nhiều người sử dụng, có lượt bình chọn khá cao, nên mình cũng xài &lt;strong&gt;Vim Plug&lt;/strong&gt; luôn 🙂&lt;/p&gt;
-&lt;p&gt;Các lý do nên xài Vim Plug:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dễ dàng cài đặt, cấu hình và sử dụng&lt;/li&gt;
-&lt;li&gt;Cài plugin từ bất cứ đâu, có thể từ folder, từ git, từ tên plugin&amp;hellip;&lt;/li&gt;
-&lt;li&gt;Dễ dàng gỡ bỏ plugins mình không cần xài nữa&lt;/li&gt;
-&lt;li&gt;Cài đặt plugin khá nhanh&lt;/li&gt;
-&lt;li&gt;Hỗ trợ 3 hệ điều hành thường sử dụng: Linux, MacOS, Windows&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;cài-đặt-vim-plughttpsgithubcomjunegunnvim-plug&#34;&gt;Cài đặt &lt;a class=&#34;link&#34; href=&#34;https://github.com/junegunn/vim-plug&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Vim Plug&lt;/a&gt;:&lt;/h3&gt;
-&lt;p&gt;Rất đơn giản, chỉ 1 dòng lệnh &lt;code&gt;curl&lt;/code&gt; là cài xong rồi 🤤&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;curl&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;-fLo&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;\&lt;/span&gt;
-    &lt;span class=&#34;nf&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;//&lt;span class=&#34;n&#34;&gt;raw&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;githubusercontent&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;junegunn&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;vim&lt;/span&gt;-&lt;span class=&#34;n&#34;&gt;plug&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;master&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;plug&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;vim&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;cấu-hình-vim-plug&#34;&gt;Cấu hình &lt;code&gt;Vim Plug&lt;/code&gt;:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Tạo file &lt;code&gt;.vimrc&lt;/code&gt; trong thư mục user của hệ điều hành, thường để trong dấu &lt;code&gt;~&lt;/code&gt; như thế này: &lt;code&gt;~/.vimrc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Để các plugin cần cài đặt bên trong khối này:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#begin()
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;...&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#end()
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Các plugin cần bắt đầu với từ khóa &lt;code&gt;Plug&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ví dụ:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#begin(&amp;#39;~/.vim/plugged&amp;#39;)
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;
-&lt;span class=&#34;s2&#34;&gt;&amp;#34; Make sure you use single quotes
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Shorthand notation; fetches https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;//&lt;span class=&#34;n&#34;&gt;github&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;junegunn&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;vim&lt;/span&gt;-&lt;span class=&#34;n&#34;&gt;easy&lt;/span&gt;-&lt;span class=&#34;n&#34;&gt;align&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;Plug&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;junegunn/vim-easy-align&amp;#39;&lt;/span&gt;
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34; Any valid git URL is allowed
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;Plug &amp;#39;https://github.com/junegunn/vim-github-dashboard.git&amp;#39;
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Multiple&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Plug&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;commands&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;can&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;be&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;written&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;single&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;line&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;separators&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;Plug&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;SirVer/ultisnips&amp;#39;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Plug&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;honza/vim-snippets&amp;#39;&lt;/span&gt;
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34; On-demand loading
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;Plug &amp;#39;scrooloose/nerdtree&amp;#39;, { &amp;#39;on&amp;#39;:  &amp;#39;NERDTreeToggle&amp;#39; }
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;Plug &amp;#39;tpope/vim-fireplace&amp;#39;, { &amp;#39;for&amp;#39;: &amp;#39;clojure&amp;#39; }
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Using&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;non-default&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;branch&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;Plug &amp;#39;rdnetto/YCM-Generator&amp;#39;, { &amp;#39;branch&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &amp;#39;&lt;span class=&#34;n&#34;&gt;stable&lt;/span&gt;&amp;#39; }
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34; Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;Plug &amp;#39;fatih/vim-go&amp;#39;, { &amp;#39;tag&amp;#39;: &amp;#39;*&amp;#39; }
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Plugin&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;options&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;Plug &amp;#39;nsf/gocode&amp;#39;, { &amp;#39;tag&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &amp;#39;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;.20150303&amp;#39;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &amp;#39;&lt;span class=&#34;n&#34;&gt;rtp&lt;/span&gt;&amp;#39;: &amp;#39;&lt;span class=&#34;n&#34;&gt;vim&lt;/span&gt;&amp;#39; }
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34; Plugin outside ~/.vim/plugged with post-update hook
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;Plug &amp;#39;junegunn/fzf&amp;#39;, { &amp;#39;dir&amp;#39;: &amp;#39;~/.fzf&amp;#39;, &amp;#39;do&amp;#39;: &amp;#39;./install --all&amp;#39; }
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Unmanaged&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plugin&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;(manually&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;installed&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;updated)&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;Plug&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;~/my-prototype-plugin&amp;#39;&lt;/span&gt;
-
-&lt;span class=&#34;err&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Initialize&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plugin&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;system&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#end()
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Phần tiếp theo chúng ta sẽ bắt đầu làm đẹp Vim :v&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/&#34; &gt;[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/cover.png" alt="Featured image of post [Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark" /&gt;&lt;h3 id=&#34;theme-code-highlight-onedarkhttpsgithubcomjoshdickonedarkvim&#34;&gt;Theme code highlight: &lt;code&gt;[Onedark](https://github.com/joshdick/onedark.vim)&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Đây là theme code highlight mà mình thấy khá đẹp và thích sử dụng nhất, nó giống với theme trên Atom, nó trông thế này:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 103; flex-basis: 249px&#34;&gt;
-		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark.png&#34; data-size=&#34;1574x1516&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark.png&#34;
-				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark_hue3da9a65efb77191a23150800bb77473_247565_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark_hue3da9a65efb77191a23150800bb77473_247565_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1574&#34;
-				height=&#34;1516&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;onedark.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;onedark.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;cài-đặt-theme-onedark&#34;&gt;Cài đặt theme &lt;code&gt;Onedark&lt;/code&gt;:&lt;/h3&gt;
-&lt;p&gt;Thêm dòng này vào file &lt;code&gt;~/.vimrc&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#begin()
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;...&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;Plug https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;//&lt;span class=&#34;n&#34;&gt;github&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;joshdick&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;onedark&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;vim&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#end()
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;...&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;syntax&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;on&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;colorscheme&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;onedark&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sau đó lưu lại và chạy lệnh này trên terminal, không cần thoát vim nha:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Tận hưởng giao diện thôi nào 😋&lt;/p&gt;
-&lt;p&gt;Phần tiếp theo chúng ta sẽ cài đặt giao diện giống thế này:
-&lt;figure style=&#34;flex-grow: 4696; flex-basis: 11270px&#34;&gt;
-		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png&#34; data-size=&#34;2348x50&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png&#34;
-				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;2348&#34;
-				height=&#34;50&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;vim-airline.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;vim-airline.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/&#34; &gt;[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/cover.png" alt="Featured image of post [Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline" /&gt;&lt;h3 id=&#34;theme-giao-diện-vim-airlinehttpsgithubcomvim-airlinevim-airline&#34;&gt;Theme giao diện: &lt;code&gt;[Vim Airline](https://github.com/vim-airline/vim-airline)&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Vim airline là plugin để làm cho cửa sổ terminal xài Vim của bạn không bị nhàm chán, nó có những thứ phía dưới như sau:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 4696; flex-basis: 11270px&#34;&gt;
-		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline.png&#34; data-size=&#34;2348x50&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline.png&#34;
-				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;2348&#34;
-				height=&#34;50&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;vim-airline.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;vim-airline.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Khá đẹp đúng không, cho mình biết được những thông tin như:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;NORMAL: mode của vim hiện tại, có thể là NORMAL, INSERT, VIRSUAL&lt;/li&gt;
-&lt;li&gt;Git branch là gì&lt;/li&gt;
-&lt;li&gt;Tên file hiện tại&lt;/li&gt;
-&lt;li&gt;Ngôn ngữ của file đó là gì&lt;/li&gt;
-&lt;li&gt;Encode của file là gì: utf-8&lt;/li&gt;
-&lt;li&gt;Phần trăm của con trỏ so với tổng số dòng&lt;/li&gt;
-&lt;li&gt;Số dòng hiện tại / tổng số dòng của file (ln:15/65)&lt;/li&gt;
-&lt;li&gt;Cột của con trỏ đang đứng (col:1)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Rồi giờ cài đặt và cấu hình nó nào:&lt;/p&gt;
-&lt;h3 id=&#34;cài-đặt-vim-airline&#34;&gt;Cài đặt &lt;code&gt;Vim Airline&lt;/code&gt;:&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#begin()
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;...&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;Plug&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;vim-airline/vim-airline&amp;#39;&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;Plug&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;vim-airline/vim-airline-themes&amp;#39;&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#end()
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gõ &lt;code&gt;:w&lt;/code&gt; để lưu, xong gõ tiếp:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Cài thêm font &lt;code&gt;power-airline&lt;/code&gt; vô nữa thì nó mới hiển thị mấy cái symbol (ký tự) của branch, mũi tên đúng được:&lt;/p&gt;
-&lt;p&gt;Trên &lt;code&gt;ubuntu&lt;/code&gt; hoặc &lt;code&gt;debian&lt;/code&gt; hoặc các Linux distro dựa trên debian:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;apt&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;fonts-powerline&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Trên &lt;code&gt;MacOS&lt;/code&gt; hoặc các OS khác:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;c&#34;&gt;# clone
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;git clone https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;//&lt;span class=&#34;n&#34;&gt;github&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;powerline&lt;/span&gt;/&lt;span class=&#34;n&#34;&gt;fonts&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt; --&lt;span class=&#34;n&#34;&gt;depth&lt;/span&gt;=1
-&lt;span class=&#34;c&#34;&gt;# install
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;fonts&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;./install.sh&lt;/span&gt;
-&lt;span class=&#34;c&#34;&gt;# clean-up a bit
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;..&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;rm&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;-rf&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;fonts&lt;/span&gt;
-
-&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; Đổi font của terminal lại thành &lt;span class=&#34;s2&#34;&gt;&amp;#34;Source Code Pro for Powerline&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vậy là cài xong, giờ cấu hình nào.&lt;/p&gt;
-&lt;h3 id=&#34;cấu-hình-vim-airline&#34;&gt;Cấu hình &lt;code&gt;Vim Airline&lt;/code&gt;:&lt;/h3&gt;
-&lt;p&gt;Các bạn vào link này để xem các theme hiện có của Airline nhé: &lt;a class=&#34;link&#34; href=&#34;https://github.com/vim-airline/vim-airline/wiki/Screenshots&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/vim-airline/vim-airline/wiki/Screenshots&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Mình lựa được theme &lt;code&gt;bubblegum&lt;/code&gt; thấy dẹp đẹp, nên quăng vô xài thôi 😍&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_theme&lt;/span&gt;=&amp;#39;&lt;span class=&#34;n&#34;&gt;bubblegum&lt;/span&gt;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_powerline_fonts&lt;/span&gt;=1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Cấu hình cho các symbol hiển thị đúng:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;nf&#34;&gt;if !exists(&amp;#39;g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_symbols&lt;/span&gt;&amp;#39;)
-  &lt;span class=&#34;nb&#34;&gt;let&lt;/span&gt; g:airline_symbols &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{}&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;endif&lt;/span&gt;
-  
-&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;powerline&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;symbols&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_left_sep&lt;/span&gt; = &amp;#39;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_left_alt_sep&lt;/span&gt; = &amp;#39;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_right_sep&lt;/span&gt; = &amp;#39;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_right_alt_sep&lt;/span&gt; = &amp;#39;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_symbols&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;branch&lt;/span&gt; = &amp;#39;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_symbols&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;readonly&lt;/span&gt; = &amp;#39;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_symbols&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;linenr&lt;/span&gt; = &amp;#39;&lt;span class=&#34;n&#34;&gt;ln&lt;/span&gt;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_symbols&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;maxlinenr&lt;/span&gt; = &amp;#39;&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_symbols&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;dirty&lt;/span&gt;=&amp;#39;⚡&amp;#39;
-&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline_symbols&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;colnr&lt;/span&gt;=&amp;#39;&lt;span class=&#34;n&#34;&gt;col&lt;/span&gt;&amp;#39;&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Cấu hình để hiển thị branch name:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#extensions#tabline#enabled = 1
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#extensions#hunks#enabled=0
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#extensions#hunks#coc_git = 1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vậy là xong, tận hưởng thành quả nào.&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/&#34; &gt;[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover.png" alt="Featured image of post [Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim" /&gt;&lt;h2 id=&#34;sidebar-nerdtreehttpsgithubcompreservimnerdtree&#34;&gt;Sidebar: &lt;code&gt;[NERDTree](https://github.com/preservim/nerdtree)&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ.&lt;/p&gt;
-&lt;p&gt;Trong Vim cũng sẽ có sidebar này, và &lt;code&gt;NERDTree&lt;/code&gt; là plugin mà được nhiều người xài nhất.&lt;/p&gt;
-&lt;p&gt;Nó trông thế này đây:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 188; flex-basis: 451px&#34;&gt;
-		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png&#34; data-size=&#34;2854x1518&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png&#34;
-				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;2854&#34;
-				height=&#34;1518&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;nerdtree.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;nerdtree.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Cũng giống mấy cái IDE khác thôi, nhưng mình nói trước cái này sẽ dùng phím để di chuyển nha, chứ không dùng chuột đâu 😅&lt;/p&gt;
-&lt;h3 id=&#34;cài-đặt-nerdtree&#34;&gt;Cài đặt &lt;code&gt;NERDTree&lt;/code&gt;:&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#begin()
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;  ...
-  Plug &lt;span class=&#34;s1&#34;&gt;&amp;#39;preservim/nerdtree&amp;#39;&lt;/span&gt;
-  ...
-&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#end()
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gõ &lt;code&gt;:w&lt;/code&gt; để lưu, xong gõ tiếp:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Giờ cấu hình cho nó nào.&lt;/p&gt;
-&lt;h3 id=&#34;cấu-hình-nerdtree&#34;&gt;Cấu hình &lt;code&gt;NERDTree&lt;/code&gt;:&lt;/h3&gt;
-&lt;p&gt;Đây là tất cả config cho &lt;code&gt;NERDTree&lt;/code&gt; mà mình đang xài:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Hiện&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;ẩn&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;NERDTreeShowHidden&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
-
-&lt;span class=&#34;err&#34;&gt;autocmd&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;VimEnter&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;NERDTree&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;wincmd&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;p&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;autocmd StdinReadPre * let s&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;std_in&lt;/span&gt;=1
-&lt;span class=&#34;nf&#34;&gt;autocmd VimEnter * NERDTree | if argc() &amp;gt; 0 || exists(&amp;#34;s&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;std_in&lt;/span&gt;&amp;#34;) &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wincmd&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;endif&lt;/span&gt;
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Mở&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;cùng&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;NERDTree&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;cho&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;tab&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mới,&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mặc&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;định&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;là&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mỗi&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;tab&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;sẽ&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mở&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;cái&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mới&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;autocmd&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;BufWinEnter&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;silent&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;NERDTreeMirror&lt;/span&gt;
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Tự&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;đóng&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;NERDTree&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;khi&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;đóng&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;tab,&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mặc&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;định&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;giữ&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;lại&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;NERDTree&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;autocmd BufEnter * if tabpagenr(&amp;#39;$&amp;#39;) == 1 &amp;amp;&amp;amp; winnr(&amp;#39;$&amp;#39;) == 1 &amp;amp;&amp;amp; exists(&amp;#39;b&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NERDTree&lt;/span&gt;&amp;#39;) &amp;amp;&amp;amp; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;:&lt;span class=&#34;n&#34;&gt;NERDTree&lt;/span&gt;.&lt;span class=&#34;n&#34;&gt;isTabTree&lt;/span&gt;() &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;quit&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;endif&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;autocmd bufenter * if (winnr(&amp;#34;$&amp;#34;) == 1 &amp;amp;&amp;amp; exists(&amp;#34;b&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NERDTree&lt;/span&gt;&amp;#34;) 
-      &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; b:NERDTree.isTabTree&lt;span class=&#34;o&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; q &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; endif
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Tìm&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;đang&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mở&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;trong&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;thư&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mục&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;bên&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;NERDTree&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;(mặc&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;định&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;không&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;sync&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;với&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;nhau)&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;map &amp;lt;leader&amp;gt;r &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NERDTreeFind&lt;/span&gt;&amp;lt;&lt;span class=&#34;n&#34;&gt;cr&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gõ &lt;code&gt;:w&lt;/code&gt; để lưu, xong gõ tiếp: &lt;code&gt;:source ~/.vimrc&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Vậy là xong cái sidebar, quá dễ đúng không 😻&lt;/p&gt;
-&lt;h3 id=&#34;các-chuyển-đổi-qua-lại-giữa-nerdtree-và-code&#34;&gt;Các chuyển đổi qua lại giữa NERDTree và code:&lt;/h3&gt;
-&lt;p&gt;Các bạn gõ phím tắt &lt;code&gt;Ctrl + ww&lt;/code&gt; 2 lần ww nha, thì nó sẽ chuyển đổi qua lại giữa NERDTree và code dễ dàng.&lt;/p&gt;
-&lt;h3 id=&#34;cách-tìm-file-trong-nerdtree&#34;&gt;Cách tìm file trong NERDTree:&lt;/h3&gt;
-&lt;p&gt;Các bạn có thểm tìm file bằng cách giống như tìm text trong vim:&lt;/p&gt;
-&lt;p&gt;Gõ dấu &lt;code&gt;/&lt;/code&gt; xong gõ tên file cần tìm, ví dụ &lt;code&gt;/index&lt;/code&gt; enter, thì nó tự nhảy trỏ tới file đó luôn.&lt;/p&gt;
-&lt;p&gt;Tìm thư mục cũng tương tự nhé 😂&lt;/p&gt;
-&lt;h3 id=&#34;cách-tạo-file-mới-đổi-tên-xóa-file-bằng-nerdtree&#34;&gt;Cách tạo file mới, đổi tên, xóa file bằng NERDTree:&lt;/h3&gt;
-&lt;p&gt;Các bạn chỉ cần di chuyển trỏ tới thư mục cần tạo file/thư mục mới,&lt;/p&gt;
-&lt;p&gt;xong ấn &lt;code&gt;m&lt;/code&gt; (có nghĩa là show &lt;code&gt;menu&lt;/code&gt; lên), xong ấn &lt;code&gt;a&lt;/code&gt; (nghĩa là &lt;code&gt;add&lt;/code&gt;).&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nếu tạo file thì để đuôi file vô, không có dấu &lt;code&gt;/&lt;/code&gt; ở cuối.&lt;/li&gt;
-&lt;li&gt;Nếu tạo folder thì phải có dấu &lt;code&gt;/&lt;/code&gt; ở cuối nha.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ví dụ:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 173; flex-basis: 416px&#34;&gt;
-		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png&#34; data-size=&#34;2770x1596&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png&#34;
-				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;2770&#34;
-				height=&#34;1596&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;nerdtree-2.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;nerdtree-2.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/&#34; &gt;[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/cover.png" alt="Featured image of post [Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF" /&gt;&lt;h2 id=&#34;hỗ-trợ-search-file-nhanh-giống-ctrl--p-trên-vscode-fzfvimhttpsgithubcomjunegunnfzfvim&#34;&gt;Hỗ trợ search file nhanh, giống Ctrl + P trên VSCode: &lt;code&gt;[FZF.vim](https://github.com/junegunn/fzf.vim)&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Nhu cầu cơ bản của dev là phải search nhanh file cần tìm để đáp ứng code, chứ nhiều khi không thể nhớ đường dẫn vô file đó, nên cần 1 plugin để hỗ trợ nó, nó gọi là &lt;code&gt;FZF&lt;/code&gt;, nó giống vầy nè:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 188; flex-basis: 451px&#34;&gt;
-		&lt;a href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf.png&#34; data-size=&#34;2866x1522&#34;&gt;&lt;img src=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf.png&#34;
-				srcset=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf_hu8afdcdd22e728c0f6c74187d60279220_342991_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf_hu8afdcdd22e728c0f6c74187d60279220_342991_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;2866&#34;
-				height=&#34;1522&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;fzf.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;fzf.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Gõ &lt;code&gt;Ctrl + P&lt;/code&gt; rồi search file y chang bên VSCode nha ✌️&lt;/p&gt;
-&lt;h3 id=&#34;cài-đặt-fzfvim&#34;&gt;Cài đặt &lt;code&gt;FZF.vim&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#begin()
-&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;  ...
-  Plug &lt;span class=&#34;s1&#34;&gt;&amp;#39;junegunn/fzf&amp;#39;&lt;/span&gt;, &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;do&amp;#39;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt; -&amp;gt; fzf#install&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-  Plug &lt;span class=&#34;s1&#34;&gt;&amp;#39;junegunn/fzf.vim&amp;#39;&lt;/span&gt;
-  ...
-&lt;span class=&#34;err&#34;&gt;call&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;plug&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#end()
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gõ &lt;code&gt;:w&lt;/code&gt; để lưu, xong gõ tiếp:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Xong rồi, giờ cấu hình tiếp nào&lt;/p&gt;
-&lt;h3 id=&#34;cấu-hình-fzfvim&#34;&gt;Cấu hình &lt;code&gt;FZF.vim&lt;/code&gt;:&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Map&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;phím&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;tắt&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Ctrl&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;P&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;nnoremap &amp;lt;silent&amp;gt; &amp;lt;C-S-p&amp;gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Files&lt;/span&gt;&amp;lt;&lt;span class=&#34;n&#34;&gt;CR&lt;/span&gt;&amp;gt;
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Tìm&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;trong&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;project,&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;nhưng&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;bỏ&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mấy&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;thư&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;mục&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;như&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;node_modules&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;ra,&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;để&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;tìm&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;nhẹ&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;hơn.&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;set wildmode=list&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;longest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;list&lt;/span&gt;:&lt;span class=&#34;n&#34;&gt;full&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;wildignore&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt;*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
-&lt;span class=&#34;err&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$FZF_DEFAULT_COMMAND&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;s2&#34;&gt;&amp;#34;find * -path &amp;#39;*/\.*&amp;#39; -prune -o -path &amp;#39;**/node_modules/**&amp;#39; -prune -o -path &amp;#39;node_modules/**&amp;#39; -prune -o -path &amp;#39;target/**&amp;#39; -prune -o -path &amp;#39;dist/**&amp;#39; -prune -o  -type f -print -o -type l -print 2&amp;gt; /dev/null&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gõ &lt;code&gt;:w&lt;/code&gt; để lưu, xong gõ tiếp:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vậy là ngon, chạy thử thôi 😋&lt;/p&gt;
-&lt;h2 id=&#34;hỗ-trợ-search-nội-dung-trong-file-nhanh-giống-ctrl--shift--f-trên-vscode&#34;&gt;Hỗ trợ search nội dung trong file nhanh, giống Ctrl + Shift + F trên VSCode:&lt;/h2&gt;
-&lt;p&gt;Phần này chúng ta cũng sử dụng &lt;code&gt;FZF.vim&lt;/code&gt; luôn, không cần cài plugin mới nhé, cấu hình luôn thôi nào:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;nf&#34;&gt;command! -bang -nargs=* Rg call fzf#vim#grep(&amp;#34;rg --column --line-number --no-heading --color=always --smart-case &amp;#34;.shellescape(&amp;lt;q-args&amp;gt;), 1, {&amp;#39;options&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &amp;#39;--&lt;span class=&#34;n&#34;&gt;delimiter&lt;/span&gt; : --&lt;span class=&#34;n&#34;&gt;nth&lt;/span&gt; 4..&amp;#39;}&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &amp;lt;&lt;span class=&#34;n&#34;&gt;bang&lt;/span&gt;&amp;gt;0)
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;Map&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;phím&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;\f&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;để&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;tìm&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;nội&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;dung,&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;tương&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;tự&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;như&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Ctrl + Shift + F&amp;#34;&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;trên&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;VSCode&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;nhé&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;nnoremap &amp;lt;silent&amp;gt; &amp;lt;Leader&amp;gt;f &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Rg&lt;/span&gt;&amp;lt;&lt;span class=&#34;n&#34;&gt;CR&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gõ &lt;code&gt;:w&lt;/code&gt; để lưu, xong gõ tiếp:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Phần tiếp theo mình sẽ cấu hình cho Vim có thể gợi y code (autocomplete code) như thế nào nhé&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/&#34; &gt;[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/cover.png" alt="Featured image of post [Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào" /&gt;&lt;h2 id=&#34;language-server-protocol-lsp&#34;&gt;Language Server Protocol (LSP):&lt;/h2&gt;
-&lt;p&gt;VSCode là 1 IDE rất phổ biến, bởi vì nó hỗ trợ rất nhiều ngôn ngữ, cả VSCode và LSP cho VSCode đều do Microsoft phát triển nên cực kỳ ngon rồi.&lt;/p&gt;
-&lt;p&gt;Trong Vim cũng có rất nhiều giải pháp cho LSP, sau khi thử vài cái thì mình thấy &lt;code&gt;COC.nvim&lt;/code&gt; là hợp lý và mạnh nhất so với mấy cái còn lại.&lt;/p&gt;
-&lt;h3 id=&#34;cài-đặt-cocnvimhttpsgithubcomneoclidecocnvim&#34;&gt;Cài đặt &lt;code&gt;[COC.nvim](https://github.com/neoclide/coc.nvim)&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;call plug#begin&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;
-  ...
-  Plug &lt;span class=&#34;s1&#34;&gt;&amp;#39;neoclide/coc.nvim&amp;#39;&lt;/span&gt;, &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;branch&amp;#39;&lt;/span&gt;: &lt;span class=&#34;s1&#34;&gt;&amp;#39;release&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-  ...
-call plug#end&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gõ &lt;code&gt;:w&lt;/code&gt; để lưu, xong gõ tiếp:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
-&lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vậy là đã cài đặt xong COC.nvim, giờ tiếp tục cấu hình&lt;/p&gt;
-&lt;h3 id=&#34;cài-đặt-lsp-cho-javascripttypescript&#34;&gt;Cài đặt LSP cho javascript/typescript&lt;/h3&gt;
-&lt;p&gt;Chạy lệnh này trên vim của bạn:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;:CocInstall coc-json coc-tsserver
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hoặc bạn có thể để vào trong file &lt;code&gt;~/.vimrc&lt;/code&gt; để dễ dàng cài đặt nơi khác, dưới đây là toàn bộ extensions mình đang xài&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;nb&#34;&gt;let&lt;/span&gt; g:coc_global_extensions &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-ultisnips&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-json&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-tsserver&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-html&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-css&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-yaml&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-highlight&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-eslint&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-git&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-prettier&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-flutter&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-angular&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;coc-pyright&amp;#39;&lt;/span&gt;,
-  &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Bạn có thể xem danh sách các extensions của COC.nvim tại đây: &lt;a class=&#34;link&#34; href=&#34;https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;cấu-hình-autocomplete-auto-import-file&#34;&gt;Cấu hình autocomplete, auto import file:&lt;/h3&gt;
-&lt;p&gt;COC.nvim cũng hỗ trợ autocomplete sau khi cài đặt LSP, cũng như auto import file vô&lt;/p&gt;
-&lt;p&gt;Cách map key như sau:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; Map Ctrl + Space để show list functions/biến autocomplete
-inoremap &amp;lt;silent&amp;gt;&amp;lt;expr&amp;gt; &amp;lt;c-space&amp;gt; coc#refresh&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;
-
-&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; Tự động import file của biến/function khi chọn và nhấn Tab
-inoremap &amp;lt;expr&amp;gt; &amp;lt;TAB&amp;gt; pumvisible&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; ? &lt;span class=&#34;s2&#34;&gt;&amp;#34;\&amp;lt;C-y&amp;gt;&amp;#34;&lt;/span&gt; : &lt;span class=&#34;s2&#34;&gt;&amp;#34;\&amp;lt;C-g&amp;gt;u\&amp;lt;TAB&amp;gt;&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Khá đơn giản phải không, thực tế phần auto import hoạt động rất hiệu quả, mình thấy ngon hơn VSCode ở chỗ nhanh hơn nhiều.&lt;/p&gt;
-&lt;h3 id=&#34;cấu-hình-phím-tắt-go-to-definition&#34;&gt;Cấu hình phím tắt go to definition&amp;hellip;&lt;/h3&gt;
-&lt;p&gt;COC.nvim hỗ trợ các tính năng auto complete, go to definition&amp;hellip; rất tốt, bạn đưa phần này vào &lt;code&gt;~/.vimrc&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; Go to definition ở tab mới
-nmap &amp;lt;silent&amp;gt; gd :call CocAction&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;jumpDefinition&amp;#39;&lt;/span&gt;, &lt;span class=&#34;s1&#34;&gt;&amp;#39;tab drop&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&amp;lt;CR&amp;gt;
-nmap &amp;lt;silent&amp;gt; gy &amp;lt;Plug&amp;gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;coc-type-definition&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-nmap &amp;lt;silent&amp;gt; gi &amp;lt;Plug&amp;gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;coc-implementation&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-nmap &amp;lt;silent&amp;gt; gr &amp;lt;Plug&amp;gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;coc-references&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;hiển-thị-document-cho-function-biến&#34;&gt;Hiển thị document cho function, biến:&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nnoremap &amp;lt;silent&amp;gt; K :call &amp;lt;SID&amp;gt;show_documentation&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;&amp;lt;CR&amp;gt;
-
-&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt;! s:show_documentation&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;index&lt;span class=&#34;o&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;vim&amp;#39;&lt;/span&gt;,&lt;span class=&#34;s1&#34;&gt;&amp;#39;help&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;, &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;filetype&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &amp;gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; 0&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-    execute &lt;span class=&#34;s1&#34;&gt;&amp;#39;h &amp;#39;&lt;/span&gt;.expand&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;cword&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-  elseif &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;coc#rpc#ready&lt;span class=&#34;o&#34;&gt;())&lt;/span&gt;
-    call CocActionAsync&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;doHover&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-  &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
-    execute &lt;span class=&#34;s1&#34;&gt;&amp;#39;!&amp;#39;&lt;/span&gt; . &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;keywordprg . &lt;span class=&#34;s2&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; . expand&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;cword&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-  endif
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lập Trình Dễ Òm.xyz</title><link>https://laptrinhdeom.github.io/</link><description>Recent content on Lập Trình Dễ Òm.xyz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.png" alt="Featured image of post [Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?" />&lt;h2 id="về-terminal-thì-sao">Về terminal thì sao?&lt;/h2>
+&lt;p>Khi sử dụng VSCode, chúng ta thường có 1 terminal phía dưới để dễ làm việc hoặc theo dõi log khi code.&lt;/p>
+&lt;p>Giải pháp trên Vim thì mình có 2 giải pháp:&lt;/p>
+&lt;ol>
+&lt;li>Có Floatterm của COC.nvim khá hay, nó là 1 terminal nổi trên vim, khi nào cần thì mở lên gõ, xong thì đóng lại.&lt;/li>
+&lt;li>Dùng tmux, mình thích cách này hơn, dùng tmux chia nhiều khung ra dễ nhìn và thao tác hơn, bản thân tmux chia khung khá thông minh, do đường viền rất nhỏ, nên tận dụng tối đa khả năng hiển thị những thứ cần thiết. Nó trông như vậy:&lt;/li>
+&lt;/ol>
+&lt;p>&lt;figure style="flex-grow: 161; flex-basis: 387px">
+&lt;a href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux.png" data-size="3104x1924">&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux.png"
+srcset="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux_hu245bdc5a230da49d9e3b47f92603733e_880343_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux_hu245bdc5a230da49d9e3b47f92603733e_880343_1024x0_resize_box_2.png 1024w"
+width="3104"
+height="1924"
+loading="lazy"
+alt="tmux.png">
+&lt;/a>
+&lt;figcaption>tmux.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Nếu màn hình lớn khoảng 24 inch thì chia vậy rất ngon để code đó các bạn 😻&lt;/p>
+&lt;p>Như vậy chúng ta đã hoàn thành toàn bộ cách cấu hình, cài đăt, cấu hình để Vim có thể làm 1 IDE chính để code, và code trên Vim thật sự rất hào hứng, rất vui các bạn ạ, hãy thử nhé :)&lt;/p></description></item><item><title>[Phần 1] Vim là cái quái gì?</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover.png" alt="Featured image of post [Phần 1] Vim là cái quái gì?" />&lt;h1 id="vim-là-quái-gì-vậy">Vim là quái gì vậy?&lt;/h1>
+&lt;p>Vim là 1 IDE được rất nhiều người sử dụng trên thế giới, Vim có sẵn trên các nền tảng, rất gọn nhẹ, khó sử dụng, nhưng khi đã xài quen rồi thì nghiện luôn 😍&lt;/p>
+&lt;p>Vim sau khi cấu hình thì có thể sử dụng như 1 IDE mà các bạn thường sử dụng như VSCode, Sublime Text, Atom&amp;hellip;&lt;/p>
+&lt;h1 id="tại-sao-nên-dùng-vim-để-code">Tại sao nên dùng Vim để code?&lt;/h1>
+&lt;ul>
+&lt;li>[Gọn, nhẹ] Xấu cực đỉnh, chính vì thế nên rất gọn nhẹ, thời gian khởi động của Vim cực kì nhanh.&lt;/li>
+&lt;li>[Tùy biến] Khả năng tùy biến cực cao, mặc định thì nó khá xấu, nhưng sau khi tùy biến lại thì sẽ rất đẹp.&lt;/li>
+&lt;li>[Plugins, Extensions] Rất nhiều, hỗ trợ hầu hết các ngôn ngữ về code highlight và autocomplete, dễ dàng cài đặt và cấu hình.&lt;/li>
+&lt;li>[Cộng đồng] Cộng đồng cực lớn, cần gì thì sẽ tìm được hỗ trợ rất nhiều trên mạng, không phải lo.&lt;/li>
+&lt;li>[Tốc độ làm việc] Tốc độ làm việc với Vim rất nhanh, tất cả thao tác khi code với Vim đều trên bàn phím, thậm chí không cần đến chuột, nên mọi thứ rất nhanh.&lt;/li>
+&lt;li>[Tiện dụng] Dễ dàng chuyển đổi giữa các thiết bị máy tính, giữa các hệ điều hành chỉ cần file &lt;code>.vimrc&lt;/code> là xong, rất đơn giản, không cần cài lại thủ công từng plugin sau khi qua môi trường mới.&lt;/li>
+&lt;li>[Cảm giác] Cảm giác code với Vim rất ngầu, pro, đỉnh, nên sẽ dễ gây nghiện 🤤, có hứng thú khi code hơn.&lt;/li>
+&lt;/ul>
+&lt;h3 id="nhược-điểm-của-vim">Nhược điểm của Vim&lt;/h3>
+&lt;ul>
+&lt;li>Khó tiếp cận, khó làm quen, đòi hỏi phải có sự kiên nhẫn và quyết tâm cao, nếu không thì rất dễ nản.&lt;/li>
+&lt;li>Rất nhiều phím tắt cần phải nhớ, phải tập làm quen nhiều lần mới nhớ được.&lt;/li>
+&lt;/ul>
+&lt;h1 id="phím-tắt-trong-vim-thường-dùng">Phím tắt trong Vim thường dùng:&lt;/h1>
+&lt;ul>
+&lt;li>Di chuyển:
+&lt;ul>
+&lt;li>Dùng 4 phím &lt;code>h,j,k,l&lt;/code> để di chuyển &lt;code>qua trái, xuống, lên, qua phải&lt;/code>&lt;/li>
+&lt;li>&lt;code>gg&lt;/code> để di chuyển nhanh lên dòng số 1&lt;/li>
+&lt;li>&lt;code>Shift + g&lt;/code> để di chuyển xuống dưới cùng của file&lt;/li>
+&lt;li>&lt;code>^&lt;/code> đề về đầu dòng&lt;/li>
+&lt;li>&lt;code>$&lt;/code> để về cuối&lt;/li>
+&lt;li>&lt;code>w&lt;/code> để đi tới 1 từ (word)&lt;/li>
+&lt;li>&lt;code>b&lt;/code> để đi lùi 1 từ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Chế độ &lt;code>Insert&lt;/code>:
+&lt;ul>
+&lt;li>&lt;code>i&lt;/code> để đưa con trỏ về chế độ &lt;code>Insert&lt;/code> ngay tại vị trí con trỏ&lt;/li>
+&lt;li>&lt;code>Shift + A&lt;/code> để con trỏ về chế độ &lt;code>Insert&lt;/code> ở cuối dòng&lt;/li>
+&lt;li>&lt;code>a&lt;/code> để đưa con trỏ về chế độ &lt;code>Insert&lt;/code> tại ngay sau con trỏ 1 ký tự&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Chế độ &lt;code>Delete&lt;/code>:
+&lt;ul>
+&lt;li>&lt;code>dw&lt;/code> để delete tới 1 từ&lt;/li>
+&lt;li>&lt;code>db&lt;/code> để delete lùi 1 từ&lt;/li>
+&lt;li>&lt;code>cw&lt;/code> để delete tới 1 từ và đưa con trỏ về chế độ &lt;code>Insert&lt;/code>&lt;/li>
+&lt;li>&lt;code>cb&lt;/code> để delete lùi 1 từ và đưa con trỏ về chế độ &lt;code>Insert&lt;/code>&lt;/li>
+&lt;li>&lt;code>di&amp;quot;&lt;/code> xóa tất cả nội dung trong cặp dấu &lt;code>&amp;quot;&amp;quot;&lt;/code>, các bạn gõ &lt;code>di&lt;/code> và ký tự muốn xóa đến đó nhé: &lt;code>di)&lt;/code>, &lt;code>di]&lt;/code>
+&lt;ul>
+&lt;li>Ví dụ &lt;code>&amp;quot;Đây là nội dung&amp;quot;&lt;/code> thì khi gõ &lt;code>di&amp;quot;&lt;/code> thì chỉ còn lại &lt;code>&amp;quot;&amp;quot;&lt;/code>&lt;/li>
+&lt;li>Ví dụ 2: &lt;code>function convert(value: string, convertTo: number) {}&lt;/code>, khi trỏ tại chỗ &lt;code>value&lt;/code> và gõ &lt;code>di)&lt;/code> thì còn lại:
+&lt;code>function convert() {}&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>ci&amp;quot;&lt;/code> tương tự như &lt;code>di&amp;quot;&lt;/code> chỉ khác sau khi xóa thì đưa con trỏ về chế độ &lt;code>Insert&lt;/code> luôn nhé.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="demo-vim-mình-đang-xài">Demo Vim mình đang xài:&lt;/h1>
+&lt;p>&lt;figure style="flex-grow: 161; flex-basis: 387px">
+&lt;a href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png" data-size="3104x1924">&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png"
+srcset="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_1024x0_resize_box_2.png 1024w"
+width="3104"
+height="1924"
+loading="lazy"
+alt="vim-demo.png">
+&lt;/a>
+&lt;figcaption>vim-demo.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Phần tiếp theo ta sẽ cùng cài đặt Vim package manager để cài đặt plugin này nọ :)&lt;/p>
+&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/" >[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug&lt;/a>&lt;/p></description></item><item><title>[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/cover.png" alt="Featured image of post [Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug" />&lt;h1 id="cài-đặt-vim-để-code-giống-ide">Cài đặt Vim để code giống IDE&lt;/h1>
+&lt;h2 id="vim-plug">Vim-Plug&lt;/h2>
+&lt;p>Vim có rất nhiều Package Manager như:&lt;/p>
+&lt;ul>
+&lt;li>Vim Plug&lt;/li>
+&lt;li>Vundle&lt;/li>
+&lt;li>Pathogen&lt;/li>
+&lt;li>Dein.vim&lt;/li>
+&lt;li>Janus&lt;/li>
+&lt;/ul>
+&lt;p>Nhưng &lt;strong>Vim Plug&lt;/strong> có vẻ được rất nhiều người sử dụng, có lượt bình chọn khá cao, nên mình cũng xài &lt;strong>Vim Plug&lt;/strong> luôn 🙂&lt;/p>
+&lt;p>Các lý do nên xài Vim Plug:&lt;/p>
+&lt;ul>
+&lt;li>Dễ dàng cài đặt, cấu hình và sử dụng&lt;/li>
+&lt;li>Cài plugin từ bất cứ đâu, có thể từ folder, từ git, từ tên plugin&amp;hellip;&lt;/li>
+&lt;li>Dễ dàng gỡ bỏ plugins mình không cần xài nữa&lt;/li>
+&lt;li>Cài đặt plugin khá nhanh&lt;/li>
+&lt;li>Hỗ trợ 3 hệ điều hành thường sử dụng: Linux, MacOS, Windows&lt;/li>
+&lt;/ul>
+&lt;h3 id="cài-đặt-vim-plughttpsgithubcomjunegunnvim-plug">Cài đặt &lt;a class="link" href="https://github.com/junegunn/vim-plug" target="_blank" rel="noopener"
+>Vim Plug&lt;/a>:&lt;/h3>
+&lt;p>Rất đơn giản, chỉ 1 dòng lệnh &lt;code>curl&lt;/code> là cài xong rồi 🤤&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">curl&lt;/span> &lt;span class="err">-fLo&lt;/span> &lt;span class="err">~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim&lt;/span> &lt;span class="err">\&lt;/span>
+&lt;span class="nf">https&lt;/span>&lt;span class="o">:&lt;/span>//&lt;span class="n">raw&lt;/span>.&lt;span class="n">githubusercontent&lt;/span>.&lt;span class="n">com&lt;/span>/&lt;span class="n">junegunn&lt;/span>/&lt;span class="n">vim&lt;/span>-&lt;span class="n">plug&lt;/span>/&lt;span class="n">master&lt;/span>/&lt;span class="n">plug&lt;/span>.&lt;span class="n">vim&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="cấu-hình-vim-plug">Cấu hình &lt;code>Vim Plug&lt;/code>:&lt;/h3>
+&lt;ul>
+&lt;li>Tạo file &lt;code>.vimrc&lt;/code> trong thư mục user của hệ điều hành, thường để trong dấu &lt;code>~&lt;/code> như thế này: &lt;code>~/.vimrc&lt;/code>&lt;/li>
+&lt;li>Để các plugin cần cài đặt bên trong khối này:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#begin()
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="err">...&lt;/span>
+&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#end()
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>
+&lt;p>Các plugin cần bắt đầu với từ khóa &lt;code>Plug&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Ví dụ:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#begin(&amp;#39;~/.vim/plugged&amp;#39;)
+&lt;/span>&lt;span class="c">&lt;/span>
+&lt;span class="s2">&amp;#34; Make sure you use single quotes
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="nf">Shorthand notation; fetches https&lt;/span>&lt;span class="o">:&lt;/span>//&lt;span class="n">github&lt;/span>.&lt;span class="n">com&lt;/span>/&lt;span class="n">junegunn&lt;/span>/&lt;span class="n">vim&lt;/span>-&lt;span class="n">easy&lt;/span>-&lt;span class="n">align&lt;/span>
+&lt;span class="err">Plug&lt;/span> &lt;span class="s1">&amp;#39;junegunn/vim-easy-align&amp;#39;&lt;/span>
+&lt;span class="s2">&amp;#34; Any valid git URL is allowed
+&lt;/span>&lt;span class="s2">Plug &amp;#39;https://github.com/junegunn/vim-github-dashboard.git&amp;#39;
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="err">Multiple&lt;/span> &lt;span class="err">Plug&lt;/span> &lt;span class="err">commands&lt;/span> &lt;span class="err">can&lt;/span> &lt;span class="err">be&lt;/span> &lt;span class="err">written&lt;/span> &lt;span class="err">in&lt;/span> &lt;span class="err">a&lt;/span> &lt;span class="err">single&lt;/span> &lt;span class="err">line&lt;/span> &lt;span class="err">using&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="err">separators&lt;/span>
+&lt;span class="err">Plug&lt;/span> &lt;span class="s1">&amp;#39;SirVer/ultisnips&amp;#39;&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="err">Plug&lt;/span> &lt;span class="s1">&amp;#39;honza/vim-snippets&amp;#39;&lt;/span>
+&lt;span class="s2">&amp;#34; On-demand loading
+&lt;/span>&lt;span class="s2">Plug &amp;#39;scrooloose/nerdtree&amp;#39;, { &amp;#39;on&amp;#39;: &amp;#39;NERDTreeToggle&amp;#39; }
+&lt;/span>&lt;span class="s2">Plug &amp;#39;tpope/vim-fireplace&amp;#39;, { &amp;#39;for&amp;#39;: &amp;#39;clojure&amp;#39; }
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="err">Using&lt;/span> &lt;span class="err">a&lt;/span> &lt;span class="err">non-default&lt;/span> &lt;span class="err">branch&lt;/span>
+&lt;span class="nf">Plug &amp;#39;rdnetto/YCM-Generator&amp;#39;, { &amp;#39;branch&amp;#39;&lt;/span>&lt;span class="o">:&lt;/span> &amp;#39;&lt;span class="n">stable&lt;/span>&amp;#39; }
+&lt;span class="s2">&amp;#34; Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+&lt;/span>&lt;span class="s2">Plug &amp;#39;fatih/vim-go&amp;#39;, { &amp;#39;tag&amp;#39;: &amp;#39;*&amp;#39; }
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="err">Plugin&lt;/span> &lt;span class="err">options&lt;/span>
+&lt;span class="nf">Plug &amp;#39;nsf/gocode&amp;#39;, { &amp;#39;tag&amp;#39;&lt;/span>&lt;span class="o">:&lt;/span> &amp;#39;&lt;span class="n">v&lt;/span>.20150303&amp;#39;&lt;span class="p">,&lt;/span> &amp;#39;&lt;span class="n">rtp&lt;/span>&amp;#39;: &amp;#39;&lt;span class="n">vim&lt;/span>&amp;#39; }
+&lt;span class="s2">&amp;#34; Plugin outside ~/.vim/plugged with post-update hook
+&lt;/span>&lt;span class="s2">Plug &amp;#39;junegunn/fzf&amp;#39;, { &amp;#39;dir&amp;#39;: &amp;#39;~/.fzf&amp;#39;, &amp;#39;do&amp;#39;: &amp;#39;./install --all&amp;#39; }
+&lt;/span>&lt;span class="s2">
+&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="err">Unmanaged&lt;/span> &lt;span class="err">plugin&lt;/span> &lt;span class="err">(manually&lt;/span> &lt;span class="err">installed&lt;/span> &lt;span class="err">and&lt;/span> &lt;span class="err">updated)&lt;/span>
+&lt;span class="err">Plug&lt;/span> &lt;span class="s1">&amp;#39;~/my-prototype-plugin&amp;#39;&lt;/span>
+&lt;span class="err">&amp;#34;&lt;/span> &lt;span class="err">Initialize&lt;/span> &lt;span class="err">plugin&lt;/span> &lt;span class="err">system&lt;/span>
+&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#end()
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;p>Phần tiếp theo chúng ta sẽ bắt đầu làm đẹp Vim :v&lt;/p>
+&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/" >[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark&lt;/a>&lt;/p></description></item><item><title>[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/cover.png" alt="Featured image of post [Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark" />&lt;h3 id="theme-code-highlight-onedarkhttpsgithubcomjoshdickonedarkvim">Theme code highlight: &lt;code>[Onedark](https://github.com/joshdick/onedark.vim)&lt;/code>&lt;/h3>
+&lt;p>Đây là theme code highlight mà mình thấy khá đẹp và thích sử dụng nhất, nó giống với theme trên Atom, nó trông thế này:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 103; flex-basis: 249px">
+&lt;a href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark.png" data-size="1574x1516">&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark.png"
+srcset="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark_hue3da9a65efb77191a23150800bb77473_247565_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark_hue3da9a65efb77191a23150800bb77473_247565_1024x0_resize_box_2.png 1024w"
+width="1574"
+height="1516"
+loading="lazy"
+alt="onedark.png">
+&lt;/a>
+&lt;figcaption>onedark.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;h3 id="cài-đặt-theme-onedark">Cài đặt theme &lt;code>Onedark&lt;/code>:&lt;/h3>
+&lt;p>Thêm dòng này vào file &lt;code>~/.vimrc&lt;/code>&lt;/p>
+&lt;p>&lt;code>vim ~/.vimrc&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#begin()
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="err">...&lt;/span>
+&lt;span class="nf">Plug https&lt;/span>&lt;span class="o">:&lt;/span>//&lt;span class="n">github&lt;/span>.&lt;span class="n">com&lt;/span>/&lt;span class="n">joshdick&lt;/span>/&lt;span class="n">onedark&lt;/span>.&lt;span class="n">vim&lt;/span>
+&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#end()
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="err">...&lt;/span>
+&lt;span class="err">syntax&lt;/span> &lt;span class="err">on&lt;/span>
+&lt;span class="err">colorscheme&lt;/span> &lt;span class="err">onedark&lt;/span>
+&lt;span class="err">...&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sau đó lưu lại và chạy lệnh này trên terminal, không cần thoát vim nha:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">:source&lt;/span> &lt;span class="err">~/.vimrc&lt;/span>
+&lt;span class="err">:PlugInstall&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Tận hưởng giao diện thôi nào 😋&lt;/p>
+&lt;p>Phần tiếp theo chúng ta sẽ cài đặt giao diện giống thế này:
+&lt;figure style="flex-grow: 4696; flex-basis: 11270px">
+&lt;a href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png" data-size="2348x50">&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png"
+srcset="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_2.png 1024w"
+width="2348"
+height="50"
+loading="lazy"
+alt="vim-airline.png">
+&lt;/a>
+&lt;figcaption>vim-airline.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/" >[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline&lt;/a>&lt;/p></description></item><item><title>[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/cover.png" alt="Featured image of post [Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline" />&lt;h3 id="theme-giao-diện-vim-airlinehttpsgithubcomvim-airlinevim-airline">Theme giao diện: &lt;code>[Vim Airline](https://github.com/vim-airline/vim-airline)&lt;/code>&lt;/h3>
+&lt;p>Vim airline là plugin để làm cho cửa sổ terminal xài Vim của bạn không bị nhàm chán, nó có những thứ phía dưới như sau:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 4696; flex-basis: 11270px">
+&lt;a href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline.png" data-size="2348x50">&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline.png"
+srcset="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_2.png 1024w"
+width="2348"
+height="50"
+loading="lazy"
+alt="vim-airline.png">
+&lt;/a>
+&lt;figcaption>vim-airline.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Khá đẹp đúng không, cho mình biết được những thông tin như:&lt;/p>
+&lt;ul>
+&lt;li>NORMAL: mode của vim hiện tại, có thể là NORMAL, INSERT, VIRSUAL&lt;/li>
+&lt;li>Git branch là gì&lt;/li>
+&lt;li>Tên file hiện tại&lt;/li>
+&lt;li>Ngôn ngữ của file đó là gì&lt;/li>
+&lt;li>Encode của file là gì: utf-8&lt;/li>
+&lt;li>Phần trăm của con trỏ so với tổng số dòng&lt;/li>
+&lt;li>Số dòng hiện tại / tổng số dòng của file (ln:15/65)&lt;/li>
+&lt;li>Cột của con trỏ đang đứng (col:1)&lt;/li>
+&lt;/ul>
+&lt;p>Rồi giờ cài đặt và cấu hình nó nào:&lt;/p>
+&lt;h3 id="cài-đặt-vim-airline">Cài đặt &lt;code>Vim Airline&lt;/code>:&lt;/h3>
+&lt;p>&lt;code>vim ~/.vimrc&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#begin()
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="err">...&lt;/span>
+&lt;span class="err">Plug&lt;/span> &lt;span class="s1">&amp;#39;vim-airline/vim-airline&amp;#39;&lt;/span>
+&lt;span class="err">Plug&lt;/span> &lt;span class="s1">&amp;#39;vim-airline/vim-airline-themes&amp;#39;&lt;/span>
+&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#end()
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Gõ &lt;code>:w&lt;/code> để lưu, xong gõ tiếp:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">:source&lt;/span> &lt;span class="err">~/.vimrc&lt;/span>
+&lt;span class="err">:PlugInstall&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Cài thêm font &lt;code>power-airline&lt;/code> vô nữa thì nó mới hiển thị mấy cái symbol (ký tự) của branch, mũi tên đúng được:&lt;/p>
+&lt;p>Trên &lt;code>ubuntu&lt;/code> hoặc &lt;code>debian&lt;/code> hoặc các Linux distro dựa trên debian:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">sudo&lt;/span> &lt;span class="err">apt&lt;/span> &lt;span class="err">install&lt;/span> &lt;span class="err">fonts-powerline&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Trên &lt;code>MacOS&lt;/code> hoặc các OS khác:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="c"># clone
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="nf">git clone https&lt;/span>&lt;span class="o">:&lt;/span>//&lt;span class="n">github&lt;/span>.&lt;span class="n">com&lt;/span>/&lt;span class="n">powerline&lt;/span>/&lt;span class="n">fonts&lt;/span>.&lt;span class="n">git&lt;/span> --&lt;span class="n">depth&lt;/span>=1
+&lt;span class="c"># install
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="err">cd&lt;/span> &lt;span class="err">fonts&lt;/span>
+&lt;span class="err">./install.sh&lt;/span>
+&lt;span class="c"># clean-up a bit
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="err">cd&lt;/span> &lt;span class="err">..&lt;/span>
+&lt;span class="err">rm&lt;/span> &lt;span class="err">-rf&lt;/span> &lt;span class="nv">fonts&lt;/span>
+&lt;span class="o">=&lt;/span>&amp;gt; Đổi font của terminal lại thành &lt;span class="s2">&amp;#34;Source Code Pro for Powerline&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Vậy là cài xong, giờ cấu hình nào.&lt;/p>
+&lt;h3 id="cấu-hình-vim-airline">Cấu hình &lt;code>Vim Airline&lt;/code>:&lt;/h3>
+&lt;p>Các bạn vào link này để xem các theme hiện có của Airline nhé: &lt;a class="link" href="https://github.com/vim-airline/vim-airline/wiki/Screenshots" target="_blank" rel="noopener"
+>https://github.com/vim-airline/vim-airline/wiki/Screenshots&lt;/a>&lt;/p>
+&lt;p>Mình lựa được theme &lt;code>bubblegum&lt;/code> thấy dẹp đẹp, nên quăng vô xài thôi 😍&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_theme&lt;/span>=&amp;#39;&lt;span class="n">bubblegum&lt;/span>&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_powerline_fonts&lt;/span>=1
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Cấu hình cho các symbol hiển thị đúng:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="nf">if !exists(&amp;#39;g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_symbols&lt;/span>&amp;#39;)
+&lt;span class="nb">let&lt;/span> g:airline_symbols &lt;span class="o">=&lt;/span> &lt;span class="o">{}&lt;/span>
+&lt;span class="err">endif&lt;/span>
+&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> &lt;span class="err">powerline&lt;/span> &lt;span class="err">symbols&lt;/span>
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_left_sep&lt;/span> = &amp;#39;&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_left_alt_sep&lt;/span> = &amp;#39;&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_right_sep&lt;/span> = &amp;#39;&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_right_alt_sep&lt;/span> = &amp;#39;&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_symbols&lt;/span>.&lt;span class="n">branch&lt;/span> = &amp;#39;&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_symbols&lt;/span>.&lt;span class="n">readonly&lt;/span> = &amp;#39;&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_symbols&lt;/span>.&lt;span class="n">linenr&lt;/span> = &amp;#39;&lt;span class="n">ln&lt;/span>&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_symbols&lt;/span>.&lt;span class="n">maxlinenr&lt;/span> = &amp;#39;&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_symbols&lt;/span>.&lt;span class="n">dirty&lt;/span>=&amp;#39;⚡&amp;#39;
+&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline_symbols&lt;/span>.&lt;span class="n">colnr&lt;/span>=&amp;#39;&lt;span class="n">col&lt;/span>&amp;#39;&amp;#34;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Cấu hình để hiển thị branch name:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline&lt;/span>&lt;span class="c">#extensions#tabline#enabled = 1
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline&lt;/span>&lt;span class="c">#extensions#hunks#enabled=0
+&lt;/span>&lt;span class="c">&lt;/span>&lt;span class="nf">let g&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">airline&lt;/span>&lt;span class="c">#extensions#hunks#coc_git = 1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Vậy là xong, tận hưởng thành quả nào.&lt;/p>
+&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/" >[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim&lt;/a>&lt;/p></description></item><item><title>[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover.png" alt="Featured image of post [Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim" />&lt;h2 id="sidebar-nerdtreehttpsgithubcompreservimnerdtree">Sidebar: &lt;code>[NERDTree](https://github.com/preservim/nerdtree)&lt;/code>&lt;/h2>
+&lt;p>Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ.&lt;/p>
+&lt;p>Trong Vim cũng sẽ có sidebar này, và &lt;code>NERDTree&lt;/code> là plugin mà được nhiều người xài nhất.&lt;/p>
+&lt;p>Nó trông thế này đây:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 188; flex-basis: 451px">
+&lt;a href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png" data-size="2854x1518">&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png"
+srcset="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_1024x0_resize_box_2.png 1024w"
+width="2854"
+height="1518"
+loading="lazy"
+alt="nerdtree.png">
+&lt;/a>
+&lt;figcaption>nerdtree.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Cũng giống mấy cái IDE khác thôi, nhưng mình nói trước cái này sẽ dùng phím để di chuyển nha, chứ không dùng chuột đâu 😅&lt;/p>
+&lt;h3 id="cài-đặt-nerdtree">Cài đặt &lt;code>NERDTree&lt;/code>:&lt;/h3>
+&lt;p>&lt;code>vim ~/.vimrc&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#begin()
+&lt;/span>&lt;span class="c">&lt;/span> ...
+Plug &lt;span class="s1">&amp;#39;preservim/nerdtree&amp;#39;&lt;/span>
+...
+&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#end()
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Gõ &lt;code>:w&lt;/code> để lưu, xong gõ tiếp:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">:source&lt;/span> &lt;span class="err">~/.vimrc&lt;/span>
+&lt;span class="err">:PlugInstall&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Giờ cấu hình cho nó nào.&lt;/p>
+&lt;h3 id="cấu-hình-nerdtree">Cấu hình &lt;code>NERDTree&lt;/code>:&lt;/h3>
+&lt;p>Đây là tất cả config cho &lt;code>NERDTree&lt;/code> mà mình đang xài:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> &lt;span class="err">Hiện&lt;/span> &lt;span class="err">file&lt;/span> &lt;span class="err">ẩn&lt;/span>
+&lt;span class="err">let&lt;/span> &lt;span class="nv">NERDTreeShowHidden&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span>
+&lt;span class="err">autocmd&lt;/span> &lt;span class="err">VimEnter&lt;/span> &lt;span class="err">*&lt;/span> &lt;span class="err">NERDTree&lt;/span> &lt;span class="err">|&lt;/span> &lt;span class="err">wincmd&lt;/span> &lt;span class="err">p&lt;/span>
+&lt;span class="nf">autocmd StdinReadPre * let s&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">std_in&lt;/span>=1
+&lt;span class="nf">autocmd VimEnter * NERDTree | if argc() &amp;gt; 0 || exists(&amp;#34;s&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">std_in&lt;/span>&amp;#34;) &lt;span class="p">|&lt;/span> &lt;span class="n">wincmd&lt;/span> &lt;span class="n">p&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="n">endif&lt;/span>
+&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> &lt;span class="err">Mở&lt;/span> &lt;span class="err">cùng&lt;/span> &lt;span class="err">NERDTree&lt;/span> &lt;span class="err">cho&lt;/span> &lt;span class="err">tab&lt;/span> &lt;span class="err">mới,&lt;/span> &lt;span class="err">mặc&lt;/span> &lt;span class="err">định&lt;/span> &lt;span class="err">là&lt;/span> &lt;span class="err">mỗi&lt;/span> &lt;span class="err">tab&lt;/span> &lt;span class="err">sẽ&lt;/span> &lt;span class="err">mở&lt;/span> &lt;span class="err">1&lt;/span> &lt;span class="err">cái&lt;/span> &lt;span class="err">mới&lt;/span>
+&lt;span class="err">autocmd&lt;/span> &lt;span class="err">BufWinEnter&lt;/span> &lt;span class="err">*&lt;/span> &lt;span class="err">silent&lt;/span> &lt;span class="err">NERDTreeMirror&lt;/span>
+&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> &lt;span class="err">Tự&lt;/span> &lt;span class="err">đóng&lt;/span> &lt;span class="err">NERDTree&lt;/span> &lt;span class="err">khi&lt;/span> &lt;span class="err">đóng&lt;/span> &lt;span class="err">tab,&lt;/span> &lt;span class="err">mặc&lt;/span> &lt;span class="err">định&lt;/span> &lt;span class="err">giữ&lt;/span> &lt;span class="err">lại&lt;/span> &lt;span class="err">NERDTree&lt;/span>
+&lt;span class="nf">autocmd BufEnter * if tabpagenr(&amp;#39;$&amp;#39;) == 1 &amp;amp;&amp;amp; winnr(&amp;#39;$&amp;#39;) == 1 &amp;amp;&amp;amp; exists(&amp;#39;b&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">NERDTree&lt;/span>&amp;#39;) &amp;amp;&amp;amp; &lt;span class="n">b&lt;/span>:&lt;span class="n">NERDTree&lt;/span>.&lt;span class="n">isTabTree&lt;/span>() &lt;span class="p">|&lt;/span> &lt;span class="n">quit&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="n">endif&lt;/span>
+&lt;span class="nf">autocmd bufenter * if (winnr(&amp;#34;$&amp;#34;) == 1 &amp;amp;&amp;amp; exists(&amp;#34;b&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">NERDTree&lt;/span>&amp;#34;)
+&lt;span class="se">\ &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span> b:NERDTree.isTabTree&lt;span class="o">())&lt;/span> &lt;span class="p">|&lt;/span> q &lt;span class="p">|&lt;/span> endif
+&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> &lt;span class="err">Tìm&lt;/span> &lt;span class="err">file&lt;/span> &lt;span class="err">đang&lt;/span> &lt;span class="err">mở&lt;/span> &lt;span class="err">trong&lt;/span> &lt;span class="err">thư&lt;/span> &lt;span class="err">mục&lt;/span> &lt;span class="err">bên&lt;/span> &lt;span class="err">NERDTree&lt;/span> &lt;span class="err">(mặc&lt;/span> &lt;span class="err">định&lt;/span> &lt;span class="err">không&lt;/span> &lt;span class="err">sync&lt;/span> &lt;span class="err">với&lt;/span> &lt;span class="err">nhau)&lt;/span>
+&lt;span class="nf">map &amp;lt;leader&amp;gt;r &lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">NERDTreeFind&lt;/span>&amp;lt;&lt;span class="n">cr&lt;/span>&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Gõ &lt;code>:w&lt;/code> để lưu, xong gõ tiếp: &lt;code>:source ~/.vimrc&lt;/code>&lt;/p>
+&lt;p>Vậy là xong cái sidebar, quá dễ đúng không 😻&lt;/p>
+&lt;h3 id="các-chuyển-đổi-qua-lại-giữa-nerdtree-và-code">Các chuyển đổi qua lại giữa NERDTree và code:&lt;/h3>
+&lt;p>Các bạn gõ phím tắt &lt;code>Ctrl + ww&lt;/code> 2 lần ww nha, thì nó sẽ chuyển đổi qua lại giữa NERDTree và code dễ dàng.&lt;/p>
+&lt;h3 id="cách-tìm-file-trong-nerdtree">Cách tìm file trong NERDTree:&lt;/h3>
+&lt;p>Các bạn có thểm tìm file bằng cách giống như tìm text trong vim:&lt;/p>
+&lt;p>Gõ dấu &lt;code>/&lt;/code> xong gõ tên file cần tìm, ví dụ &lt;code>/index&lt;/code> enter, thì nó tự nhảy trỏ tới file đó luôn.&lt;/p>
+&lt;p>Tìm thư mục cũng tương tự nhé 😂&lt;/p>
+&lt;h3 id="cách-tạo-file-mới-đổi-tên-xóa-file-bằng-nerdtree">Cách tạo file mới, đổi tên, xóa file bằng NERDTree:&lt;/h3>
+&lt;p>Các bạn chỉ cần di chuyển trỏ tới thư mục cần tạo file/thư mục mới,&lt;/p>
+&lt;p>xong ấn &lt;code>m&lt;/code> (có nghĩa là show &lt;code>menu&lt;/code> lên), xong ấn &lt;code>a&lt;/code> (nghĩa là &lt;code>add&lt;/code>).&lt;/p>
+&lt;ul>
+&lt;li>Nếu tạo file thì để đuôi file vô, không có dấu &lt;code>/&lt;/code> ở cuối.&lt;/li>
+&lt;li>Nếu tạo folder thì phải có dấu &lt;code>/&lt;/code> ở cuối nha.&lt;/li>
+&lt;/ul>
+&lt;p>Ví dụ:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 173; flex-basis: 416px">
+&lt;a href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png" data-size="2770x1596">&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png"
+srcset="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_1024x0_resize_box_2.png 1024w"
+width="2770"
+height="1596"
+loading="lazy"
+alt="nerdtree-2.png">
+&lt;/a>
+&lt;figcaption>nerdtree-2.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/" >[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF&lt;/a>&lt;/p></description></item><item><title>[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/cover.png" alt="Featured image of post [Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF" />&lt;h2 id="hỗ-trợ-search-file-nhanh-giống-ctrl--p-trên-vscode-fzfvimhttpsgithubcomjunegunnfzfvim">Hỗ trợ search file nhanh, giống Ctrl + P trên VSCode: &lt;code>[FZF.vim](https://github.com/junegunn/fzf.vim)&lt;/code>&lt;/h2>
+&lt;p>Nhu cầu cơ bản của dev là phải search nhanh file cần tìm để đáp ứng code, chứ nhiều khi không thể nhớ đường dẫn vô file đó, nên cần 1 plugin để hỗ trợ nó, nó gọi là &lt;code>FZF&lt;/code>, nó giống vầy nè:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 188; flex-basis: 451px">
+&lt;a href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf.png" data-size="2866x1522">&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf.png"
+srcset="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf_hu8afdcdd22e728c0f6c74187d60279220_342991_480x0_resize_box_2.png 480w, https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf_hu8afdcdd22e728c0f6c74187d60279220_342991_1024x0_resize_box_2.png 1024w"
+width="2866"
+height="1522"
+loading="lazy"
+alt="fzf.png">
+&lt;/a>
+&lt;figcaption>fzf.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;p>Gõ &lt;code>Ctrl + P&lt;/code> rồi search file y chang bên VSCode nha ✌️&lt;/p>
+&lt;h3 id="cài-đặt-fzfvim">Cài đặt &lt;code>FZF.vim&lt;/code>&lt;/h3>
+&lt;p>&lt;code>vim ~/.vimrc&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#begin()
+&lt;/span>&lt;span class="c">&lt;/span> ...
+Plug &lt;span class="s1">&amp;#39;junegunn/fzf&amp;#39;&lt;/span>, &lt;span class="o">{&lt;/span> &lt;span class="s1">&amp;#39;do&amp;#39;&lt;/span>: &lt;span class="o">{&lt;/span> -&amp;gt; fzf#install&lt;span class="o">()&lt;/span> &lt;span class="o">}&lt;/span> &lt;span class="o">}&lt;/span>
+Plug &lt;span class="s1">&amp;#39;junegunn/fzf.vim&amp;#39;&lt;/span>
+...
+&lt;span class="err">call&lt;/span> &lt;span class="err">plug&lt;/span>&lt;span class="c">#end()
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Gõ &lt;code>:w&lt;/code> để lưu, xong gõ tiếp:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">:source&lt;/span> &lt;span class="err">~/.vimrc&lt;/span>
+&lt;span class="err">:PlugInstall&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Xong rồi, giờ cấu hình tiếp nào&lt;/p>
+&lt;h3 id="cấu-hình-fzfvim">Cấu hình &lt;code>FZF.vim&lt;/code>:&lt;/h3>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> &lt;span class="err">Map&lt;/span> &lt;span class="err">phím&lt;/span> &lt;span class="err">tắt&lt;/span> &lt;span class="err">Ctrl&lt;/span> &lt;span class="err">+&lt;/span> &lt;span class="err">P&lt;/span>
+&lt;span class="nf">nnoremap &amp;lt;silent&amp;gt; &amp;lt;C-S-p&amp;gt; &lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">Files&lt;/span>&amp;lt;&lt;span class="n">CR&lt;/span>&amp;gt;
+&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> &lt;span class="err">Tìm&lt;/span> &lt;span class="err">file&lt;/span> &lt;span class="err">trong&lt;/span> &lt;span class="err">project,&lt;/span> &lt;span class="err">nhưng&lt;/span> &lt;span class="err">bỏ&lt;/span> &lt;span class="err">mấy&lt;/span> &lt;span class="err">thư&lt;/span> &lt;span class="err">mục&lt;/span> &lt;span class="err">như&lt;/span> &lt;span class="err">node_modules&lt;/span> &lt;span class="err">ra,&lt;/span> &lt;span class="err">để&lt;/span> &lt;span class="err">tìm&lt;/span> &lt;span class="err">nhẹ&lt;/span> &lt;span class="err">hơn.&lt;/span>
+&lt;span class="nf">set wildmode=list&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">longest&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">list&lt;/span>:&lt;span class="n">full&lt;/span>
+&lt;span class="err">set&lt;/span> &lt;span class="nv">wildignore&lt;/span>&lt;span class="o">+=&lt;/span>*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
+&lt;span class="err">let&lt;/span> &lt;span class="nv">$FZF_DEFAULT_COMMAND&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;find * -path &amp;#39;*/\.*&amp;#39; -prune -o -path &amp;#39;**/node_modules/**&amp;#39; -prune -o -path &amp;#39;node_modules/**&amp;#39; -prune -o -path &amp;#39;target/**&amp;#39; -prune -o -path &amp;#39;dist/**&amp;#39; -prune -o -type f -print -o -type l -print 2&amp;gt; /dev/null&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Gõ &lt;code>:w&lt;/code> để lưu, xong gõ tiếp:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">:source&lt;/span> &lt;span class="err">~/.vimrc&lt;/span>
+&lt;span class="err">:PlugInstall&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Vậy là ngon, chạy thử thôi 😋&lt;/p>
+&lt;h2 id="hỗ-trợ-search-nội-dung-trong-file-nhanh-giống-ctrl--shift--f-trên-vscode">Hỗ trợ search nội dung trong file nhanh, giống Ctrl + Shift + F trên VSCode:&lt;/h2>
+&lt;p>Phần này chúng ta cũng sử dụng &lt;code>FZF.vim&lt;/code> luôn, không cần cài plugin mới nhé, cấu hình luôn thôi nào:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="nf">command! -bang -nargs=* Rg call fzf#vim#grep(&amp;#34;rg --column --line-number --no-heading --color=always --smart-case &amp;#34;.shellescape(&amp;lt;q-args&amp;gt;), 1, {&amp;#39;options&amp;#39;&lt;/span>&lt;span class="o">:&lt;/span> &amp;#39;--&lt;span class="n">delimiter&lt;/span> : --&lt;span class="n">nth&lt;/span> 4..&amp;#39;}&lt;span class="p">,&lt;/span> &amp;lt;&lt;span class="n">bang&lt;/span>&amp;gt;0)
+&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> &lt;span class="err">Map&lt;/span> &lt;span class="err">phím&lt;/span> &lt;span class="s2">&amp;#34;\f&amp;#34;&lt;/span> &lt;span class="err">để&lt;/span> &lt;span class="err">tìm&lt;/span> &lt;span class="err">nội&lt;/span> &lt;span class="err">dung,&lt;/span> &lt;span class="err">tương&lt;/span> &lt;span class="err">tự&lt;/span> &lt;span class="err">như&lt;/span> &lt;span class="s2">&amp;#34;Ctrl + Shift + F&amp;#34;&lt;/span> &lt;span class="err">trên&lt;/span> &lt;span class="err">VSCode&lt;/span> &lt;span class="err">nhé&lt;/span>
+&lt;span class="nf">nnoremap &amp;lt;silent&amp;gt; &amp;lt;Leader&amp;gt;f &lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">Rg&lt;/span>&amp;lt;&lt;span class="n">CR&lt;/span>&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Gõ &lt;code>:w&lt;/code> để lưu, xong gõ tiếp:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">:source&lt;/span> &lt;span class="err">~/.vimrc&lt;/span>
+&lt;span class="err">:PlugInstall&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Phần tiếp theo mình sẽ cấu hình cho Vim có thể gợi y code (autocomplete code) như thế nào nhé&lt;/p>
+&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/" >[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào&lt;/a>&lt;/p></description></item><item><title>[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/cover.png" alt="Featured image of post [Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào" />&lt;h2 id="language-server-protocol-lsp">Language Server Protocol (LSP):&lt;/h2>
+&lt;p>VSCode là 1 IDE rất phổ biến, bởi vì nó hỗ trợ rất nhiều ngôn ngữ, cả VSCode và LSP cho VSCode đều do Microsoft phát triển nên cực kỳ ngon rồi.&lt;/p>
+&lt;p>Trong Vim cũng có rất nhiều giải pháp cho LSP, sau khi thử vài cái thì mình thấy &lt;code>COC.nvim&lt;/code> là hợp lý và mạnh nhất so với mấy cái còn lại.&lt;/p>
+&lt;h3 id="cài-đặt-cocnvimhttpsgithubcomneoclidecocnvim">Cài đặt &lt;code>[COC.nvim](https://github.com/neoclide/coc.nvim)&lt;/code>&lt;/h3>
+&lt;p>&lt;code>vim ~/.vimrc&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">call plug#begin&lt;span class="o">()&lt;/span>
+...
+Plug &lt;span class="s1">&amp;#39;neoclide/coc.nvim&amp;#39;&lt;/span>, &lt;span class="o">{&lt;/span>&lt;span class="s1">&amp;#39;branch&amp;#39;&lt;/span>: &lt;span class="s1">&amp;#39;release&amp;#39;&lt;/span>&lt;span class="o">}&lt;/span>
+...
+call plug#end&lt;span class="o">()&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Gõ &lt;code>:w&lt;/code> để lưu, xong gõ tiếp:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">:source&lt;/span> &lt;span class="err">~/.vimrc&lt;/span>
+&lt;span class="err">:PlugInstall&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Vậy là đã cài đặt xong COC.nvim, giờ tiếp tục cấu hình&lt;/p>
+&lt;h3 id="cài-đặt-lsp-cho-javascripttypescript">Cài đặt LSP cho javascript/typescript&lt;/h3>
+&lt;p>Chạy lệnh này trên vim của bạn:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">:CocInstall coc-json coc-tsserver
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Hoặc bạn có thể để vào trong file &lt;code>~/.vimrc&lt;/code> để dễ dàng cài đặt nơi khác, dưới đây là toàn bộ extensions mình đang xài&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nb">let&lt;/span> g:coc_global_extensions &lt;span class="o">=&lt;/span> &lt;span class="o">[&lt;/span>
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-ultisnips&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-json&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-tsserver&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-html&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-css&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-yaml&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-highlight&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-eslint&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-git&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-prettier&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-flutter&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-angular&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="s1">&amp;#39;coc-pyright&amp;#39;&lt;/span>,
+&lt;span class="se">\ &lt;/span>&lt;span class="o">]&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Bạn có thể xem danh sách các extensions của COC.nvim tại đây: &lt;a class="link" href="https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions" target="_blank" rel="noopener"
+>https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions&lt;/a>&lt;/p>
+&lt;h3 id="cấu-hình-autocomplete-auto-import-file">Cấu hình autocomplete, auto import file:&lt;/h3>
+&lt;p>COC.nvim cũng hỗ trợ autocomplete sau khi cài đặt LSP, cũng như auto import file vô&lt;/p>
+&lt;p>Cách map key như sau:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> Map Ctrl + Space để show list functions/biến autocomplete
+inoremap &amp;lt;silent&amp;gt;&amp;lt;expr&amp;gt; &amp;lt;c-space&amp;gt; coc#refresh&lt;span class="o">()&lt;/span>
+&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> Tự động import file của biến/function khi chọn và nhấn Tab
+inoremap &amp;lt;expr&amp;gt; &amp;lt;TAB&amp;gt; pumvisible&lt;span class="o">()&lt;/span> ? &lt;span class="s2">&amp;#34;\&amp;lt;C-y&amp;gt;&amp;#34;&lt;/span> : &lt;span class="s2">&amp;#34;\&amp;lt;C-g&amp;gt;u\&amp;lt;TAB&amp;gt;&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Khá đơn giản phải không, thực tế phần auto import hoạt động rất hiệu quả, mình thấy ngon hơn VSCode ở chỗ nhanh hơn nhiều.&lt;/p>
+&lt;h3 id="cấu-hình-phím-tắt-go-to-definition">Cấu hình phím tắt go to definition&amp;hellip;&lt;/h3>
+&lt;p>COC.nvim hỗ trợ các tính năng auto complete, go to definition&amp;hellip; rất tốt, bạn đưa phần này vào &lt;code>~/.vimrc&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="s2">&amp;#34;&amp;#34;&lt;/span> Go to definition ở tab mới
+nmap &amp;lt;silent&amp;gt; gd :call CocAction&lt;span class="o">(&lt;/span>&lt;span class="s1">&amp;#39;jumpDefinition&amp;#39;&lt;/span>, &lt;span class="s1">&amp;#39;tab drop&amp;#39;&lt;/span>&lt;span class="o">)&lt;/span>&amp;lt;CR&amp;gt;
+nmap &amp;lt;silent&amp;gt; gy &amp;lt;Plug&amp;gt;&lt;span class="o">(&lt;/span>coc-type-definition&lt;span class="o">)&lt;/span>
+nmap &amp;lt;silent&amp;gt; gi &amp;lt;Plug&amp;gt;&lt;span class="o">(&lt;/span>coc-implementation&lt;span class="o">)&lt;/span>
+nmap &amp;lt;silent&amp;gt; gr &amp;lt;Plug&amp;gt;&lt;span class="o">(&lt;/span>coc-references&lt;span class="o">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="hiển-thị-document-cho-function-biến">Hiển thị document cho function, biến:&lt;/h3>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">nnoremap &amp;lt;silent&amp;gt; K :call &amp;lt;SID&amp;gt;show_documentation&lt;span class="o">()&lt;/span>&amp;lt;CR&amp;gt;
+&lt;span class="k">function&lt;/span>! s:show_documentation&lt;span class="o">()&lt;/span>
+&lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>index&lt;span class="o">([&lt;/span>&lt;span class="s1">&amp;#39;vim&amp;#39;&lt;/span>,&lt;span class="s1">&amp;#39;help&amp;#39;&lt;/span>&lt;span class="o">]&lt;/span>, &lt;span class="p">&amp;amp;&lt;/span>filetype&lt;span class="o">)&lt;/span> &amp;gt;&lt;span class="o">=&lt;/span> 0&lt;span class="o">)&lt;/span>
+execute &lt;span class="s1">&amp;#39;h &amp;#39;&lt;/span>.expand&lt;span class="o">(&lt;/span>&lt;span class="s1">&amp;#39;&amp;lt;cword&amp;gt;&amp;#39;&lt;/span>&lt;span class="o">)&lt;/span>
+elseif &lt;span class="o">(&lt;/span>coc#rpc#ready&lt;span class="o">())&lt;/span>
+call CocActionAsync&lt;span class="o">(&lt;/span>&lt;span class="s1">&amp;#39;doHover&amp;#39;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;span class="k">else&lt;/span>
+execute &lt;span class="s1">&amp;#39;!&amp;#39;&lt;/span> . &lt;span class="p">&amp;amp;&lt;/span>keywordprg . &lt;span class="s2">&amp;#34; &amp;#34;&lt;/span> . expand&lt;span class="o">(&lt;/span>&lt;span class="s1">&amp;#39;&amp;lt;cword&amp;gt;&amp;#39;&lt;/span>&lt;span class="o">)&lt;/span>
+endif
 endfunction
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;highlight-word-chỗ-con-trỏ-đang-đứng&#34;&gt;Highlight word chỗ con trỏ đang đứng:&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;autocmd CursorHold * silent call CocActionAsync&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;highlight&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/&#34; &gt;[Phần 8] Vim là cái quái gì? - Prettier&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 8] Vim là cái quái gì? - Prettier</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/cover.png" alt="Featured image of post [Phần 8] Vim là cái quái gì? - Prettier" /&gt;&lt;h2 id=&#34;prettier&#34;&gt;Prettier&lt;/h2&gt;
-&lt;p&gt;Đây là 1 tính năng mà mình rất thích và rất hay xài trong các dự án, và cũng bắt buộc các thành viên trong công ty xài nó, vì nó tự động format code về cùng 1 định dạng, không cần phải suy nghĩ hoặc làm thủ công nữa, khá hữu ích khi làm việc nhóm nha 😋&lt;/p&gt;
-&lt;p&gt;COC.nvim có hỗ trợ prettier extension luôn, đây là cách cài đặt và cấu hình:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;List extension trên mình đã có prettier rồi, nhưng nếu bạn muốn cài đặt riêng thì dùng lệnh này: &lt;code&gt;:CocInstall coc-prettier&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update config cho COC setting như sau:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mở file &lt;code&gt;coc-settings.json&lt;/code&gt; bằng cách: &lt;code&gt;:CocConfig&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Thêm dòng này vào:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;coc.preferences.formatOnSaveFiletypes&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;css&amp;#34;&lt;/span&gt;,
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;markdown&amp;#34;&lt;/span&gt;,
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;typescript&amp;#34;&lt;/span&gt;,
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;,
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;javascriptreact&amp;#34;&lt;/span&gt;,
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;typescriptreact&amp;#34;&lt;/span&gt;,
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;json&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;,
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Lưu lại: &lt;code&gt;:w&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Cấu hình tự động format khi lưu file:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;command! -nargs&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; Prettier :call CocAction&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;runCommand&amp;#39;&lt;/span&gt;, &lt;span class=&#34;s1&#34;&gt;&amp;#39;prettier.formatFile&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;nb&#34;&gt;let&lt;/span&gt; g:prettier#autoformat &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Thiết lập file &lt;code&gt;.prettierrc&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;File này là file cấu hình prettier có thể đọc và thực hiện khi format&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;trailingComma&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;all&amp;#34;&lt;/span&gt;,
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;arrowParens&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;always&amp;#34;&lt;/span&gt;,
-  &lt;span class=&#34;s2&#34;&gt;&amp;#34;printWidth&amp;#34;&lt;/span&gt;: &lt;span class=&#34;m&#34;&gt;120&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Bạn có thể tham khảo thêm config của &lt;code&gt;.prettierrc&lt;/code&gt; tại đây: &lt;a class=&#34;link&#34; href=&#34;https://github.com/neoclide/coc-prettier&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/neoclide/coc-prettier&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Phần tiếp theo chúng ta sẽ cấu hình ESLint để đảm bảo code theo chuẩn, dễ dàng làm việc nhóm nhé.&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/&#34; &gt;[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim</title>
-        <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</link>
-        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</guid>
-        <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/cover.png" alt="Featured image of post [Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim" /&gt;&lt;h2 id=&#34;eslint&#34;&gt;ESLint&lt;/h2&gt;
-&lt;p&gt;Vâng, đây là 1 trong những thứ giúp chúng ta làm việc nhóm tốt hơn, đây là 1 extension giúp phân tích và báo warning các lỗi cơ bản trong khi code, giúp quá trình làm việc nhóm đỡ vất vả, đỡ phải xung đột giữa các thành viên trong nhóm.&lt;/p&gt;
-&lt;p&gt;ESLint không giúp bạn code nhanh hơn, hay code của bạn chạy nhanh hơn, mà nó giúp code dễ đọc hơn, dễ hiểu hơn, giúp quá trình debug dễ hơn trong tương lai, tránh bớt các bug không đáng có do quá trình code chúng ta mà ra.&lt;/p&gt;
-&lt;p&gt;ESLint cũng có thể giúp chúng ta fix tự động các lỗi ở mức dễ, như thiếu dấu ; hay format không đúng theo prettier quy đinh&amp;hellip;&lt;/p&gt;
-&lt;h3 id=&#34;cài-đặt-eslint&#34;&gt;Cài đặt ESLint&lt;/h3&gt;
-&lt;p&gt;COC.nvim cũng hỗ trợ cho chúng ta extension này luôn, chỉ việc cài đặt và sử dụng.&lt;/p&gt;
-&lt;p&gt;Trong list extensions trên mình đã có eslint rồi, nhưng các bạn có thể cài đặt thủ công bằng lệnh này: &lt;code&gt;:CocInstall coc-eslint&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Các bạn có thể tham khảo thêm tại đây: &lt;a class=&#34;link&#34; href=&#34;https://github.com/neoclide/coc-eslint&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/neoclide/coc-eslint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/&#34; &gt;[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="highlight-word-chỗ-con-trỏ-đang-đứng">Highlight word chỗ con trỏ đang đứng:&lt;/h3>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">autocmd CursorHold * silent call CocActionAsync&lt;span class="o">(&lt;/span>&lt;span class="s1">&amp;#39;highlight&amp;#39;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/" >[Phần 8] Vim là cái quái gì? - Prettier&lt;/a>&lt;/p></description></item><item><title>[Phần 8] Vim là cái quái gì? - Prettier</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/cover.png" alt="Featured image of post [Phần 8] Vim là cái quái gì? - Prettier" />&lt;h2 id="prettier">Prettier&lt;/h2>
+&lt;p>Đây là 1 tính năng mà mình rất thích và rất hay xài trong các dự án, và cũng bắt buộc các thành viên trong công ty xài nó, vì nó tự động format code về cùng 1 định dạng, không cần phải suy nghĩ hoặc làm thủ công nữa, khá hữu ích khi làm việc nhóm nha 😋&lt;/p>
+&lt;p>COC.nvim có hỗ trợ prettier extension luôn, đây là cách cài đặt và cấu hình:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>List extension trên mình đã có prettier rồi, nhưng nếu bạn muốn cài đặt riêng thì dùng lệnh này: &lt;code>:CocInstall coc-prettier&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Update config cho COC setting như sau:&lt;/p>
+&lt;ul>
+&lt;li>Mở file &lt;code>coc-settings.json&lt;/code> bằng cách: &lt;code>:CocConfig&lt;/code>&lt;/li>
+&lt;li>Thêm dòng này vào:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="s2">&amp;#34;coc.preferences.formatOnSaveFiletypes&amp;#34;&lt;/span>: &lt;span class="o">[&lt;/span>
+&lt;span class="s2">&amp;#34;css&amp;#34;&lt;/span>,
+&lt;span class="s2">&amp;#34;markdown&amp;#34;&lt;/span>,
+&lt;span class="s2">&amp;#34;typescript&amp;#34;&lt;/span>,
+&lt;span class="s2">&amp;#34;javascript&amp;#34;&lt;/span>,
+&lt;span class="s2">&amp;#34;javascriptreact&amp;#34;&lt;/span>,
+&lt;span class="s2">&amp;#34;typescriptreact&amp;#34;&lt;/span>,
+&lt;span class="s2">&amp;#34;json&amp;#34;&lt;/span>
+&lt;span class="o">]&lt;/span>,
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Lưu lại: &lt;code>:w&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Cấu hình tự động format khi lưu file:&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">command! -nargs&lt;span class="o">=&lt;/span>&lt;span class="m">0&lt;/span> Prettier :call CocAction&lt;span class="o">(&lt;/span>&lt;span class="s1">&amp;#39;runCommand&amp;#39;&lt;/span>, &lt;span class="s1">&amp;#39;prettier.formatFile&amp;#39;&lt;/span>&lt;span class="o">)&lt;/span>
+&lt;span class="nb">let&lt;/span> g:prettier#autoformat &lt;span class="o">=&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>
+&lt;p>Thiết lập file &lt;code>.prettierrc&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>File này là file cấu hình prettier có thể đọc và thực hiện khi format&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="o">{&lt;/span>
+&lt;span class="s2">&amp;#34;trailingComma&amp;#34;&lt;/span>: &lt;span class="s2">&amp;#34;all&amp;#34;&lt;/span>,
+&lt;span class="s2">&amp;#34;arrowParens&amp;#34;&lt;/span>: &lt;span class="s2">&amp;#34;always&amp;#34;&lt;/span>,
+&lt;span class="s2">&amp;#34;printWidth&amp;#34;&lt;/span>: &lt;span class="m">120&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Bạn có thể tham khảo thêm config của &lt;code>.prettierrc&lt;/code> tại đây: &lt;a class="link" href="https://github.com/neoclide/coc-prettier" target="_blank" rel="noopener"
+>https://github.com/neoclide/coc-prettier&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Phần tiếp theo chúng ta sẽ cấu hình ESLint để đảm bảo code theo chuẩn, dễ dàng làm việc nhóm nhé.&lt;/p>
+&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/" >[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim&lt;/a>&lt;/p></description></item><item><title>[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim</title><link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</guid><description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/cover.png" alt="Featured image of post [Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim" />&lt;h2 id="eslint">ESLint&lt;/h2>
+&lt;p>Vâng, đây là 1 trong những thứ giúp chúng ta làm việc nhóm tốt hơn, đây là 1 extension giúp phân tích và báo warning các lỗi cơ bản trong khi code, giúp quá trình làm việc nhóm đỡ vất vả, đỡ phải xung đột giữa các thành viên trong nhóm.&lt;/p>
+&lt;p>ESLint không giúp bạn code nhanh hơn, hay code của bạn chạy nhanh hơn, mà nó giúp code dễ đọc hơn, dễ hiểu hơn, giúp quá trình debug dễ hơn trong tương lai, tránh bớt các bug không đáng có do quá trình code chúng ta mà ra.&lt;/p>
+&lt;p>ESLint cũng có thể giúp chúng ta fix tự động các lỗi ở mức dễ, như thiếu dấu ; hay format không đúng theo prettier quy đinh&amp;hellip;&lt;/p>
+&lt;h3 id="cài-đặt-eslint">Cài đặt ESLint&lt;/h3>
+&lt;p>COC.nvim cũng hỗ trợ cho chúng ta extension này luôn, chỉ việc cài đặt và sử dụng.&lt;/p>
+&lt;p>Trong list extensions trên mình đã có eslint rồi, nhưng các bạn có thể cài đặt thủ công bằng lệnh này: &lt;code>:CocInstall coc-eslint&lt;/code>&lt;/p>
+&lt;p>Các bạn có thể tham khảo thêm tại đây: &lt;a class="link" href="https://github.com/neoclide/coc-eslint" target="_blank" rel="noopener"
+>https://github.com/neoclide/coc-eslint&lt;/a>&lt;/p>
+&lt;p>Xem tiếp &amp;raquo; &lt;a class="link" href="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/" >[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?&lt;/a>&lt;/p></description></item></channel></rss>
