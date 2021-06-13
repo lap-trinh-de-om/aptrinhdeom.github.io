@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Lập trình dễ òm.xyz</title>
+        <title>Lập Trình Dễ Òm.xyz</title>
         <link>https://laptrinhdeom.github.io/</link>
-        <description>Recent content on Lập trình dễ òm.xyz</description>
+        <description>Recent content on Lập Trình Dễ Òm.xyz</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 13 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title>
         <link>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link>
-        <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid>
         <description>&lt;img src="https://laptrinhdeom.github.io/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.png" alt="Featured image of post [Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?" /&gt;&lt;h2 id=&#34;về-terminal-thì-sao&#34;&gt;Về terminal thì sao?&lt;/h2&gt;

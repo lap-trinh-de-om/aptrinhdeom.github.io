@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Lập trình dễ òm.xyz</title>
+    <title>Pages on Lập Trình Dễ Òm.xyz</title>
     <link>https://laptrinhdeom.github.io/page/</link>
-    <description>Recent content in Pages on Lập trình dễ òm.xyz</description>
+    <description>Recent content in Pages on Lập Trình Dễ Òm.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laptrinhdeom.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Archives</title>
+      <title>Giới thiệu</title>
+      <link>https://laptrinhdeom.github.io/about-me/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://laptrinhdeom.github.io/about-me/</guid>
+      <description>Blog Lập trình dễ òm là nơi chia sẻ các kinh nghiệm và kiến thức về lập trình, về máy tính, đời sống xung quanh 1 developer.
+Mình tên là Huỳnh Bá Nhớ, có kinh nghiệm 10 năm làm việc trong ngành lập trình, làm việc cho các tập đoàn lớn, công ty nhỏ, công ty start-up, công ty phần mềm nước ngoài&amp;hellip; Hiện đang làm vị trí technical manager ở công ty Mỹ.</description>
+    </item>
+    
+    <item>
+      <title>Kho lưu trữ</title>
       <link>https://laptrinhdeom.github.io/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://laptrinhdeom.github.io/archives/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Giới thiệu</title>
-      <link>https://laptrinhdeom.github.io/gi%E1%BB%9Bi-thi%E1%BB%87u/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://laptrinhdeom.github.io/gi%E1%BB%9Bi-thi%E1%BB%87u/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
-    </item>
-    
-    <item>
-      <title>Search</title>
+      <title>Tìm kiếm</title>
       <link>https://laptrinhdeom.github.io/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
