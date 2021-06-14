@@ -1,4 +1,277 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lập Trình Dễ Òm.xyz</title><link>https://www.laptrinhdeom.xyz/</link><description>Recent content on Lập Trình Dễ Òm.xyz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title><link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid><description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.png" alt="Featured image of post [Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?" />&lt;h2 id="về-terminal-thì-sao">Về terminal thì sao?&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lập Trình Dễ Òm.xyz</title><link>https://www.laptrinhdeom.xyz/</link><description>Recent content on Lập Trình Dễ Òm.xyz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>JWT là gì? Tất tần tật về JWT</title><link>https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/</link><pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate><guid>https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/</guid><description>&lt;img src="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/cover.png" alt="Featured image of post JWT là gì? Tất tần tật về JWT" />&lt;h3 id="-jwt-là-gì-vậy-nhỉ">✅ JWT là gì vậy nhỉ?&lt;/h3>
+&lt;ul>
+&lt;li>Nó là viết tắt của &lt;code>JSON Web Token&lt;/code>&lt;/li>
+&lt;li>JWT là 1 chuỗi JSON được mã hóa, nó trông thế này đây:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-makefile" data-lang="makefile">&lt;span class="err">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.&lt;/span>
+&lt;span class="err">eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.&lt;/span>
+&lt;span class="err">SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Các bạn copy chuỗi trên, xong vào &lt;a class="link" href="https://jwt.io/" target="_blank" rel="noopener"
+>đây&lt;/a> dán vào xem thử nó thế nào nhé 🙂&lt;/li>
+&lt;li>JWT là phương thức để giao tiếp giữa Back-End và Front-End (&lt;code>Stateless&lt;/code>).
+Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, và trả chuỗi này về Front-End, Back-End hoàn toàn không lưu trữ token này trên server.&lt;/li>
+&lt;li>Cơ chế hoạt động giống như hình dưới đây:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;figure style="flex-grow: 298; flex-basis: 715px">
+&lt;a href="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt.png" data-size="2112x708">&lt;img src="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt.png"
+srcset="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt_hud5e499587e4094707b1a90ad61266e85_96008_480x0_resize_box_2.png 480w, https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt_hud5e499587e4094707b1a90ad61266e85_96008_1024x0_resize_box_2.png 1024w"
+width="2112"
+height="708"
+loading="lazy"
+alt="01-jwt.png">
+&lt;/a>
+&lt;figcaption>01-jwt.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;h3 id="-tại-sao-jwt-lại-sinh-ra">✅ Tại sao JWT lại sinh ra?&lt;/h3>
+&lt;ul>
+&lt;li>Trước đây chúng ta lập trình web, lúc đó điện thoại di động chưa phổ biến, nên không có app cho điện thoại di động, vì thế chỉ sử dụng cơ chế xác thực người dùng bằng &lt;code>Session Based&lt;/code>.&lt;/li>
+&lt;li>Session Based là gì?
+&lt;ul>
+&lt;li>
+&lt;p>Các bạn xem hình dưới đây:&lt;/p>
+&lt;p>&lt;figure style="flex-grow: 298; flex-basis: 715px">
+&lt;a href="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based.png" data-size="2112x708">&lt;img src="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based.png"
+srcset="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based_hucdd257f931a157b5c0dadba83af15119_102105_480x0_resize_box_2.png 480w, https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based_hucdd257f931a157b5c0dadba83af15119_102105_1024x0_resize_box_2.png 1024w"
+width="2112"
+height="708"
+loading="lazy"
+alt="02-session-based.png">
+&lt;/a>
+&lt;figcaption>02-session-based.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Các bạn thấy nó cũng tương tự với JWT, nhưng khác nhau chỗ không xài JWT mà xài cookie phải không?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Đúng vậy nó sẽ dùng &lt;code>cookie&lt;/code> để định danh người dùng, và &lt;code>sessionId&lt;/code> sẽ được lưu trữ trên phía server, ở dạng text.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Để biết người dùng đã đăng nhập hay chưa, và id của user là gì&amp;hellip;&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Sau khi có website chạy với session based rồi, giờ đột nhiên có nhu cầu thêm 1 app cho điện thoại nữa, vậy phải làm thế nào?&lt;/li>
+&lt;li>App trên điện thoại đâu có cookie để xài sessionId như web được???&lt;/li>
+&lt;li>Cuối cùng, 1 cơ chế mới được định nghĩa ra để giải quyết vấn đề này, đó là dùng Json Web Token. Nó mang chữ web thôi, nhưng xài ở đâu cũng được.&lt;/li>
+&lt;/ul>
+&lt;h3 id="-trong-chuỗi-jwt-có-những-gì-vậy">✅ Trong chuỗi JWT có những gì vậy?&lt;/h3>
+&lt;p>JWT có 3 phần: Header, Payload và Signature, chi tiết các bạn có thể xem hình dưới:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>Header&lt;/code>, trong header sẽ có 2 thuộc tính:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>alg&lt;/code>: thuật toán mã hoá của JWT, thường sẽ là &lt;code>HS256&lt;/code>&lt;/li>
+&lt;li>&lt;code>typ&lt;/code>: loại token, thường sẽ là &lt;code>JWT&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Payload&lt;/code>: là nơi chứa các data cần thiết để định danh user, ví dụ user id, email, và các thông tin khác thường dùng như sau:&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.notion.so/e79c084210a744018be222359ca0ce18" target="_blank" rel="noopener"
+>JWT Payload keys&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Các thông tin các các bạn có thể tham khảo ở đây: &lt;a class="link" href="https://en.wikipedia.org/wiki/JSON_Web_Token#Standard_fields" target="_blank" rel="noopener"
+>https://en.wikipedia.org/wiki/JSON_Web_Token#Standard_fields&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Signature&lt;/code>: là chữ ký điện tử của JWT, dùng để verify JWT này có được tạo ra đúng không, dựa trên thuật toán mã hoá như sau:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>base64UrlEncode(header)&lt;/code>&lt;/li>
+&lt;li>&lt;code>base64UrlEncode(payload)&lt;/code>&lt;/li>
+&lt;li>&lt;code>HMACSHA256(#1, #2, secretKey)&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;code>secretKey&lt;/code> là chuỗi ngẫu nhiên được lưu trữ trên server&lt;/li>
+&lt;li>&lt;code>secretKey&lt;/code> dùng để tạo ra Signature cho JWT và verify JWT có hợp lệ hay không.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="kd">var&lt;/span> &lt;span class="nx">signature&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">HMACSHA256&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="nx">base64UrlEncode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">header&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;.&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span>
+&lt;span class="nx">base64UrlEncode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">payload&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;span class="nx">secret&lt;/span>
+&lt;span class="p">);&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">jwt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">base64UrlEncode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">header&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;.&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">base64UrlEncode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">payload&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;.&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">signature&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;h3 id="-jwt-hoạt-động-thế-nào-vậy">✅ JWT hoạt động thế nào vậy?&lt;/h3>
+&lt;ul>
+&lt;li>Cơ chế JWT khá đơn giản:
+&lt;ul>
+&lt;li>Server sau khi xác thực đúng user thì trả về 1 chuỗi mã hoá cho client&lt;/li>
+&lt;li>Client lưu lại mã này ở local, có thể lưu ở &lt;code>cookie, localStorate, AsyncStorage, SharedPreferences...&lt;/code> hay bất cứ đâu bạn muốn mà có thể truy cập nhanh để lấy giá trị là được.&lt;/li>
+&lt;li>Mỗi request sau lên server thì set JWT vào header trước khi gửi lên.&lt;/li>
+&lt;li>Server lấy JWT từ header, &lt;code>verify&lt;/code> coi thử JWT có hợp lệ không, hợp lệ thì cho vào, không thì đá lỗi &lt;code>401&lt;/code> về cho client.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Các bạn có thể tham khảo ở hình dưới sẽ chi tiết hơn:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;figure style="flex-grow: 100; flex-basis: 240px">
+&lt;a href="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow.png" data-size="2112x2112">&lt;img src="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow.png"
+srcset="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow_hu8d253bb90a7042289f3a77f2bb36fb04_295764_480x0_resize_box_2.png 480w, https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow_hu8d253bb90a7042289f3a77f2bb36fb04_295764_1024x0_resize_box_2.png 1024w"
+width="2112"
+height="2112"
+loading="lazy"
+alt="03-jwt-workflow.png">
+&lt;/a>
+&lt;figcaption>03-jwt-workflow.png&lt;/figcaption>
+&lt;/figure>&lt;/p>
+&lt;h3 id="-làm-thế-nào-để-verify-jwt-có-hợp-lệ-không-nhỉ">✅ Làm thế nào để verify JWT có hợp lệ không nhỉ?&lt;/h3>
+&lt;ul>
+&lt;li>Để verify 1 chuỗi JWT có hợp lệ hay không thì nó sẽ thế này:
+&lt;ul>
+&lt;li>
+&lt;p>Đầu tiên, server sẽ giải mã (decode) chuỗi JWT của header và payload ra, trong payload sẽ có các thông tin như:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>iss&lt;/code>: Người tạo là ai&lt;/li>
+&lt;li>&lt;code>nbf&lt;/code>: Not before, token này có tới thòi điểm hợp lệ chưa&lt;/li>
+&lt;li>&lt;code>exp&lt;/code>: Expiration time, token này có hết hạn chưa&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Server kiểm tra các thông tin trên, nếu bất cứ thông tin nào không hợp lệ, thì sẽ trả lỗi ra.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tiếp theo server sẽ thử hash header và payload với thuật toán tạo JWT trên để so sánh với Signature có giống không, nếu không giống thì cũng trả ra lỗi.&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="kd">var&lt;/span> &lt;span class="nx">signature&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">HMACSHA256&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="nx">base64UrlEncode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">header&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s2">&amp;#34;.&amp;#34;&lt;/span> &lt;span class="o">+&lt;/span>
+&lt;span class="nx">base64UrlEncode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">payload&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;span class="nx">secret&lt;/span>
+&lt;span class="p">);&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Các bạn thử tạo theo thuật toán này xem có ra được chuỗi JWT không nhé 😉&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="-thử-tạo-1-chuỗi-jwt-bằng-nodejs-như-thế-nào">✅ Thử tạo 1 chuỗi JWT bằng NodeJS như thế nào?&lt;/h3>
+&lt;ul>
+&lt;li>Bây giờ chúng ta thử dùng NodeJS tạo ra 1 chuỗi JWT thử xem nhé.
+&lt;ul>
+&lt;li>
+&lt;p>Bạn tạo 1 file &lt;code>create-jwt.js&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tiếp tục bạn chạy lệnh: &lt;code>npm init&lt;/code>, xong làm theo hướng dẫn trên terminal:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="kr">package&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">demo&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">jwt&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nx">version&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mf">1.0.0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nx">description&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;span class="nx">entry&lt;/span> &lt;span class="nx">point&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">index&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">js&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nx">test&lt;/span> &lt;span class="nx">command&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;span class="nx">git&lt;/span> &lt;span class="nx">repository&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;span class="nx">keywords&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;span class="nx">author&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;span class="nx">license&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">ISC&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nx">About&lt;/span> &lt;span class="nx">to&lt;/span> &lt;span class="nx">write&lt;/span> &lt;span class="nx">to&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="nx">home&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">username&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">demo&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">jwt&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="kr">package&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">json&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;span class="p">{&lt;/span>
+&lt;span class="s2">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;demo-jwt&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;version&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;1.0.0&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;main&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;index.js&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;scripts&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="s2">&amp;#34;test&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;&lt;/span>
+&lt;span class="p">},&lt;/span>
+&lt;span class="s2">&amp;#34;author&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s2">&amp;#34;license&amp;#34;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;ISC&amp;#34;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="nx">Is&lt;/span> &lt;span class="k">this&lt;/span> &lt;span class="nx">OK&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">yes&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Giờ bạn chạy tiếp lệnh này: &lt;code>npm install jsonwebtoken&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Xong tạo file &lt;code>create-jwt.js&lt;/code> với nội dung sau:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="kd">var&lt;/span> &lt;span class="nx">jwt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;jsonwebtoken&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">token&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">jwt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">sign&lt;/span>&lt;span class="p">({&lt;/span>
+&lt;span class="nx">sub&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;e271a680-3e55-45bd-bbcf-aa4576ac835f&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="nx">iss&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;JWT Demo&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="nx">iat&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">Math&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">floor&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">Date&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">now&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="mi">1000&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">30&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="nx">data&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">test&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;abc&amp;#39;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">},&lt;/span> &lt;span class="s1">&amp;#39;secretKey@123&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">expiresIn&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;1m&amp;#39;&lt;/span> &lt;span class="p">});&lt;/span>
+&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;token&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">token&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Vậy là xong phần tạo JWT với nodejs rồi, giờ chạy thử: &lt;code>node create-jwt.js&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Bạn sẽ thấy kết quả như sau:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="nx">token&lt;/span> &lt;span class="nx">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;span class="nx">eyJzdWIiOiJlMjcxYTY4MC0zZTU1LTQ1YmQtYmJjZi1hYTQ1NzZhYzgzNWYiLCJpc3MiOiJKV1QgRGVtbyIsImRhdGEiOnsidGVzdCI6ImFiYyJ9fQ&lt;/span>&lt;span class="p">.&lt;/span>
+&lt;span class="mi">3&lt;/span>&lt;span class="nx">ibxGqZi7n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="nx">MjwbuKAYBkFYVwf59qUZt6Q6nbgp_wI&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Bạn thử copy quăng vô &lt;a class="link" href="http://jwt.io" target="_blank" rel="noopener"
+>jwt.io&lt;/a> xem thử được thông tin gì nhé 😎&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="-thử-verify-chuỗi-jwt-với-nodejs-nào">✅ Thử verify chuỗi JWT với nodejs nào.&lt;/h3>
+&lt;ul>
+&lt;li>Sau khi tạo xong JWT thì mình verify chuỗi xem hợp lệ hay không nhé.
+&lt;ul>
+&lt;li>
+&lt;p>Tạo file &lt;code>verify-jwt.js&lt;/code> với nội dung sau:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="kd">var&lt;/span> &lt;span class="nx">token&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;...&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// Thay token ở trên vào chỗ dấu ... hen.
+&lt;/span>&lt;span class="c1">&lt;/span>
+&lt;span class="k">try&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">decoded&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">jwt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">verify&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">token&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;secretKey@123);
+&lt;/span>&lt;span class="s1"> console.log(&amp;#39;&lt;/span>&lt;span class="nx">token&lt;/span> &lt;span class="nx">data&lt;/span>&lt;span class="s1">&amp;#39;, decoded);
+&lt;/span>&lt;span class="s1">} catch(err) {
+&lt;/span>&lt;span class="s1"> console.log(&amp;#39;&lt;/span>&lt;span class="nx">Không&lt;/span> &lt;span class="nx">thể&lt;/span> &lt;span class="nx">verify&lt;/span> &lt;span class="nx">token&lt;/span> &lt;span class="nx">này&lt;/span>&lt;span class="err">&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Bạn chạy thử &lt;code>node verify-jwt.js&lt;/code> xem kết quả thế nào nhé 😇&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="-thử-hack-jwt-có-được-không">✅ Thử hack JWT có được không?&lt;/h3>
+&lt;ul>
+&lt;li>Bây giờ mình có tình huống thế này:
+&lt;ol>
+&lt;li>Bạn tạo 1 JWT ở trên&lt;/li>
+&lt;li>Copy dán vào &lt;a class="link" href="http://jwt.io" target="_blank" rel="noopener"
+>jwt.io&lt;/a>&lt;/li>
+&lt;li>Copy phần &lt;code>Signature&lt;/code> để giữ lại đâu đó, có thể dán vào IDE để giữ lại tí mình có việc dùng lại nhé 😂&lt;/li>
+&lt;li>Sửa lại payload phần &lt;code>sub&lt;/code> thành 1 id của admin&lt;/li>
+&lt;li>&lt;a class="link" href="http://jwt.io" target="_blank" rel="noopener"
+>jwt.io&lt;/a> tự tạo lại 1 chuỗi JWT mới, &lt;code>Signature&lt;/code> hoàn toàn khác.&lt;/li>
+&lt;li>Copy chuỗi mới, dán vào file &lt;code>verify-jwt.js&lt;/code> và chạy thử.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Tình huống khác, tiếp theo tình huống trên nhé:
+&lt;ol>
+&lt;li>Copy &lt;code>Signature&lt;/code> lúc nãy giữ lại.&lt;/li>
+&lt;li>Dán vào phần `&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="-ưu-nhược-điểm-của-jwt-là-gì">✅ Ưu, nhược điểm của JWT là gì?&lt;/h3>
+&lt;p>(Đang cập nhật)&lt;/p>
+&lt;h3 id="-làm-sao-để-logout-1-user-đang-xài-jwt-hợp-lệ-trước-thời-hạn">✅ Làm sao để logout 1 user đang xài JWT hợp lệ trước thời hạn?&lt;/h3>
+&lt;ul>
+&lt;li>Khi sử dụng &lt;code>Session based&lt;/code> thì &lt;code>sessionId&lt;/code> được lưu trên server, khi user logout thì chúng ta chỉ việc xóa &lt;code>sessionId&lt;/code> trên server là xong.&lt;/li>
+&lt;li>Nhưng đang dùng JWT, server không lưu lại, thì làm sao để logout user nhỉ?
+&lt;ul>
+&lt;li>Không có cách nào logout 1 user khi họ đang sử dụng JWT, nghĩa là cho dù user đã nhấn nút logout rồi, nhưng lấy JWT đó vẫn request lên server bình thường nhé, server không hề biết được user đã logout rồi.&lt;/li>
+&lt;li>Vậy cách nào để từ chối các request sau khi user đã logout? Chúng ta có 1 cách là:
+&lt;ul>
+&lt;li>Khi user logout, gửi token lên server với request logout.&lt;/li>
+&lt;li>Server lưu lại JWT đã logout trên Redis hoặc 1 nơi nào đó.&lt;/li>
+&lt;li>Bất cứ request nào lên server thì server kiểm tra JWT có trên chỗ lưu JWT đã logout hay không, nếu có thì từ chối request, đá lỗi 401 Unauthorized về cho client.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>🐗 Vậy là xong toàn bộ kiến thức về JWT, bạn có thể làm thử tất cả ví dụ trên nhé, để nắm kiến thức kỹ hơn.&lt;/p>
+&lt;p>❔ Nếu các bạn có thắc mắc gì, bất cứ gì chưa rõ, cứ comment để mình giải thích kỹ hơn nhé🙂&lt;/p>
+&lt;p>Cảm ơn các bạn đã theo dõi bài viết.&lt;/p></description></item><item><title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title><link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link><pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate><guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid><description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.png" alt="Featured image of post [Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?" />&lt;h2 id="về-terminal-thì-sao">Về terminal thì sao?&lt;/h2>
 &lt;p>Khi sử dụng VSCode, chúng ta thường có 1 terminal phía dưới để dễ làm việc hoặc theo dõi log khi code.&lt;/p>
 &lt;p>Giải pháp trên Vim thì mình có 2 giải pháp:&lt;/p>
 &lt;ol>
