@@ -1,4 +1,159 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lập Trình Dễ Òm.xyz</title><link>https://www.laptrinhdeom.xyz/</link><description>Recent content on Lập Trình Dễ Òm.xyz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 17 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>[Clean Code là gì] Quy tắt với biến (variable)</title><link>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/</link><pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate><guid>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/</guid><description>&lt;img src="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/cover.jpeg" alt="Featured image of post [Clean Code là gì] Quy tắt với biến (variable)" /></description></item><item><title>Clean Code là gì? Lợi ích của Clean Code là gì?</title><link>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/</link><pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate><guid>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/</guid><description>&lt;img src="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/cover.jpeg" alt="Featured image of post Clean Code là gì? Lợi ích của Clean Code là gì?" />&lt;h1 id="clean-code-là-gì-lợi-ích-của-clean-code-là-gì">Clean Code là gì? Lợi ích của Clean Code là gì?&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lập Trình Dễ Òm.xyz</title><link>https://www.laptrinhdeom.xyz/</link><description>Recent content on Lập Trình Dễ Òm.xyz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>[Clean Code là gì] Quy tắt viết hàm (function)</title><link>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-viet-ham-function/</link><pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate><guid>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-viet-ham-function/</guid><description>&lt;img src="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-viet-ham-function/cover.jpeg" alt="Featured image of post [Clean Code là gì] Quy tắt viết hàm (function)" /></description></item><item><title>[Clean Code là gì] Quy tắt với biến (variable)</title><link>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/</link><pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate><guid>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/</guid><description>&lt;img src="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/cover.jpeg" alt="Featured image of post [Clean Code là gì] Quy tắt với biến (variable)" />&lt;h1 id="2-quy-tắc-với-biến-variable">[2] Quy tắc với biến (variable)&lt;/h1>
+&lt;p>Thật sự việc suy nghĩ đặt tên biến là 1 trong những việc khá mất thời gian, dễ gây bực bội nhất 😄.&lt;/p>
+&lt;p>Đôi khi phải vò đầu bức tóc để tìm ra 1 tên biến sao cho phù hợp, dễ đọc, dễ hiểu nhất.&lt;/p>
+&lt;p>Vậy phải làm sao để đặt tên biến cho phù hợp nhỉ, các bạn đọc các quy tắc dưới đây để có cách đặt tên biến sao cho chuẩn hóa nhé.&lt;/p>
+&lt;h3 id="-tên-biến-phải-có-nghĩa">🌟 Tên biến phải có nghĩa:&lt;/h3>
+&lt;p>Vậy &amp;ldquo;có nghĩa&amp;rdquo; là như thế nào? Có nghĩa thì phải đáp ứng các nguyên tắc sau đây:&lt;/p>
+&lt;ul>
+&lt;li>Tên biến phải trả lời được tất cả các câu hỏi lớn.&lt;/li>
+&lt;li>Nó phải nói với bạn được là:
+&lt;ul>
+&lt;li>Tại sao nó tồn tại?&lt;/li>
+&lt;li>Làm thế nào để sử dụng biến này?&lt;/li>
+&lt;li>Loại dữ liệu của nó là gì? (ý này là tùy chọn, không bắt buộc, nhưng khuyến khích)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Nếu tên biến phải thêm comment để hiểu được, thì không đáp ứng được ý nghĩa dễ hiểu.&lt;/li>
+&lt;/ul>
+&lt;p>Ví dụ:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="c1">// Bad
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kr">int&lt;/span> &lt;span class="nx">d&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// elapsed time in days
+&lt;/span>&lt;span class="c1">&lt;/span>
+&lt;span class="c1">// Good
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kr">int&lt;/span> &lt;span class="nx">elapsedTimeInDays&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="o">-----------------------------------------------------------&lt;/span>
+&lt;span class="c1">// Bad
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">product&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">products&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">filter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">item&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="nx">item&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">active&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="c1">// =&amp;gt; Nhìn tưởng có 1 product mà thôi.
+&lt;/span>&lt;span class="c1">&lt;/span>
+&lt;span class="c1">// Good
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">activeProducts&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">products&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">filter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">item&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="nx">item&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">active&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="cm">/* =&amp;gt; Nhìn tên biến ta hiểu ngay là biến
+&lt;/span>&lt;span class="cm"> chứa 1 danh sách các products active = true.
+&lt;/span>&lt;span class="cm">*/&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="-tên-biến-phải-dễ-dàng-tìm-kiếm">🌟 Tên biến phải dễ dàng tìm kiếm:&lt;/h3>
+&lt;p>Có 1 sự thật là khi bạn làm dự án:&lt;/p>
+&lt;ul>
+&lt;li>Bạn hay tập trung vào để làm các tính năng chạy được, chạy ngon lành trước.&lt;/li>
+&lt;li>Không quan tâm đến các cách clean code, đặt tên biến sao cho dễ hiểu.&lt;/li>
+&lt;li>Ví dụ cách viết như sau:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kr">int&lt;/span> &lt;span class="nx">j&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">j&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">34&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">j&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">s&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">t&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Đến 1 ngày, khách hàng yêu cầu thay đổi 1 vài chỗ theo ý họ:&lt;/p>
+&lt;ul>
+&lt;li>Bạn mò mẫm trong đống code cũ của bạn 😔&lt;/li>
+&lt;li>Bây giờ phải ngồi nhớ lại code này nó đang làm gì ta?
+&lt;ul>
+&lt;li>Tại sao lại là lặp từ &lt;code>0&lt;/code> đến &lt;code>34&lt;/code>?&lt;/li>
+&lt;li>&lt;code>t&lt;/code> là gì? &lt;code>s&lt;/code> là gì?&lt;/li>
+&lt;li>Tại sao lại nhân với &lt;code>4&lt;/code> rồi chia cho &lt;code>5&lt;/code>?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Và bạn mặc kệ, sửa cho chạy tiếp đã.&lt;/li>
+&lt;/ul>
+&lt;p>Đến 2 năm sau, khách hàng lại yêu cầu bạn thay đổi chỗ này nữa thì sao 🤭&lt;/p>
+&lt;ul>
+&lt;li>Bạn không nhớ nó nằm chỗ nào trong đống code hỗn độn 😆&lt;/li>
+&lt;li>Bạn không biết làm sao để tìm kiếm ra chỗ code này cả.&lt;/li>
+&lt;li>Bạn chỉ được 1 thông tin là đổi 34 thành 20.&lt;/li>
+&lt;li>Bạn thử search toàn bộ dự án với số 34 🥴.&lt;/li>
+&lt;li>Kết quả là khoảng hơn 1000 kết quả với số 34 🙇‍♂️.&lt;/li>
+&lt;/ul>
+&lt;p>Thật sự là ác mộng phải không 🥶, mình đã từng gặp tình trạng này khi tiếp nhận dự án từ người khác, không biết phải bắt đầu từ đâu luôn 🥵&lt;/p>
+&lt;p>Vậy chỗ ở trên ta có thể viết lại như sau:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="kr">int&lt;/span> &lt;span class="nx">realDaysPerIdealDay&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">const&lt;/span> &lt;span class="kr">int&lt;/span> &lt;span class="nx">WORK_DAYS_PER_WEEK&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">int&lt;/span> &lt;span class="nx">sum&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kr">int&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">j&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nx">NUMBER_OF_TASKS&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">j&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kr">int&lt;/span> &lt;span class="nx">realTaskDays&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">taskEstimate&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">j&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">realDaysPerIdealDay&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">int&lt;/span> &lt;span class="nx">realTaskWeeks&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">realdays&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="nx">WORK_DAYS_PER_WEEK&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;span class="nx">sum&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="nx">realTaskWeeks&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Nhìn dễ hiểu khủng khiếp, không thể nào tin được mình đã có thể code được như vậy 😍&lt;/p>
+&lt;p>Vậy hãy cố gắng viết code sao cho dễ đọc, dễ hiểu nhé các bạn 😉&lt;/p>
+&lt;h3 id="-tên-biến-phải-đọc-được-phát-âm-được">🌟 Tên biến phải đọc được (phát âm được):&lt;/h3>
+&lt;p>Phát đọc (phát âm) được nghĩa là ta có thể đọc nó thành lời.&lt;/p>
+&lt;p>Ví dụ &lt;code>dayOfBirth&lt;/code>, &lt;code>firstName&lt;/code>, &lt;code>lastName&lt;/code>&amp;hellip; chứ không phải là: &lt;code>daOBth&lt;/code>, &lt;code>fNm&lt;/code>, &lt;code>lNa&lt;/code>&amp;hellip;&lt;/p>
+&lt;p>Các bạn cũng thấy được sự khác nhau ở trên đúng rồi, khác nhau lắm.&lt;/p>
+&lt;p>Nó khác chỗ khi chúng ta có thể đọc được tên biến dễ dàng thì chúng ta có thể hiểu được ngay ý nghĩa, mục đích của tên biến đó để làm gì, cách sử dụng nó thế nào, loại dữ liệu của nó&amp;hellip;&lt;/p>
+&lt;p>Ví dụ:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="c1">// Bad
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">tmStmp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">Date&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">now&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;span class="c1">// Good
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">currentTimeStamp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">Date&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">now&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;span class="o">-------------------------------------------------------&lt;/span>
+&lt;span class="c1">// Bad
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="nb">String&lt;/span> &lt;span class="nx">msg&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;Message content&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="c1">// Good
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="nb">String&lt;/span> &lt;span class="nx">message&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;Message content&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="-tên-biến-phải-thể-hiện-được-giá-trị-chứa-trong-đó">🌟 Tên biến phải thể hiện được giá trị chứa trong đó:&lt;/h3>
+&lt;p>Ý nãy phía trên mình có giải thích, thật ra mục đích của việc này là:&lt;/p>
+&lt;ul>
+&lt;li>Bớt thời gian suy nghĩ của chúng ta khi đọc tên biến.&lt;/li>
+&lt;li>Đọc vô là hiểu liền:
+&lt;ul>
+&lt;li>Biến đó để làm gì.&lt;/li>
+&lt;li>Dùng nó thế nào: gán string hay int hay array&amp;hellip;&lt;/li>
+&lt;li>Nó chứa gì trong đó :v&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Để thời gian suy nghĩ về biến ta hay suy nghĩ về những cái khác, như thuật toán để đáp ứng được yêu cầu tính năng mới&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;p>Ví dụ:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="c1">// Bad
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">MINUTE&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="c1">// Good
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">MAX_EXECUTE_MINUTES&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="o">-----------------------------------------------&lt;/span>
+&lt;span class="c1">// Bad
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">50&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="c1">// Good
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">numberOfObjectInClass&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">50&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="-tên-biến-theo-chuẩn-camelcase">🌟 Tên biến theo chuẩn camelCase:&lt;/h3>
+&lt;p>Tùy vào ngôn ngữ mà bạn sử dụng có quy ước đặt tên biến riêng, nhưng đa phần các ngôn ngữ đề khuyên nên đặt tên biến theo chuẩn camelCase.&lt;/p>
+&lt;p>Cách đặt tên biến camelCase tương tự như cách viết của chữ camelCase:&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>&lt;strong>Chữ đầu tiên&lt;/strong>&lt;/em> của &lt;em>&lt;strong>từ đầu tiên&lt;/strong>&lt;/em> thì viết &lt;em>&lt;strong>thường&lt;/strong>&lt;/em>&lt;/li>
+&lt;li>&lt;em>&lt;strong>Chữ đầu tiên&lt;/strong>&lt;/em> của &lt;em>&lt;strong>các từ phía sau&lt;/strong>&lt;/em> thì viết &lt;em>&lt;strong>hoa&lt;/strong>&lt;/em>.&lt;/li>
+&lt;/ul>
+&lt;p>Ví dụ:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="kr">const&lt;/span> &lt;span class="nx">numberOfObjectInClass&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">firstName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;Nguyen&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">int&lt;/span> &lt;span class="nx">productQuantity&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="-nên-ưu-tiên-dễ-hiểu-hơn-là-ngắn-gọn">🌟 Nên ưu tiên dễ hiểu hơn là ngắn gọn:&lt;/h3>
+&lt;p>Tất nhiên, nếu có thể thì nên đặt tên ngắn gọn vẫn hơn, nhưng phải dễ hiểu nhé 🙂&lt;/p>
+&lt;p>Nếu trường hợp bạn không nghĩ được tên nào vừa ngắn gọn, vừa dễ hiểu thì nên đặt tên dài 1 chút nhưng có thể hiểu được thì nên ưu tiên tên dài nhé 😉&lt;/p>
+&lt;p>Ví dụ:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="c1">// Bad
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">WORK_DAYS&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="c1">// Good, đọc thấy rõ nghĩa, dễ hiểu hơn.
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">WORK_DAYS_PER_WEEK&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="c1">// Bad
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">TIME_FORMAT&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;HH:mm&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="c1">// Good
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kr">const&lt;/span> &lt;span class="nx">DEFAULT_TIME_FORMAT&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;HH:mm&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">const&lt;/span> &lt;span class="nx">STORE_TIME_FORMAT&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">DEFAULT_TIME_FORMAT&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;span class="kr">const&lt;/span> &lt;span class="nx">TIME_PICKER_FORMAT&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;hh:mm&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="-hạn-chế-viết-sai-chính-tả">🌟 Hạn chế viết sai chính tả:&lt;/h3>
+&lt;p>Lỗi khá phổ biến của các dev mình là viết tên biến bằng tiếng Anh, nhưng lại sai chính tả. Hậu quả của việc sai chính tả sẽ như sau:&lt;/p>
+&lt;ul>
+&lt;li>Khó khăn trong việc đọc hiểu ý nghĩa của biến.&lt;/li>
+&lt;li>Khó tìm kiếm về sau.&lt;/li>
+&lt;li>Khó chịu cho đồng nghiệp khi làm việc chung.&lt;/li>
+&lt;/ul>
+&lt;p>Vì thế nên chúng ta dành chút thời gian để tra từ điển, hoặc viết thử ý nghĩa trên google translate xem có đúng nghĩa chưa nhé.&lt;/p>
+&lt;h3 id="việc-đặt-tên-biến-mình-hay-làm-là">Việc đặt tên biến mình hay làm là:&lt;/h3>
+&lt;ul>
+&lt;li>Suy nghĩ về ý nghĩa của tên biến bằng tiếng Việt.&lt;/li>
+&lt;li>Dịch các từ đó sang tiếng Anh, tra xem đúng ngữ pháp chưa.&lt;/li>
+&lt;li>Gõ các từ tiếng Anh đó lên Google Translate xem đúng nghĩa chưa.&lt;/li>
+&lt;li>Chuyển qua lại giữa tiếng Anh ↔ tiếng Việt xem đúng ngữ pháp chưa (tương đối thôi)&lt;/li>
+&lt;li>Ghép các từ đó lại thành 1 biến hoàn chỉnh.&lt;/li>
+&lt;/ul>
+&lt;p>-&amp;gt; Phần tiếp theo mình sẽ nói chi tiết về cách quy tắc với hàm (function) nhé.&lt;/p>
+&lt;p>Phần tiếp theo &amp;raquo; &lt;a class="link" href="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-viet-ham-function/" >[Clean Code là gì] Quy tắt viết hàm (function)&lt;/a>&lt;/p></description></item><item><title>Clean Code là gì? Lợi ích của Clean Code là gì?</title><link>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/</link><pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate><guid>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/</guid><description>&lt;img src="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/cover.jpeg" alt="Featured image of post Clean Code là gì? Lợi ích của Clean Code là gì?" />&lt;h1 id="clean-code-là-gì-lợi-ích-của-clean-code-là-gì">Clean Code là gì? Lợi ích của Clean Code là gì?&lt;/h1>
 &lt;blockquote>
 &lt;p>&lt;strong>Clean code is code that is easy to understand and easy to change.&lt;/strong>&lt;/p>
 &lt;/blockquote>
