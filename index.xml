@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Sat, 23 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>HTML cơ bản - dành cho người chưa biết gì - Phần 1</title>
-        <link>https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
         <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/cover.jpeg" alt="Featured image of post HTML cơ bản - dành cho người chưa biết gì - Phần 1" /&gt;&lt;h2 id=&#34;html-là-gì&#34;&gt;HTML là gì?&lt;/h2&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/cover.jpeg" alt="Featured image of post HTML cơ bản - dành cho người chưa biết gì - Phần 1" /&gt;&lt;h2 id=&#34;html-là-gì&#34;&gt;HTML là gì?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;HTML&lt;/strong&gt; là 1 trong những &lt;strong&gt;ngôn ngữ&lt;/strong&gt; &lt;strong&gt;cơ bản&lt;/strong&gt; nhất khi bắt đầu học &lt;strong&gt;lập trình web&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;HTML&lt;/strong&gt; viết tắt của &lt;strong&gt;H&lt;/strong&gt;yper&lt;strong&gt;t&lt;/strong&gt;ext &lt;strong&gt;M&lt;/strong&gt;arkup &lt;strong&gt;L&lt;/strong&gt;anguage, là ngôn ngữ dùng để xây dựng khung sườn, cấu trúc các thành phần trên website.&lt;/li&gt;
@@ -29,18 +29,25 @@
 &lt;p&gt;Có rất rất nhiều IDE/Editors mà các bạn có thể sử dụng để lập trình HTML/CSS, mình chỉ liệt kê 1 số IDE/Editor ở đây để các bạn có thể tham khảo và sử dụng nhé.&lt;/p&gt;
 &lt;h3 id=&#34;1-vscodehttpscodevisualstudiocom-visual-studio-code&#34;&gt;1. &lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;VSCode&lt;/a&gt;: (Visual Studio Code)&lt;/h3&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 145; flex-basis: 349px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled.png&#34; data-size=&#34;940x645&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;940&#34;
-				height=&#34;645&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 145; 
+			flex-basis: 349px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled.png&#34; data-size=&#34;940x645&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled.png&#34;
+			width=&#34;940&#34;
+			height=&#34;645&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Ưu điểm:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Miễn phí, do Microsoft phát triển và bảo trì.&lt;/li&gt;
@@ -55,18 +62,25 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;2-sublime-texthttpswwwsublimetextcom&#34;&gt;2. &lt;a class=&#34;link&#34; href=&#34;https://www.sublimetext.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Sublime Text&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 184; flex-basis: 443px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1.png&#34; data-size=&#34;2560x1386&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2560&#34;
-				height=&#34;1386&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 184; 
+			flex-basis: 443px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1.png&#34; data-size=&#34;2560x1386&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1.png&#34;
+			width=&#34;2560&#34;
+			height=&#34;1386&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Ưu điểm:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nhẹ hơn VSCode, ít tốn tài nguyên so với IDE khác&lt;/li&gt;
@@ -81,18 +95,25 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;3-atomhttpsatomio&#34;&gt;3. &lt;a class=&#34;link&#34; href=&#34;https://atom.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Atom&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 159; flex-basis: 383px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2.png&#34; data-size=&#34;1560x976&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;1560&#34;
-				height=&#34;976&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 159; 
+			flex-basis: 383px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2.png&#34; data-size=&#34;1560x976&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2.png&#34;
+			width=&#34;1560&#34;
+			height=&#34;976&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Ưu điểm:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Miễn phí, do Github phát triển và bảo trì.&lt;/li&gt;
@@ -104,23 +125,30 @@
         </item>
         <item>
         <title>HTML cơ bản - dành cho người chưa biết gì - Phần 2</title>
-        <link>https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</link>
         <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/cover.jpeg" alt="Featured image of post HTML cơ bản - dành cho người chưa biết gì - Phần 2" /&gt;&lt;h2 id=&#34;cấu-trúc-cơ-bản-của-website&#34;&gt;Cấu trúc cơ bản của website&lt;/h2&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 150; flex-basis: 360px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled.png&#34; data-size=&#34;1600x1065&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled_hu0cce08d48f71f37e78ac967398dfd26b_246698_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled_hu0cce08d48f71f37e78ac967398dfd26b_246698_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;1600&#34;
-				height=&#34;1065&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/cover.jpeg" alt="Featured image of post HTML cơ bản - dành cho người chưa biết gì - Phần 2" /&gt;&lt;h2 id=&#34;cấu-trúc-cơ-bản-của-website&#34;&gt;Cấu trúc cơ bản của website&lt;/h2&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 150; 
+			flex-basis: 360px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled.png&#34; data-size=&#34;1600x1065&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled.png&#34;
+			width=&#34;1600&#34;
+			height=&#34;1065&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled_hu0cce08d48f71f37e78ac967398dfd26b_246698_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled_hu0cce08d48f71f37e78ac967398dfd26b_246698_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Trên đây là cấu trúc của 1 website thường thấy, nó sẽ bao gồm các thành phần như:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Header&lt;/strong&gt;: là thành phần chứa hình Logo, tên website, giới thiệu về website, hình ảnh giới thiệu về các hoạt động của chủ website.&lt;/li&gt;
@@ -213,18 +241,25 @@
 &lt;li&gt;&lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;:
 &lt;ul&gt;
 &lt;li&gt;Là thẻ để hiển thị dữ liệu dạng bảng, có hàng, cột như excel, ví dụ:
-&lt;figure style=&#34;flex-grow: 229; flex-basis: 550px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1.png&#34; data-size=&#34;1344x586&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1_hu14d529d11b7af2312a60445c3b752eef_271838_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1_hu14d529d11b7af2312a60445c3b752eef_271838_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;1344&#34;
-				height=&#34;586&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/li&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 229; 
+			flex-basis: 550px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1.png&#34; data-size=&#34;1344x586&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1.png&#34;
+			width=&#34;1344&#34;
+			height=&#34;586&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1_hu14d529d11b7af2312a60445c3b752eef_271838_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1_hu14d529d11b7af2312a60445c3b752eef_271838_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;Phải kết hợp với các thẻ con &lt;!-- raw HTML omitted --&gt;, &lt;!-- raw HTML omitted --&gt;, &lt;!-- raw HTML omitted --&gt;, &lt;!-- raw HTML omitted --&gt; mới hiển thị được dữ liệu&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -232,18 +267,25 @@
 &lt;ul&gt;
 &lt;li&gt;Là thẻ để hiển thị ô nhập liệu, để người dùng nhập các thông tin như tên, tuổi, số điện thoại&amp;hellip;&lt;/li&gt;
 &lt;li&gt;Ví dụ:
-&lt;figure style=&#34;flex-grow: 145; flex-basis: 350px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2.png&#34; data-size=&#34;1354x928&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2_hu9e75c42b824a52063c0f75124e805954_131821_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2_hu9e75c42b824a52063c0f75124e805954_131821_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;1354&#34;
-				height=&#34;928&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/li&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 145; 
+			flex-basis: 350px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2.png&#34; data-size=&#34;1354x928&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2.png&#34;
+			width=&#34;1354&#34;
+			height=&#34;928&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2_hu9e75c42b824a52063c0f75124e805954_131821_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2_hu9e75c42b824a52063c0f75124e805954_131821_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;:
@@ -251,18 +293,25 @@
 &lt;li&gt;Thẻ này để hiển thị 1 liên kết đến 1 trang con khác, hoặc 1 website khác.&lt;/li&gt;
 &lt;li&gt;Thường dùng trên các menu, danh mục, sản phẩm&amp;hellip;&lt;/li&gt;
 &lt;li&gt;Ví dụ:
-&lt;figure style=&#34;flex-grow: 177; flex-basis: 426px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3.png&#34; data-size=&#34;1280x720&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3_hu5ba1cc8085b4418b6d3f4c179bbe936d_396137_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3_hu5ba1cc8085b4418b6d3f4c179bbe936d_396137_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;1280&#34;
-				height=&#34;720&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/li&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 177; 
+			flex-basis: 426px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3.png&#34; data-size=&#34;1280x720&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3.png&#34;
+			width=&#34;1280&#34;
+			height=&#34;720&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3_hu5ba1cc8085b4418b6d3f4c179bbe936d_396137_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3_hu5ba1cc8085b4418b6d3f4c179bbe936d_396137_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt;:
@@ -270,18 +319,25 @@
 &lt;li&gt;Là thẻ để hiển thị nút nhấn, để người dùng tương tác sau khi nhập liệu.&lt;/li&gt;
 &lt;li&gt;Có thể là nhấn nút để gửi email, gửi liên hệ, đồng ý thanh toán&amp;hellip;&lt;/li&gt;
 &lt;li&gt;Ví dụ:
-&lt;figure style=&#34;flex-grow: 177; flex-basis: 426px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4.png&#34; data-size=&#34;800x450&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4_hu114d16434c8c640022289d1932ae348c_21534_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4_hu114d16434c8c640022289d1932ae348c_21534_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;800&#34;
-				height=&#34;450&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/li&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 177; 
+			flex-basis: 426px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4.png&#34; data-size=&#34;800x450&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4.png&#34;
+			width=&#34;800&#34;
+			height=&#34;450&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4_hu114d16434c8c640022289d1932ae348c_21534_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4_hu114d16434c8c640022289d1932ae348c_21534_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;:
@@ -296,18 +352,25 @@
 &lt;li&gt;2 thẻ này dùng để hiển thị dữ liệu dạng danh sách dọc/ngang.&lt;/li&gt;
 &lt;li&gt;Danh sách sẽ thường là menu, danh sách sản phẩm, danh mục&amp;hellip;&lt;/li&gt;
 &lt;li&gt;Ví dụ:
-&lt;figure style=&#34;flex-grow: 144; flex-basis: 347px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5.png&#34; data-size=&#34;1140x788&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5_hu4261cf4aba218d6c699a03462cd8b4d9_62355_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5_hu4261cf4aba218d6c699a03462cd8b4d9_62355_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;1140&#34;
-				height=&#34;788&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Untitled&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/li&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 144; 
+			flex-basis: 347px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5.png&#34; data-size=&#34;1140x788&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5.png&#34;
+			width=&#34;1140&#34;
+			height=&#34;788&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5_hu4261cf4aba218d6c699a03462cd8b4d9_62355_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5_hu4261cf4aba218d6c699a03462cd8b4d9_62355_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Untitled&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -322,27 +385,27 @@ Chúng ta sẽ từ từ tìm hiểu dần qua các ví dụ và phần CSS nhé
         </item>
         <item>
         <title>Tổng hợp các theme cực đẹp cho GNOME desktop environment </title>
-        <link>https://www.laptrinhdeom.xyz/p/tong-hop-cac-theme-cuc-dep-cho-gnome/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/tong-hop-cac-theme-cuc-dep-cho-gnome/</link>
         <pubDate>Fri, 03 Sep 2021 17:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/tong-hop-cac-theme-cuc-dep-cho-gnome/</guid>
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/tong-hop-cac-theme-cuc-dep-cho-gnome/</guid>
         <description></description>
         </item>
         <item>
         <title>[Clean Code là gì] Quy tắt viết hàm (function)</title>
-        <link>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-viet-ham-function/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-viet-ham-function/</link>
         <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-viet-ham-function/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-viet-ham-function/cover.jpeg" alt="Featured image of post [Clean Code là gì] Quy tắt viết hàm (function)" /&gt;</description>
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-viet-ham-function/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-viet-ham-function/cover.jpeg" alt="Featured image of post [Clean Code là gì] Quy tắt viết hàm (function)" /&gt;</description>
         </item>
         <item>
         <title>[Clean Code là gì] Quy tắt với biến (variable)</title>
-        <link>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/</link>
         <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/cover.jpeg" alt="Featured image of post [Clean Code là gì] Quy tắt với biến (variable)" /&gt;&lt;h1 id=&#34;2-quy-tắc-với-biến-variable&#34;&gt;[2] Quy tắc với biến (variable)&lt;/h1&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/cover.jpeg" alt="Featured image of post [Clean Code là gì] Quy tắt với biến (variable)" /&gt;&lt;h1 id=&#34;2-quy-tắc-với-biến-variable&#34;&gt;[2] Quy tắc với biến (variable)&lt;/h1&gt;
 &lt;p&gt;Thật sự việc suy nghĩ đặt tên biến là 1 trong những việc khá mất thời gian, dễ gây bực bội nhất 😄.&lt;/p&gt;
 &lt;p&gt;Đôi khi phải vò đầu bức tóc để tìm ra 1 tên biến sao cho phù hợp, dễ đọc, dễ hiểu nhất.&lt;/p&gt;
 &lt;p&gt;Vậy phải làm sao để đặt tên biến cho phù hợp nhỉ, các bạn đọc các quy tắc dưới đây để có cách đặt tên biến sao cho chuẩn hóa nhé.&lt;/p&gt;
@@ -509,16 +572,16 @@ Chúng ta sẽ từ từ tìm hiểu dần qua các ví dụ và phần CSS nhé
 &lt;li&gt;Ghép các từ đó lại thành 1 biến hoàn chỉnh.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;-&amp;gt; Phần tiếp theo mình sẽ nói chi tiết về cách quy tắc với hàm (function) nhé.&lt;/p&gt;
-&lt;p&gt;Phần tiếp theo &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-viet-ham-function/&#34; &gt;[Clean Code là gì] Quy tắt viết hàm (function)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Phần tiếp theo &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-viet-ham-function/&#34; &gt;[Clean Code là gì] Quy tắt viết hàm (function)&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Clean Code là gì? Lợi ích của Clean Code là gì?</title>
-        <link>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/</link>
         <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/cover.jpeg" alt="Featured image of post Clean Code là gì? Lợi ích của Clean Code là gì?" /&gt;&lt;h1 id=&#34;clean-code-là-gì-lợi-ích-của-clean-code-là-gì&#34;&gt;Clean Code là gì? Lợi ích của Clean Code là gì?&lt;/h1&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/cover.jpeg" alt="Featured image of post Clean Code là gì? Lợi ích của Clean Code là gì?" /&gt;&lt;h1 id=&#34;clean-code-là-gì-lợi-ích-của-clean-code-là-gì&#34;&gt;Clean Code là gì? Lợi ích của Clean Code là gì?&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Clean code is code that is easy to understand and easy to change.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -538,31 +601,45 @@ Chúng ta sẽ từ từ tìm hiểu dần qua các ví dụ và phần CSS nhé
 &lt;li&gt;Cần thời gian để suy nghĩ về các quy tắc, tên biến, tên hàm để đúng theo các quy tắc.&lt;/li&gt;
 &lt;li&gt;Chán nản, bực bội khi phải bó buộc mình vào 1 quy tắc cứng nhắc, mất thời gian để đặt tên cho đúng.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 469; flex-basis: 1126px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/nhuoc-diem-clean-code.png&#34; data-size=&#34;2928x624&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/nhuoc-diem-clean-code.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/nhuoc-diem-clean-code_hue66cce4d183a7d22d1ad004b6ee4521a_142556_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/nhuoc-diem-clean-code_hue66cce4d183a7d22d1ad004b6ee4521a_142556_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2928&#34;
-				height=&#34;624&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;nhuoc-diem-clean-code.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;nhuoc-diem-clean-code.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 469; 
+			flex-basis: 1126px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/nhuoc-diem-clean-code.png&#34; data-size=&#34;2928x624&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/nhuoc-diem-clean-code.png&#34;
+			width=&#34;2928&#34;
+			height=&#34;624&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/nhuoc-diem-clean-code_hue66cce4d183a7d22d1ad004b6ee4521a_142556_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/nhuoc-diem-clean-code_hue66cce4d183a7d22d1ad004b6ee4521a_142556_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;nhuoc-diem-clean-code.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;nhuoc-diem-clean-code.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;✨ Giờ đến xem xét các lợi ích của Clean code thế nào nhé 😉&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 138; flex-basis: 333px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/uu-diem-clean-code.png&#34; data-size=&#34;2328x1676&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/uu-diem-clean-code.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/uu-diem-clean-code_hu1488e18967d7c7d0372fd02a68cdfe9b_222564_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/uu-diem-clean-code_hu1488e18967d7c7d0372fd02a68cdfe9b_222564_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2328&#34;
-				height=&#34;1676&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;uu-diem-clean-code.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;uu-diem-clean-code.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 138; 
+			flex-basis: 333px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/uu-diem-clean-code.png&#34; data-size=&#34;2328x1676&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/uu-diem-clean-code.png&#34;
+			width=&#34;2328&#34;
+			height=&#34;1676&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/uu-diem-clean-code_hu1488e18967d7c7d0372fd02a68cdfe9b_222564_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-loi-ich-cua-clean-code-la-gi/uu-diem-clean-code_hu1488e18967d7c7d0372fd02a68cdfe9b_222564_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;uu-diem-clean-code.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;uu-diem-clean-code.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;✨ Các bạn nhìn hình thì sẽ chắc cũng hiểu, giải thích chi tiết như sau:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Code sạch thì đẹp:&lt;/strong&gt; đúng thế, code sạch thì nhìn đẹp đúng không ✌️, cái gì cũng sạch thì sẽ đẹp hơn 😅.&lt;/li&gt;
@@ -585,16 +662,16 @@ Chúng ta sẽ từ từ tìm hiểu dần qua các ví dụ và phần CSS nhé
 &lt;/ul&gt;
 &lt;p&gt;Khá dễ hiểu phải không nào.&lt;/p&gt;
 &lt;p&gt;Phần tiếp theo chúng ta sẽ nghiên cứu về các &lt;strong&gt;quy tắt đặt tên biến (variable)&lt;/strong&gt; thế nào để đảm bảo Clean nhé.&lt;/p&gt;
-&lt;p&gt;Phần tiếp theo &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/clean-code-la-gi-quy-tat-voi-bien-variable/&#34; &gt;[Clean Code là gì] Quy tắt với biến (variable)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Phần tiếp theo &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/&#34; &gt;[Clean Code là gì] Quy tắt với biến (variable)&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>JWT là gì? Tất tần tật về JWT</title>
-        <link>https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/</link>
         <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/cover.png" alt="Featured image of post JWT là gì? Tất tần tật về JWT" /&gt;&lt;h3 id=&#34;-jwt-là-gì-vậy-nhỉ&#34;&gt;✅ JWT là gì vậy nhỉ?&lt;/h3&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/cover.png" alt="Featured image of post JWT là gì? Tất tần tật về JWT" /&gt;&lt;h3 id=&#34;-jwt-là-gì-vậy-nhỉ&#34;&gt;✅ JWT là gì vậy nhỉ?&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Nó là viết tắt của &lt;code&gt;JSON Web Token&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;JWT là 1 chuỗi JSON được mã hóa, nó trông thế này đây:&lt;/li&gt;
@@ -609,18 +686,25 @@ Chúng ta sẽ từ từ tìm hiểu dần qua các ví dụ và phần CSS nhé
 Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, và trả chuỗi này về Front-End, Back-End hoàn toàn không lưu trữ token này trên server.&lt;/li&gt;
 &lt;li&gt;Cơ chế hoạt động giống như hình dưới đây:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 298; flex-basis: 715px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt.png&#34; data-size=&#34;2112x708&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt_hud5e499587e4094707b1a90ad61266e85_96008_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt_hud5e499587e4094707b1a90ad61266e85_96008_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2112&#34;
-				height=&#34;708&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;01-jwt.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;01-jwt.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 298; 
+			flex-basis: 715px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt.png&#34; data-size=&#34;2112x708&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt.png&#34;
+			width=&#34;2112&#34;
+			height=&#34;708&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt_hud5e499587e4094707b1a90ad61266e85_96008_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/01-jwt_hud5e499587e4094707b1a90ad61266e85_96008_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;01-jwt.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;01-jwt.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;-tại-sao-jwt-lại-sinh-ra&#34;&gt;✅ Tại sao JWT lại sinh ra?&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Trước đây chúng ta lập trình web, lúc đó điện thoại di động chưa phổ biến, nên không có app cho điện thoại di động, vì thế chỉ sử dụng cơ chế xác thực người dùng bằng &lt;code&gt;Session Based&lt;/code&gt;.&lt;/li&gt;
@@ -628,18 +712,25 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Các bạn xem hình dưới đây:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 298; flex-basis: 715px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based.png&#34; data-size=&#34;2112x708&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based_hucdd257f931a157b5c0dadba83af15119_102105_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based_hucdd257f931a157b5c0dadba83af15119_102105_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2112&#34;
-				height=&#34;708&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;02-session-based.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;02-session-based.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 298; 
+			flex-basis: 715px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based.png&#34; data-size=&#34;2112x708&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based.png&#34;
+			width=&#34;2112&#34;
+			height=&#34;708&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based_hucdd257f931a157b5c0dadba83af15119_102105_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/02-session-based_hucdd257f931a157b5c0dadba83af15119_102105_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;02-session-based.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;02-session-based.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Các bạn thấy nó cũng tương tự với JWT, nhưng khác nhau chỗ không xài JWT mà xài cookie phải không?&lt;/p&gt;
@@ -707,18 +798,25 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
 &lt;/li&gt;
 &lt;li&gt;Các bạn có thể tham khảo ở hình dưới sẽ chi tiết hơn:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 100; flex-basis: 240px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow.png&#34; data-size=&#34;2112x2112&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow_hu8d253bb90a7042289f3a77f2bb36fb04_295764_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow_hu8d253bb90a7042289f3a77f2bb36fb04_295764_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2112&#34;
-				height=&#34;2112&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;03-jwt-workflow.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;03-jwt-workflow.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 100; 
+			flex-basis: 240px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow.png&#34; data-size=&#34;2112x2112&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow.png&#34;
+			width=&#34;2112&#34;
+			height=&#34;2112&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow_hu8d253bb90a7042289f3a77f2bb36fb04_295764_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/03-jwt-workflow_hu8d253bb90a7042289f3a77f2bb36fb04_295764_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;03-jwt-workflow.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;03-jwt-workflow.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;-làm-thế-nào-để-verify-jwt-có-hợp-lệ-không-nhỉ&#34;&gt;✅ Làm thế nào để verify JWT có hợp lệ không nhỉ?&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Để verify 1 chuỗi JWT có hợp lệ hay không thì nó sẽ thế này:
@@ -883,40 +981,47 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
         </item>
         <item>
         <title>[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.png" alt="Featured image of post [Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?" /&gt;&lt;h2 id=&#34;về-terminal-thì-sao&#34;&gt;Về terminal thì sao?&lt;/h2&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.png" alt="Featured image of post [Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?" /&gt;&lt;h2 id=&#34;về-terminal-thì-sao&#34;&gt;Về terminal thì sao?&lt;/h2&gt;
 &lt;p&gt;Khi sử dụng VSCode, chúng ta thường có 1 terminal phía dưới để dễ làm việc hoặc theo dõi log khi code.&lt;/p&gt;
 &lt;p&gt;Giải pháp trên Vim thì mình có 2 giải pháp:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Có Floatterm của COC.nvim khá hay, nó là 1 terminal nổi trên vim, khi nào cần thì mở lên gõ, xong thì đóng lại.&lt;/li&gt;
 &lt;li&gt;Dùng tmux, mình thích cách này hơn, dùng tmux chia nhiều khung ra dễ nhìn và thao tác hơn, bản thân tmux chia khung khá thông minh, do đường viền rất nhỏ, nên tận dụng tối đa khả năng hiển thị những thứ cần thiết. Nó trông như vậy:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 161; flex-basis: 387px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux.png&#34; data-size=&#34;3104x1924&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux_hu245bdc5a230da49d9e3b47f92603733e_880343_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux_hu245bdc5a230da49d9e3b47f92603733e_880343_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;3104&#34;
-				height=&#34;1924&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;tmux.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;tmux.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 161; 
+			flex-basis: 387px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux.png&#34; data-size=&#34;3104x1924&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux.png&#34;
+			width=&#34;3104&#34;
+			height=&#34;1924&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux_hu245bdc5a230da49d9e3b47f92603733e_880343_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/tmux_hu245bdc5a230da49d9e3b47f92603733e_880343_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;tmux.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;tmux.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Nếu màn hình lớn khoảng 24 inch thì chia vậy rất ngon để code đó các bạn 😻&lt;/p&gt;
 &lt;p&gt;Như vậy chúng ta đã hoàn thành toàn bộ cách cấu hình, cài đăt, cấu hình để Vim có thể làm 1 IDE chính để code, và code trên Vim thật sự rất hào hứng, rất vui các bạn ạ, hãy thử nhé :)&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 1] Vim là cái quái gì?</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover.png" alt="Featured image of post [Phần 1] Vim là cái quái gì?" /&gt;&lt;h1 id=&#34;vim-là-quái-gì-vậy&#34;&gt;Vim là quái gì vậy?&lt;/h1&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover.png" alt="Featured image of post [Phần 1] Vim là cái quái gì?" /&gt;&lt;h1 id=&#34;vim-là-quái-gì-vậy&#34;&gt;Vim là quái gì vậy?&lt;/h1&gt;
 &lt;p&gt;Vim là 1 IDE được rất nhiều người sử dụng trên thế giới, Vim có sẵn trên các nền tảng, rất gọn nhẹ, khó sử dụng, nhưng khi đã xài quen rồi thì nghiện luôn 😍&lt;/p&gt;
 &lt;p&gt;Vim sau khi cấu hình thì có thể sử dụng như 1 IDE mà các bạn thường sử dụng như VSCode, Sublime Text, Atom&amp;hellip;&lt;/p&gt;
 &lt;h1 id=&#34;tại-sao-nên-dùng-vim-để-code&#34;&gt;Tại sao nên dùng Vim để code?&lt;/h1&gt;
@@ -972,29 +1077,36 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;demo-vim-mình-đang-xài&#34;&gt;Demo Vim mình đang xài:&lt;/h1&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 161; flex-basis: 387px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png&#34; data-size=&#34;3104x1924&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;3104&#34;
-				height=&#34;1924&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;vim-demo.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;vim-demo.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 161; 
+			flex-basis: 387px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png&#34; data-size=&#34;3104x1924&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo.png&#34;
+			width=&#34;3104&#34;
+			height=&#34;1924&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/vim-demo_hu245bdc5a230da49d9e3b47f92603733e_1011506_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;vim-demo.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;vim-demo.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Phần tiếp theo ta sẽ cùng cài đặt Vim package manager để cài đặt plugin này nọ :)&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/&#34; &gt;[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/&#34; &gt;[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/cover.png" alt="Featured image of post [Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug" /&gt;&lt;h1 id=&#34;cài-đặt-vim-để-code-giống-ide&#34;&gt;Cài đặt Vim để code giống IDE&lt;/h1&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/cover.png" alt="Featured image of post [Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug" /&gt;&lt;h1 id=&#34;cài-đặt-vim-để-code-giống-ide&#34;&gt;Cài đặt Vim để code giống IDE&lt;/h1&gt;
 &lt;h2 id=&#34;vim-plug&#34;&gt;Vim-Plug&lt;/h2&gt;
 &lt;p&gt;Vim có rất nhiều Package Manager như:&lt;/p&gt;
 &lt;ul&gt;
@@ -1069,29 +1181,36 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Phần tiếp theo chúng ta sẽ bắt đầu làm đẹp Vim :v&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/&#34; &gt;[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/&#34; &gt;[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/cover.png" alt="Featured image of post [Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark" /&gt;&lt;h3 id=&#34;theme-code-highlight-onedarkhttpsgithubcomjoshdickonedarkvim&#34;&gt;Theme code highlight: &lt;code&gt;[Onedark](https://github.com/joshdick/onedark.vim)&lt;/code&gt;&lt;/h3&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/cover.png" alt="Featured image of post [Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark" /&gt;&lt;h3 id=&#34;theme-code-highlight-onedarkhttpsgithubcomjoshdickonedarkvim&#34;&gt;Theme code highlight: &lt;code&gt;[Onedark](https://github.com/joshdick/onedark.vim)&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Đây là theme code highlight mà mình thấy khá đẹp và thích sử dụng nhất, nó giống với theme trên Atom, nó trông thế này:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 103; flex-basis: 249px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark.png&#34; data-size=&#34;1574x1516&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark_hue3da9a65efb77191a23150800bb77473_247565_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark_hue3da9a65efb77191a23150800bb77473_247565_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;1574&#34;
-				height=&#34;1516&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;onedark.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;onedark.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 103; 
+			flex-basis: 249px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark.png&#34; data-size=&#34;1574x1516&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark.png&#34;
+			width=&#34;1574&#34;
+			height=&#34;1516&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark_hue3da9a65efb77191a23150800bb77473_247565_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/onedark_hue3da9a65efb77191a23150800bb77473_247565_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;onedark.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;onedark.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;cài-đặt-theme-onedark&#34;&gt;Cài đặt theme &lt;code&gt;Onedark&lt;/code&gt;:&lt;/h3&gt;
 &lt;p&gt;Thêm dòng này vào file &lt;code&gt;~/.vimrc&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/p&gt;
@@ -1108,41 +1227,55 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
 &lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Tận hưởng giao diện thôi nào 😋&lt;/p&gt;
 &lt;p&gt;Phần tiếp theo chúng ta sẽ cài đặt giao diện giống thế này:
-&lt;figure style=&#34;flex-grow: 4696; flex-basis: 11270px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png&#34; data-size=&#34;2348x50&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2348&#34;
-				height=&#34;50&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;vim-airline.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;vim-airline.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/&#34; &gt;[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline&lt;/a&gt;&lt;/p&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 4696; 
+			flex-basis: 11270px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png&#34; data-size=&#34;2348x50&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline.png&#34;
+			width=&#34;2348&#34;
+			height=&#34;50&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;vim-airline.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;vim-airline.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/&#34; &gt;[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/cover.png" alt="Featured image of post [Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline" /&gt;&lt;h3 id=&#34;theme-giao-diện-vim-airlinehttpsgithubcomvim-airlinevim-airline&#34;&gt;Theme giao diện: &lt;code&gt;[Vim Airline](https://github.com/vim-airline/vim-airline)&lt;/code&gt;&lt;/h3&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/cover.png" alt="Featured image of post [Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline" /&gt;&lt;h3 id=&#34;theme-giao-diện-vim-airlinehttpsgithubcomvim-airlinevim-airline&#34;&gt;Theme giao diện: &lt;code&gt;[Vim Airline](https://github.com/vim-airline/vim-airline)&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Vim airline là plugin để làm cho cửa sổ terminal xài Vim của bạn không bị nhàm chán, nó có những thứ phía dưới như sau:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 4696; flex-basis: 11270px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline.png&#34; data-size=&#34;2348x50&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2348&#34;
-				height=&#34;50&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;vim-airline.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;vim-airline.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 4696; 
+			flex-basis: 11270px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline.png&#34; data-size=&#34;2348x50&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline.png&#34;
+			width=&#34;2348&#34;
+			height=&#34;50&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/vim-airline_huf05068d9222ca580ab76012f6309c3b4_20359_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;vim-airline.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;vim-airline.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Khá đẹp đúng không, cho mình biết được những thông tin như:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;NORMAL: mode của vim hiện tại, có thể là NORMAL, INSERT, VIRSUAL&lt;/li&gt;
@@ -1207,31 +1340,38 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
 &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#extensions#hunks#enabled=0
 &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;let g&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;airline&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#extensions#hunks#coc_git = 1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vậy là xong, tận hưởng thành quả nào.&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/&#34; &gt;[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/&#34; &gt;[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover.png" alt="Featured image of post [Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim" /&gt;&lt;h2 id=&#34;sidebar-nerdtreehttpsgithubcompreservimnerdtree&#34;&gt;Sidebar: &lt;code&gt;[NERDTree](https://github.com/preservim/nerdtree)&lt;/code&gt;&lt;/h2&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover.png" alt="Featured image of post [Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim" /&gt;&lt;h2 id=&#34;sidebar-nerdtreehttpsgithubcompreservimnerdtree&#34;&gt;Sidebar: &lt;code&gt;[NERDTree](https://github.com/preservim/nerdtree)&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ.&lt;/p&gt;
 &lt;p&gt;Trong Vim cũng sẽ có sidebar này, và &lt;code&gt;NERDTree&lt;/code&gt; là plugin mà được nhiều người xài nhất.&lt;/p&gt;
 &lt;p&gt;Nó trông thế này đây:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 188; flex-basis: 451px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png&#34; data-size=&#34;2854x1518&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2854&#34;
-				height=&#34;1518&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;nerdtree.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;nerdtree.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 188; 
+			flex-basis: 451px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png&#34; data-size=&#34;2854x1518&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png&#34;
+			width=&#34;2854&#34;
+			height=&#34;1518&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;nerdtree.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;nerdtree.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Cũng giống mấy cái IDE khác thôi, nhưng mình nói trước cái này sẽ dùng phím để di chuyển nha, chứ không dùng chuột đâu 😅&lt;/p&gt;
 &lt;h3 id=&#34;cài-đặt-nerdtree&#34;&gt;Cài đặt &lt;code&gt;NERDTree&lt;/code&gt;:&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/p&gt;
@@ -1279,41 +1419,55 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
 &lt;li&gt;Nếu tạo folder thì phải có dấu &lt;code&gt;/&lt;/code&gt; ở cuối nha.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ví dụ:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 173; flex-basis: 416px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png&#34; data-size=&#34;2770x1596&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2770&#34;
-				height=&#34;1596&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;nerdtree-2.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;nerdtree-2.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/&#34; &gt;[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 173; 
+			flex-basis: 416px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png&#34; data-size=&#34;2770x1596&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png&#34;
+			width=&#34;2770&#34;
+			height=&#34;1596&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;nerdtree-2.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;nerdtree-2.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/&#34; &gt;[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/cover.png" alt="Featured image of post [Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF" /&gt;&lt;h2 id=&#34;hỗ-trợ-search-file-nhanh-giống-ctrl--p-trên-vscode-fzfvimhttpsgithubcomjunegunnfzfvim&#34;&gt;Hỗ trợ search file nhanh, giống Ctrl + P trên VSCode: &lt;code&gt;[FZF.vim](https://github.com/junegunn/fzf.vim)&lt;/code&gt;&lt;/h2&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/cover.png" alt="Featured image of post [Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF" /&gt;&lt;h2 id=&#34;hỗ-trợ-search-file-nhanh-giống-ctrl--p-trên-vscode-fzfvimhttpsgithubcomjunegunnfzfvim&#34;&gt;Hỗ trợ search file nhanh, giống Ctrl + P trên VSCode: &lt;code&gt;[FZF.vim](https://github.com/junegunn/fzf.vim)&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Nhu cầu cơ bản của dev là phải search nhanh file cần tìm để đáp ứng code, chứ nhiều khi không thể nhớ đường dẫn vô file đó, nên cần 1 plugin để hỗ trợ nó, nó gọi là &lt;code&gt;FZF&lt;/code&gt;, nó giống vầy nè:&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 188; flex-basis: 451px&#34;&gt;
-		&lt;a href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf.png&#34; data-size=&#34;2866x1522&#34;&gt;&lt;img src=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf.png&#34;
-				srcset=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf_hu8afdcdd22e728c0f6c74187d60279220_342991_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf_hu8afdcdd22e728c0f6c74187d60279220_342991_1024x0_resize_box_3.png 1024w&#34;
-				width=&#34;2866&#34;
-				height=&#34;1522&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;fzf.png&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;fzf.png&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 188; 
+			flex-basis: 451px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf.png&#34; data-size=&#34;2866x1522&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf.png&#34;
+			width=&#34;2866&#34;
+			height=&#34;1522&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf_hu8afdcdd22e728c0f6c74187d60279220_342991_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/fzf_hu8afdcdd22e728c0f6c74187d60279220_342991_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;fzf.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;fzf.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Gõ &lt;code&gt;Ctrl + P&lt;/code&gt; rồi search file y chang bên VSCode nha ✌️&lt;/p&gt;
 &lt;h3 id=&#34;cài-đặt-fzfvim&#34;&gt;Cài đặt &lt;code&gt;FZF.vim&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/p&gt;
@@ -1349,16 +1503,16 @@ Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, v
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-makefile&#34; data-lang=&#34;makefile&#34;&gt;&lt;span class=&#34;err&#34;&gt;:source&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;~/.vimrc&lt;/span&gt;
 &lt;span class=&#34;err&#34;&gt;:PlugInstall&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Phần tiếp theo mình sẽ cấu hình cho Vim có thể gợi y code (autocomplete code) như thế nào nhé&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/&#34; &gt;[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/&#34; &gt;[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/cover.png" alt="Featured image of post [Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào" /&gt;&lt;h2 id=&#34;language-server-protocol-lsp&#34;&gt;Language Server Protocol (LSP):&lt;/h2&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-7-autocomplete-code-nhu-the-nao/cover.png" alt="Featured image of post [Phần 7] Vim là cái quái gì? - Autocomplete code như thế nào" /&gt;&lt;h2 id=&#34;language-server-protocol-lsp&#34;&gt;Language Server Protocol (LSP):&lt;/h2&gt;
 &lt;p&gt;VSCode là 1 IDE rất phổ biến, bởi vì nó hỗ trợ rất nhiều ngôn ngữ, cả VSCode và LSP cho VSCode đều do Microsoft phát triển nên cực kỳ ngon rồi.&lt;/p&gt;
 &lt;p&gt;Trong Vim cũng có rất nhiều giải pháp cho LSP, sau khi thử vài cái thì mình thấy &lt;code&gt;COC.nvim&lt;/code&gt; là hợp lý và mạnh nhất so với mấy cái còn lại.&lt;/p&gt;
 &lt;h3 id=&#34;cài-đặt-cocnvimhttpsgithubcomneoclidecocnvim&#34;&gt;Cài đặt &lt;code&gt;[COC.nvim](https://github.com/neoclide/coc.nvim)&lt;/code&gt;&lt;/h3&gt;
@@ -1423,16 +1577,16 @@ nmap &amp;lt;silent&amp;gt; gr &amp;lt;Plug&amp;gt;&lt;span class=&#34;o&#34;&gt
 endfunction
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;highlight-word-chỗ-con-trỏ-đang-đứng&#34;&gt;Highlight word chỗ con trỏ đang đứng:&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;autocmd CursorHold * silent call CocActionAsync&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;highlight&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/&#34; &gt;[Phần 8] Vim là cái quái gì? - Prettier&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/&#34; &gt;[Phần 8] Vim là cái quái gì? - Prettier&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 8] Vim là cái quái gì? - Prettier</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/cover.png" alt="Featured image of post [Phần 8] Vim là cái quái gì? - Prettier" /&gt;&lt;h2 id=&#34;prettier&#34;&gt;Prettier&lt;/h2&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-8-prettier/cover.png" alt="Featured image of post [Phần 8] Vim là cái quái gì? - Prettier" /&gt;&lt;h2 id=&#34;prettier&#34;&gt;Prettier&lt;/h2&gt;
 &lt;p&gt;Đây là 1 tính năng mà mình rất thích và rất hay xài trong các dự án, và cũng bắt buộc các thành viên trong công ty xài nó, vì nó tự động format code về cùng 1 định dạng, không cần phải suy nghĩ hoặc làm thủ công nữa, khá hữu ích khi làm việc nhóm nha 😋&lt;/p&gt;
 &lt;p&gt;COC.nvim có hỗ trợ prettier extension luôn, đây là cách cài đặt và cấu hình:&lt;/p&gt;
 &lt;ul&gt;
@@ -1482,16 +1636,16 @@ endfunction
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Phần tiếp theo chúng ta sẽ cấu hình ESLint để đảm bảo code theo chuẩn, dễ dàng làm việc nhóm nhé.&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/&#34; &gt;[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/&#34; &gt;[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>[Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim</title>
-        <link>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</link>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</link>
         <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/cover.png" alt="Featured image of post [Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim" /&gt;&lt;h2 id=&#34;eslint&#34;&gt;ESLint&lt;/h2&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-9-cai-dat-eslint-cho-vim/cover.png" alt="Featured image of post [Phần 9] Vim là cái quái gì? - Cài đặt ESLint cho Vim" /&gt;&lt;h2 id=&#34;eslint&#34;&gt;ESLint&lt;/h2&gt;
 &lt;p&gt;Vâng, đây là 1 trong những thứ giúp chúng ta làm việc nhóm tốt hơn, đây là 1 extension giúp phân tích và báo warning các lỗi cơ bản trong khi code, giúp quá trình làm việc nhóm đỡ vất vả, đỡ phải xung đột giữa các thành viên trong nhóm.&lt;/p&gt;
 &lt;p&gt;ESLint không giúp bạn code nhanh hơn, hay code của bạn chạy nhanh hơn, mà nó giúp code dễ đọc hơn, dễ hiểu hơn, giúp quá trình debug dễ hơn trong tương lai, tránh bớt các bug không đáng có do quá trình code chúng ta mà ra.&lt;/p&gt;
 &lt;p&gt;ESLint cũng có thể giúp chúng ta fix tự động các lỗi ở mức dễ, như thiếu dấu ; hay format không đúng theo prettier quy đinh&amp;hellip;&lt;/p&gt;
@@ -1500,7 +1654,7 @@ endfunction
 &lt;p&gt;Trong list extensions trên mình đã có eslint rồi, nhưng các bạn có thể cài đặt thủ công bằng lệnh này: &lt;code&gt;:CocInstall coc-eslint&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Các bạn có thể tham khảo thêm tại đây: &lt;a class=&#34;link&#34; href=&#34;https://github.com/neoclide/coc-eslint&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/neoclide/coc-eslint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/p/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/&#34; &gt;[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Xem tiếp &amp;raquo; &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/&#34; &gt;[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         

@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/tags/jwt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JWT là gì? Tất tần tật về JWT</title>
-      <link>https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/</link>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.laptrinhdeom.xyz/p/jwt-la-gi-tat-tan-tat-ve-jwt/</guid>
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/jwt-la-gi-tat-tan-tat-ve-jwt/</guid>
       <description>✅ JWT là gì vậy nhỉ?  Nó là viết tắt của JSON Web Token JWT là 1 chuỗi JSON được mã hóa, nó trông thế này đây:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9. eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ. SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c  Các bạn copy chuỗi trên, xong vào đây dán vào xem thử nó thế nào nhé 🙂 JWT là phương thức để giao tiếp giữa Back-End và Front-End (Stateless). Nghĩa là Back-End chỉ tạo ra 1 chuỗi token cho user khi đăng nhập, và trả chuỗi này về Front-End, Back-End hoàn toàn không lưu trữ token này trên server.</description>
     </item>
     

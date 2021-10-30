@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ. Trong Vim cũng sẽ có sidebar này, và `NERDTree` là plugin mà được nhiều người xài nhất.'><title>[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim</title>
+
+<link rel='canonical' href='https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim'>
+<meta property='og:description' content='Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ. Trong Vim cũng sẽ có sidebar này, và `NERDTree` là plugin mà được nhiều người xài nhất.'>
+<meta property='og:url' content='https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/'>
+<meta property='og:site_name' content='Lập Trình Dễ Òm.xyz'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='IDE' /><meta property='article:tag' content='Vim' /><meta property='article:published_time' content='2021-06-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-06-12T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover.png' />
+<meta name="twitter:title" content="[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim">
+<meta name="twitter:description" content="Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ. Trong Vim cũng sẽ có sidebar này, và `NERDTree` là plugin mà được nhiều người xài nhất."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover.png' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMYS7CXX5Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-VMYS7CXX5Q', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Quay lại</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/">
+                <img src="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover_hue0e6fc9d6f258765cd954a7597dfb97a_379656_800x0_resize_box_3.png"
+                        srcset="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover_hue0e6fc9d6f258765cd954a7597dfb97a_379656_800x0_resize_box_3.png 800w, /bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/cover_hue0e6fc9d6f258765cd954a7597dfb97a_379656_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="470" 
+                        loading="lazy"
+                        alt="Featured image of post [Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/ide/" >
+                IDE
+            </a>
+        
+            <a href="/categories/vim/" >
+                Vim
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/">[Phần 5] Vim là cái quái gì? - Thêm Sidebar cho Vim</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ. Trong Vim cũng sẽ có sidebar này, và `NERDTree` là plugin mà được nhiều người xài nhất.
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 12, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 phút để đọc
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h2 id="sidebar-nerdtreehttpsgithubcompreservimnerdtree">Sidebar: <code>[NERDTree](https://github.com/preservim/nerdtree)</code></h2>
+<p>Thường các IDE cần phải có sidebar để hiển thị cấu trúc thư mục của dự án, để mình dễ hình dung các files bố trí thế nào này nọ.</p>
+<p>Trong Vim cũng sẽ có sidebar này, và <code>NERDTree</code> là plugin mà được nhiều người xài nhất.</p>
+<p>Nó trông thế này đây:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 188; 
+			flex-basis: 451px"
+	>
+	<a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png" data-size="2854x1518">
+		<img src="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree.png"
+			width="2854"
+			height="1518"
+			srcset="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_480x0_resize_box_3.png 480w, /bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree_hu076f682fb988d78c252e8987423eb63a_321957_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="nerdtree.png">
+	</a>
+	
+	<figcaption>nerdtree.png</figcaption>
+	
+</figure></p>
+<p>Cũng giống mấy cái IDE khác thôi, nhưng mình nói trước cái này sẽ dùng phím để di chuyển nha, chứ không dùng chuột đâu 😅</p>
+<h3 id="cài-đặt-nerdtree">Cài đặt <code>NERDTree</code>:</h3>
+<p><code>vim ~/.vimrc</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-makefile" data-lang="makefile"><span class="err">call</span> <span class="err">plug</span><span class="c">#begin()
+</span><span class="c"></span>  ...
+  Plug <span class="s1">&#39;preservim/nerdtree&#39;</span>
+  ...
+<span class="err">call</span> <span class="err">plug</span><span class="c">#end()
+</span></code></pre></div><p>Gõ <code>:w</code> để lưu, xong gõ tiếp:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-makefile" data-lang="makefile"><span class="err">:source</span> <span class="err">~/.vimrc</span>
+<span class="err">:PlugInstall</span>
+</code></pre></div><p>Giờ cấu hình cho nó nào.</p>
+<h3 id="cấu-hình-nerdtree">Cấu hình <code>NERDTree</code>:</h3>
+<p>Đây là tất cả config cho <code>NERDTree</code> mà mình đang xài:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-makefile" data-lang="makefile"><span class="s2">&#34;&#34;</span> <span class="err">Hiện</span> <span class="err">file</span> <span class="err">ẩn</span>
+<span class="err">let</span> <span class="nv">NERDTreeShowHidden</span><span class="o">=</span><span class="m">1</span>
+
+<span class="err">autocmd</span> <span class="err">VimEnter</span> <span class="err">*</span> <span class="err">NERDTree</span> <span class="err">|</span> <span class="err">wincmd</span> <span class="err">p</span>
+<span class="nf">autocmd StdinReadPre * let s</span><span class="o">:</span><span class="n">std_in</span>=1
+<span class="nf">autocmd VimEnter * NERDTree | if argc() &gt; 0 || exists(&#34;s</span><span class="o">:</span><span class="n">std_in</span>&#34;) <span class="p">|</span> <span class="n">wincmd</span> <span class="n">p</span> <span class="p">|</span> <span class="n">endif</span>
+
+<span class="s2">&#34;&#34;</span> <span class="err">Mở</span> <span class="err">cùng</span> <span class="err">NERDTree</span> <span class="err">cho</span> <span class="err">tab</span> <span class="err">mới,</span> <span class="err">mặc</span> <span class="err">định</span> <span class="err">là</span> <span class="err">mỗi</span> <span class="err">tab</span> <span class="err">sẽ</span> <span class="err">mở</span> <span class="err">1</span> <span class="err">cái</span> <span class="err">mới</span>
+<span class="err">autocmd</span> <span class="err">BufWinEnter</span> <span class="err">*</span> <span class="err">silent</span> <span class="err">NERDTreeMirror</span>
+
+<span class="s2">&#34;&#34;</span> <span class="err">Tự</span> <span class="err">đóng</span> <span class="err">NERDTree</span> <span class="err">khi</span> <span class="err">đóng</span> <span class="err">tab,</span> <span class="err">mặc</span> <span class="err">định</span> <span class="err">giữ</span> <span class="err">lại</span> <span class="err">NERDTree</span>
+<span class="nf">autocmd BufEnter * if tabpagenr(&#39;$&#39;) == 1 &amp;&amp; winnr(&#39;$&#39;) == 1 &amp;&amp; exists(&#39;b</span><span class="o">:</span><span class="n">NERDTree</span>&#39;) &amp;&amp; <span class="n">b</span>:<span class="n">NERDTree</span>.<span class="n">isTabTree</span>() <span class="p">|</span> <span class="n">quit</span> <span class="p">|</span> <span class="n">endif</span>
+<span class="nf">autocmd bufenter * if (winnr(&#34;$&#34;) == 1 &amp;&amp; exists(&#34;b</span><span class="o">:</span><span class="n">NERDTree</span>&#34;) 
+      <span class="se">\ </span><span class="o">&amp;&amp;</span> b:NERDTree.isTabTree<span class="o">())</span> <span class="p">|</span> q <span class="p">|</span> endif
+
+<span class="s2">&#34;&#34;</span> <span class="err">Tìm</span> <span class="err">file</span> <span class="err">đang</span> <span class="err">mở</span> <span class="err">trong</span> <span class="err">thư</span> <span class="err">mục</span> <span class="err">bên</span> <span class="err">NERDTree</span> <span class="err">(mặc</span> <span class="err">định</span> <span class="err">không</span> <span class="err">sync</span> <span class="err">với</span> <span class="err">nhau)</span>
+<span class="nf">map &lt;leader&gt;r </span><span class="o">:</span><span class="n">NERDTreeFind</span>&lt;<span class="n">cr</span>&gt;
+</code></pre></div><p>Gõ <code>:w</code> để lưu, xong gõ tiếp: <code>:source ~/.vimrc</code></p>
+<p>Vậy là xong cái sidebar, quá dễ đúng không 😻</p>
+<h3 id="các-chuyển-đổi-qua-lại-giữa-nerdtree-và-code">Các chuyển đổi qua lại giữa NERDTree và code:</h3>
+<p>Các bạn gõ phím tắt <code>Ctrl + ww</code> 2 lần ww nha, thì nó sẽ chuyển đổi qua lại giữa NERDTree và code dễ dàng.</p>
+<h3 id="cách-tìm-file-trong-nerdtree">Cách tìm file trong NERDTree:</h3>
+<p>Các bạn có thểm tìm file bằng cách giống như tìm text trong vim:</p>
+<p>Gõ dấu <code>/</code> xong gõ tên file cần tìm, ví dụ <code>/index</code> enter, thì nó tự nhảy trỏ tới file đó luôn.</p>
+<p>Tìm thư mục cũng tương tự nhé 😂</p>
+<h3 id="cách-tạo-file-mới-đổi-tên-xóa-file-bằng-nerdtree">Cách tạo file mới, đổi tên, xóa file bằng NERDTree:</h3>
+<p>Các bạn chỉ cần di chuyển trỏ tới thư mục cần tạo file/thư mục mới,</p>
+<p>xong ấn <code>m</code> (có nghĩa là show <code>menu</code> lên), xong ấn <code>a</code> (nghĩa là <code>add</code>).</p>
+<ul>
+<li>Nếu tạo file thì để đuôi file vô, không có dấu <code>/</code> ở cuối.</li>
+<li>Nếu tạo folder thì phải có dấu <code>/</code> ở cuối nha.</li>
+</ul>
+<p>Ví dụ:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 173; 
+			flex-basis: 416px"
+	>
+	<a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png" data-size="2770x1596">
+		<img src="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2.png"
+			width="2770"
+			height="1596"
+			srcset="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_480x0_resize_box_3.png 480w, /bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-5-sidebar-with-nerdtree/nerdtree-2_huce691d961a97c29295bdacef8afd06e7_315987_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="nerdtree-2.png">
+	</a>
+	
+	<figcaption>nerdtree-2.png</figcaption>
+	
+</figure></p>
+<p>Xem tiếp &raquo; <a class="link" href="https://www.laptrinhdeom.xyz/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-6-tim-file-voi-fzf/" >[Phần 6] Vim là cái quái gì? - Search tên file và nội dung nhanh với FZF</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ide/">IDE</a>
+        
+            <a href="/tags/vim/">Vim</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Lập trình dễ òm.xyz</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Bài viết liên quan</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/">
+        
+        
+            <div class="article-image">
+                <img src="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-10-terminal-cho-vim-thi-sao" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 10] Vim là cái quái gì? - Về termial trong Vim thì sao nhỉ?</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/">
+        
+        
+            <div class="article-image">
+                <img src="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-1" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 1] Vim là cái quái gì?</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/">
+        
+        
+            <div class="article-image">
+                <img src="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-2-vim-plug" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 2] Vim là cái quái gì? - Cài đặt Vim-Plug</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/">
+        
+        
+            <div class="article-image">
+                <img src="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-3-onedark" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 3] Vim là cái quái gì? - Làm đẹp Vim với OneDark</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/">
+        
+        
+            <div class="article-image">
+                <img src="/bai-viet/vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline/cover.4401de2f21976815dc6a51bc89cb1883_hue0e6fc9d6f258765cd954a7597dfb97a_379656_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="vim-la-cai-quai-gi-cach-cai-dat-va-su-dung-vim-nhu-vscode-phan-4-vim-airline" 
+                        data-hash="md5-RAHeLyGXaBXcalG8icsYgw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">[Phần 4] Vim là cái quái gì? - Làm đẹp Vim với Vim Airline</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <script 
+  async 
+  src="https://telegram.org/js/telegram-widget.js?15" 
+  data-telegram-discussion="laptrinhdeom_channel/17" 
+  data-comments-limit="15" 
+  data-colorful="1" 
+  data-dark="1"
+></script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 Lập Trình Dễ Òm.xyz
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://t.me/laptrinhdeom" target="_blank">Chém gió trên Telegram</a> <br/>
+        Đã xây dựng với  <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.4.0">Stack</a></b> được thiết kế <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Mục lục</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sidebar-nerdtreehttpsgithubcompreservimnerdtree">Sidebar: <code>[NERDTree](https://github.com/preservim/nerdtree)</code></a>
+      <ul>
+        <li><a href="#cài-đặt-nerdtree">Cài đặt <code>NERDTree</code>:</a></li>
+        <li><a href="#cấu-hình-nerdtree">Cấu hình <code>NERDTree</code>:</a></li>
+        <li><a href="#các-chuyển-đổi-qua-lại-giữa-nerdtree-và-code">Các chuyển đổi qua lại giữa NERDTree và code:</a></li>
+        <li><a href="#cách-tìm-file-trong-nerdtree">Cách tìm file trong NERDTree:</a></li>
+        <li><a href="#cách-tạo-file-mới-đổi-tên-xóa-file-bằng-nerdtree">Cách tạo file mới, đổi tên, xóa file bằng NERDTree:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

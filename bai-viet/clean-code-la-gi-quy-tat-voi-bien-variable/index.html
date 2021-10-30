@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Các quy tắt khi làm việc với biến (variable) trong Clean Code thế nào?'><title>[Clean Code là gì] Quy tắt với biến (variable)</title>
+
+<link rel='canonical' href='https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='[Clean Code là gì] Quy tắt với biến (variable)'>
+<meta property='og:description' content='Các quy tắt khi làm việc với biến (variable) trong Clean Code thế nào?'>
+<meta property='og:url' content='https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/'>
+<meta property='og:site_name' content='Lập Trình Dễ Òm.xyz'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Clean Code' /><meta property='article:published_time' content='2021-07-03T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-07-03T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/cover.jpeg' />
+<meta name="twitter:title" content="[Clean Code là gì] Quy tắt với biến (variable)">
+<meta name="twitter:description" content="Các quy tắt khi làm việc với biến (variable) trong Clean Code thế nào?"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/cover.jpeg' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMYS7CXX5Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-VMYS7CXX5Q', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Quay lại</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/">
+                <img src="/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/cover_hu340e4aace18e22992457c1a03afbcc3c_126792_800x0_resize_q75_box.jpeg"
+                        srcset="/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/cover_hu340e4aace18e22992457c1a03afbcc3c_126792_800x0_resize_q75_box.jpeg 800w, /bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/cover_hu340e4aace18e22992457c1a03afbcc3c_126792_1600x0_resize_q75_box.jpeg 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post [Clean Code là gì] Quy tắt với biến (variable)" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/clean-code/" >
+                Clean Code
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/bai-viet/clean-code-la-gi-quy-tat-voi-bien-variable/">[Clean Code là gì] Quy tắt với biến (variable)</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Các quy tắt khi làm việc với biến (variable) trong Clean Code thế nào?
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jul 03, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 phút để đọc
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h1 id="2-quy-tắc-với-biến-variable">[2] Quy tắc với biến (variable)</h1>
+<p>Thật sự việc suy nghĩ đặt tên biến là 1 trong những việc khá mất thời gian, dễ gây bực bội nhất 😄.</p>
+<p>Đôi khi phải vò đầu bức tóc để tìm ra 1 tên biến sao cho phù hợp, dễ đọc, dễ hiểu nhất.</p>
+<p>Vậy phải làm sao để đặt tên biến cho phù hợp nhỉ, các bạn đọc các quy tắc dưới đây để có cách đặt tên biến sao cho chuẩn hóa nhé.</p>
+<h3 id="-tên-biến-phải-có-nghĩa">🌟 Tên biến phải có nghĩa:</h3>
+<p>Vậy &ldquo;có nghĩa&rdquo; là như thế nào? Có nghĩa thì phải đáp ứng các nguyên tắc sau đây:</p>
+<ul>
+<li>Tên biến phải trả lời được tất cả các câu hỏi lớn.</li>
+<li>Nó phải nói với bạn được là:
+<ul>
+<li>Tại sao nó tồn tại?</li>
+<li>Làm thế nào để sử dụng biến này?</li>
+<li>Loại dữ liệu của nó là gì? (ý này là tùy chọn, không bắt buộc, nhưng khuyến khích)</li>
+</ul>
+</li>
+<li>Nếu tên biến phải thêm comment để hiểu được, thì không đáp ứng được ý nghĩa dễ hiểu.</li>
+</ul>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// Bad
+</span><span class="c1"></span><span class="kr">int</span> <span class="nx">d</span><span class="p">;</span> <span class="c1">// elapsed time in days
+</span><span class="c1"></span>
+<span class="c1">// Good
+</span><span class="c1"></span><span class="kr">int</span> <span class="nx">elapsedTimeInDays</span><span class="p">;</span>
+
+<span class="o">-----------------------------------------------------------</span>
+
+<span class="c1">// Bad
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">product</span> <span class="o">=</span> <span class="nx">products</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">.</span><span class="nx">active</span><span class="p">);</span> 
+<span class="c1">// =&gt; Nhìn tưởng có 1 product mà thôi.
+</span><span class="c1"></span>
+<span class="c1">// Good
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">activeProducts</span> <span class="o">=</span> <span class="nx">products</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">.</span><span class="nx">active</span><span class="p">);</span>
+<span class="cm">/* =&gt; Nhìn tên biến ta hiểu ngay là biến 
+</span><span class="cm">        chứa 1 danh sách các products active = true.
+</span><span class="cm">*/</span>
+</code></pre></div><h3 id="-tên-biến-phải-dễ-dàng-tìm-kiếm">🌟 Tên biến phải dễ dàng tìm kiếm:</h3>
+<p>Có 1 sự thật là khi bạn làm dự án:</p>
+<ul>
+<li>Bạn hay tập trung vào để làm các tính năng chạy được, chạy ngon lành trước.</li>
+<li>Không quan tâm đến các cách clean code, đặt tên biến sao cho dễ hiểu.</li>
+<li>Ví dụ cách viết như sau:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="k">for</span> <span class="p">(</span><span class="kr">int</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">34</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">s</span> <span class="o">+=</span> <span class="p">(</span><span class="nx">t</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="mi">5</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>Đến 1 ngày, khách hàng yêu cầu thay đổi 1 vài chỗ theo ý họ:</p>
+<ul>
+<li>Bạn mò mẫm trong đống code cũ của bạn 😔</li>
+<li>Bây giờ phải ngồi nhớ lại code này nó đang làm gì ta?
+<ul>
+<li>Tại sao lại là lặp từ <code>0</code> đến <code>34</code>?</li>
+<li><code>t</code> là gì? <code>s</code> là gì?</li>
+<li>Tại sao lại nhân với <code>4</code> rồi chia cho <code>5</code>?</li>
+</ul>
+</li>
+<li>Và bạn mặc kệ, sửa cho chạy tiếp đã.</li>
+</ul>
+<p>Đến 2 năm sau, khách hàng lại yêu cầu bạn thay đổi chỗ này nữa thì sao 🤭</p>
+<ul>
+<li>Bạn không nhớ nó nằm chỗ nào trong đống code hỗn độn 😆</li>
+<li>Bạn không biết làm sao để tìm kiếm ra chỗ code này cả.</li>
+<li>Bạn chỉ được 1 thông tin là đổi 34 thành 20.</li>
+<li>Bạn thử search toàn bộ dự án với số 34 🥴.</li>
+<li>Kết quả là khoảng hơn 1000 kết quả với số 34 🙇‍♂️.</li>
+</ul>
+<p>Thật sự là ác mộng phải không 🥶, mình đã từng gặp tình trạng này khi tiếp nhận dự án từ người khác, không biết phải bắt đầu từ đâu luôn 🥵</p>
+<p>Vậy chỗ ở trên ta có thể viết lại như sau:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">int</span> <span class="nx">realDaysPerIdealDay</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+<span class="kr">const</span> <span class="kr">int</span> <span class="nx">WORK_DAYS_PER_WEEK</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kr">int</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kr">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">NUMBER_OF_TASKS</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">int</span> <span class="nx">realTaskDays</span> <span class="o">=</span> <span class="nx">taskEstimate</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">*</span> <span class="nx">realDaysPerIdealDay</span><span class="p">;</span>
+    <span class="kr">int</span> <span class="nx">realTaskWeeks</span> <span class="o">=</span> <span class="p">(</span><span class="nx">realdays</span> <span class="o">/</span> <span class="nx">WORK_DAYS_PER_WEEK</span><span class="p">);</span>
+    <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">realTaskWeeks</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>Nhìn dễ hiểu khủng khiếp, không thể nào tin được mình đã có thể code được như vậy 😍</p>
+<p>Vậy hãy cố gắng viết code sao cho dễ đọc, dễ hiểu nhé các bạn 😉</p>
+<h3 id="-tên-biến-phải-đọc-được-phát-âm-được">🌟 Tên biến phải đọc được (phát âm được):</h3>
+<p>Phát đọc (phát âm) được nghĩa là ta có thể đọc nó thành lời.</p>
+<p>Ví dụ <code>dayOfBirth</code>, <code>firstName</code>, <code>lastName</code>&hellip; chứ không phải là: <code>daOBth</code>, <code>fNm</code>, <code>lNa</code>&hellip;</p>
+<p>Các bạn cũng thấy được sự khác nhau ở trên đúng rồi, khác nhau lắm.</p>
+<p>Nó khác chỗ khi chúng ta có thể đọc được tên biến dễ dàng thì chúng ta có thể hiểu được ngay ý nghĩa, mục đích của tên biến đó để làm gì, cách sử dụng nó thế nào, loại dữ liệu của nó&hellip;</p>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// Bad
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">tmStmp</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">();</span>
+
+<span class="c1">// Good
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">currentTimeStamp</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">();</span>
+<span class="o">-------------------------------------------------------</span>
+<span class="c1">// Bad
+</span><span class="c1"></span><span class="nb">String</span> <span class="nx">msg</span> <span class="o">=</span> <span class="s1">&#39;Message content&#39;</span><span class="p">;</span>
+
+<span class="c1">// Good
+</span><span class="c1"></span><span class="nb">String</span> <span class="nx">message</span> <span class="o">=</span> <span class="s1">&#39;Message content&#39;</span><span class="p">;</span>
+</code></pre></div><h3 id="-tên-biến-phải-thể-hiện-được-giá-trị-chứa-trong-đó">🌟 Tên biến phải thể hiện được giá trị chứa trong đó:</h3>
+<p>Ý nãy phía trên mình có giải thích, thật ra mục đích của việc này là:</p>
+<ul>
+<li>Bớt thời gian suy nghĩ của chúng ta khi đọc tên biến.</li>
+<li>Đọc vô là hiểu liền:
+<ul>
+<li>Biến đó để làm gì.</li>
+<li>Dùng nó thế nào: gán string hay int hay array&hellip;</li>
+<li>Nó chứa gì trong đó :v</li>
+</ul>
+</li>
+<li>Để thời gian suy nghĩ về biến ta hay suy nghĩ về những cái khác, như thuật toán để đáp ứng được yêu cầu tính năng mới&hellip;</li>
+</ul>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// Bad
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">MINUTE</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+<span class="c1">// Good
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">MAX_EXECUTE_MINUTES</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+<span class="o">-----------------------------------------------</span>
+
+<span class="c1">// Bad
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span> 
+
+<span class="c1">// Good
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">numberOfObjectInClass</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+</code></pre></div><h3 id="-tên-biến-theo-chuẩn-camelcase">🌟 Tên biến theo chuẩn camelCase:</h3>
+<p>Tùy vào ngôn ngữ mà bạn sử dụng có quy ước đặt tên biến riêng, nhưng đa phần các ngôn ngữ đề khuyên nên đặt tên biến theo chuẩn camelCase.</p>
+<p>Cách đặt tên biến camelCase tương tự như cách viết của chữ camelCase:</p>
+<ul>
+<li><em><strong>Chữ đầu tiên</strong></em> của <em><strong>từ đầu tiên</strong></em> thì viết <em><strong>thường</strong></em></li>
+<li><em><strong>Chữ đầu tiên</strong></em> của <em><strong>các từ phía sau</strong></em> thì viết <em><strong>hoa</strong></em>.</li>
+</ul>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">const</span> <span class="nx">numberOfObjectInClass</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="s1">&#39;Nguyen&#39;</span><span class="p">;</span>
+<span class="kr">int</span> <span class="nx">productQuantity</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div><h3 id="-nên-ưu-tiên-dễ-hiểu-hơn-là-ngắn-gọn">🌟 Nên ưu tiên dễ hiểu hơn là ngắn gọn:</h3>
+<p>Tất nhiên, nếu có thể thì nên đặt tên ngắn gọn vẫn hơn, nhưng phải dễ hiểu nhé 🙂</p>
+<p>Nếu trường hợp bạn không nghĩ được tên nào vừa ngắn gọn, vừa dễ hiểu thì nên đặt tên dài 1 chút nhưng có thể hiểu được thì nên ưu tiên tên dài nhé 😉</p>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// Bad
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">WORK_DAYS</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+
+<span class="c1">// Good, đọc thấy rõ nghĩa, dễ hiểu hơn.
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">WORK_DAYS_PER_WEEK</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+
+<span class="c1">// Bad
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">TIME_FORMAT</span> <span class="o">=</span> <span class="s1">&#39;HH:mm&#39;</span><span class="p">;</span>
+
+<span class="c1">// Good
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">DEFAULT_TIME_FORMAT</span> <span class="o">=</span> <span class="s1">&#39;HH:mm&#39;</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">STORE_TIME_FORMAT</span> <span class="o">=</span> <span class="nx">DEFAULT_TIME_FORMAT</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">TIME_PICKER_FORMAT</span> <span class="o">=</span> <span class="s1">&#39;hh:mm&#39;</span><span class="p">;</span>
+</code></pre></div><h3 id="-hạn-chế-viết-sai-chính-tả">🌟 Hạn chế viết sai chính tả:</h3>
+<p>Lỗi khá phổ biến của các dev mình là viết tên biến bằng tiếng Anh, nhưng lại sai chính tả. Hậu quả của việc sai chính tả sẽ như sau:</p>
+<ul>
+<li>Khó khăn trong việc đọc hiểu ý nghĩa của biến.</li>
+<li>Khó tìm kiếm về sau.</li>
+<li>Khó chịu cho đồng nghiệp khi làm việc chung.</li>
+</ul>
+<p>Vì thế nên chúng ta dành chút thời gian để tra từ điển, hoặc viết thử ý nghĩa trên google translate xem có đúng nghĩa chưa nhé.</p>
+<h3 id="việc-đặt-tên-biến-mình-hay-làm-là">Việc đặt tên biến mình hay làm là:</h3>
+<ul>
+<li>Suy nghĩ về ý nghĩa của tên biến bằng tiếng Việt.</li>
+<li>Dịch các từ đó sang tiếng Anh, tra xem đúng ngữ pháp chưa.</li>
+<li>Gõ các từ tiếng Anh đó lên Google Translate xem đúng nghĩa chưa.</li>
+<li>Chuyển qua lại giữa tiếng Anh ↔ tiếng Việt xem đúng ngữ pháp chưa (tương đối thôi)</li>
+<li>Ghép các từ đó lại thành 1 biến hoàn chỉnh.</li>
+</ul>
+<p>-&gt; Phần tiếp theo mình sẽ nói chi tiết về cách quy tắc với hàm (function) nhé.</p>
+<p>Phần tiếp theo &raquo; <a class="link" href="https://www.laptrinhdeom.xyz/bai-viet/clean-code-la-gi-quy-tat-viet-ham-function/" >[Clean Code là gì] Quy tắt viết hàm (function)</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/clean-code/">Clean Code</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Lập trình dễ òm.xyz</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+    
+        
+    <script 
+  async 
+  src="https://telegram.org/js/telegram-widget.js?15" 
+  data-telegram-discussion="laptrinhdeom_channel/23" 
+  data-comments-limit="15" 
+  data-colorful="1" 
+  data-dark="1"
+></script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 Lập Trình Dễ Òm.xyz
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://t.me/laptrinhdeom" target="_blank">Chém gió trên Telegram</a> <br/>
+        Đã xây dựng với  <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.4.0">Stack</a></b> được thiết kế <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Mục lục</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-tên-biến-phải-có-nghĩa">🌟 Tên biến phải có nghĩa:</a></li>
+        <li><a href="#-tên-biến-phải-dễ-dàng-tìm-kiếm">🌟 Tên biến phải dễ dàng tìm kiếm:</a></li>
+        <li><a href="#-tên-biến-phải-đọc-được-phát-âm-được">🌟 Tên biến phải đọc được (phát âm được):</a></li>
+        <li><a href="#-tên-biến-phải-thể-hiện-được-giá-trị-chứa-trong-đó">🌟 Tên biến phải thể hiện được giá trị chứa trong đó:</a></li>
+        <li><a href="#-tên-biến-theo-chuẩn-camelcase">🌟 Tên biến theo chuẩn camelCase:</a></li>
+        <li><a href="#-nên-ưu-tiên-dễ-hiểu-hơn-là-ngắn-gọn">🌟 Nên ưu tiên dễ hiểu hơn là ngắn gọn:</a></li>
+        <li><a href="#-hạn-chế-viết-sai-chính-tả">🌟 Hạn chế viết sai chính tả:</a></li>
+        <li><a href="#việc-đặt-tên-biến-mình-hay-làm-là">Việc đặt tên biến mình hay làm là:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
