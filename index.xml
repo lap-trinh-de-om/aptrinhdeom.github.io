@@ -42,10 +42,10 @@
 			height=&#34;645&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			alt=&#34;Visual Studio Code&#34;&gt;
 	&lt;/a&gt;
 	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	&lt;figcaption&gt;Visual Studio Code&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Ưu điểm:&lt;/p&gt;
@@ -75,10 +75,10 @@
 			height=&#34;1386&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			alt=&#34;Sublime Text&#34;&gt;
 	&lt;/a&gt;
 	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	&lt;figcaption&gt;Sublime Text&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Ưu điểm:&lt;/p&gt;
@@ -108,18 +108,23 @@
 			height=&#34;976&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			alt=&#34;Atom&#34;&gt;
 	&lt;/a&gt;
 	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	&lt;figcaption&gt;Atom&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Ưu điểm:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Miễn phí, do Github phát triển và bảo trì.&lt;/li&gt;
 &lt;li&gt;Chạy đa nền tảng: Mac, Linux, Windows.&lt;/li&gt;
+&lt;li&gt;Giao diện đẹp mắt.&lt;/li&gt;
 &lt;li&gt;Cài đặt dễ dàng, dễ sử dụng.&lt;/li&gt;
 &lt;li&gt;Hệ thống plugins, extensions mạnh mẽ với hàng ngàn extensions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nhược điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tốn nhiều tài nguyên hơn các IDE ở trên&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
@@ -143,10 +148,10 @@
 			height=&#34;1065&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled_hu0cce08d48f71f37e78ac967398dfd26b_246698_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled_hu0cce08d48f71f37e78ac967398dfd26b_246698_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			alt=&#34;Cấu trúc cơ bản của website&#34;&gt;
 	&lt;/a&gt;
 	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	&lt;figcaption&gt;Cấu trúc cơ bản của website&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Trên đây là cấu trúc của 1 website thường thấy, nó sẽ bao gồm các thành phần như:&lt;/p&gt;
@@ -254,10 +259,8 @@
 			height=&#34;586&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1_hu14d529d11b7af2312a60445c3b752eef_271838_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-1_hu14d529d11b7af2312a60445c3b752eef_271838_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			&gt;
 	&lt;/a&gt;
-	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;Phải kết hợp với các thẻ con &lt;!-- raw HTML omitted --&gt;, &lt;!-- raw HTML omitted --&gt;, &lt;!-- raw HTML omitted --&gt;, &lt;!-- raw HTML omitted --&gt; mới hiển thị được dữ liệu&lt;/li&gt;
@@ -280,10 +283,8 @@
 			height=&#34;928&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2_hu9e75c42b824a52063c0f75124e805954_131821_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-2_hu9e75c42b824a52063c0f75124e805954_131821_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			&gt;
 	&lt;/a&gt;
-	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -306,10 +307,8 @@
 			height=&#34;720&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3_hu5ba1cc8085b4418b6d3f4c179bbe936d_396137_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-3_hu5ba1cc8085b4418b6d3f4c179bbe936d_396137_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			&gt;
 	&lt;/a&gt;
-	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -332,10 +331,8 @@
 			height=&#34;450&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4_hu114d16434c8c640022289d1932ae348c_21534_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-4_hu114d16434c8c640022289d1932ae348c_21534_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			&gt;
 	&lt;/a&gt;
-	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -365,10 +362,10 @@
 			height=&#34;788&#34;
 			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5_hu4261cf4aba218d6c699a03462cd8b4d9_62355_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/Untitled-5_hu4261cf4aba218d6c699a03462cd8b4d9_62355_1024x0_resize_box_3.png 1024w&#34;
 			loading=&#34;lazy&#34;
-			alt=&#34;Untitled&#34;&gt;
+			alt=&#34;, &#34;&gt;
 	&lt;/a&gt;
 	
-	&lt;figcaption&gt;Untitled&lt;/figcaption&gt;
+	&lt;figcaption&gt;,&lt;/figcaption&gt;
 	
 &lt;/figure&gt;&lt;/li&gt;
 &lt;/ul&gt;
