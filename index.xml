@@ -6,7 +6,58 @@
         <description>Recent content on Lập Trình Dễ Òm.xyz</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 23 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 11 Dec 2021 10:55:03 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Javascript - Hoisting là gì?</title>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/javascript-hoisting-la-gi/</link>
+        <pubDate>Sat, 11 Dec 2021 10:55:03 +0000</pubDate>
+        
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript-hoisting-la-gi/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/javascript-hoisting-la-gi/cover.jpg" alt="Featured image of post Javascript - Hoisting là gì?" /&gt;&lt;h1 id=&#34;hoisting-trong-javascript-là-gì&#34;&gt;Hoisting trong Javascript là gì?&lt;/h1&gt;
+&lt;p&gt;Từ xưa giờ khi làm việc với javascript, thì chắc hẳn các bạn cũng nghe tới thuật ngữ &lt;code&gt;Hoisting&lt;/code&gt; rồi đúng không.&lt;/p&gt;
+&lt;p&gt;Vậy &lt;code&gt;Hoisting&lt;/code&gt; là cái quái gì vậy? nó có ăn được không? nó giúp ích gì cho chúng ta?&lt;/p&gt;
+&lt;p&gt;Mình sẽ giúp các bạn hiểu rõ về nó để chúng ta có đủ kiến thức và sự tự tin khi làm việc với javascript hơn nhé :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;định-nghĩa&#34;&gt;Định nghĩa:&lt;/h2&gt;
+&lt;p&gt;Hoisting nghe cao sang vậy thôi, chứ thật ra không có gì là cao siêu đâu nhé.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Hoisting&lt;/code&gt; là cơ chế của Javascript sẽ chuyển các phần khai báo của biến và hàm lên top của phạm vi của biến và hàm đó.&lt;/p&gt;
+&lt;h2 id=&#34;ví-dụ-1---variable&#34;&gt;Ví dụ 1 - variable:&lt;/h2&gt;
+&lt;p&gt;Định nghĩa chỉ có vậy, nó hơi khó hiểu, để mình thêm ví dụ để các bạn dễ hiểu hơn:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Code trên được Javascript biên dịch như sau:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Cho nên kết quả của ví dụ trên là: &lt;code&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Các bạn có hình dung ra được không, Javascript sẽ tự động chuyển phần khai báo của biến &lt;code&gt;hello&lt;/code&gt; lên đầu tiên của đoạn code, khởi tạo biến xong rồi mới thực hiện các logic khác bên dưới.&lt;/p&gt;
+&lt;h2 id=&#34;ví-dụ-2---function&#34;&gt;Ví dụ 2 - function:&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+
+&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Tương tự như biến, function cũng được Javascript hoisted lên trên cùng của phạm vi.&lt;/p&gt;
+&lt;p&gt;Kết quả: &lt;code&gt;Xin chào&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Điều đó có nghĩa là bạn hoàn toàn có thể gọi 1 function ở dưới (trước khi viết hàm) để sử dụng mà không gặp lỗi.&lt;/p&gt;
+&lt;p&gt;Nó sẽ tiện lợi cho chúng ta khi cấu trúc code để dễ làm việc hơn, ví dụ xử lý logic ở trên, phía dưới sẽ là nơi chứa các hàm và biến.&lt;/p&gt;
+&lt;h2 id=&#34;ví-dụ-3&#34;&gt;Ví dụ 3:&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+
+&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Kết quả: &lt;code&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;lưu-ý&#34;&gt;Lưu ý:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript chỉ hoist phần &lt;strong&gt;khai báo&lt;/strong&gt; &lt;code&gt;biến&lt;/code&gt; và &lt;code&gt;hàm&lt;/code&gt; lên top của phạm vi (scoped), các phần logic khác như gán giá trị thì không được hoist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Nếu có thắc mắc gì thì các bạn cứ bình luận bên dưới để mình giải đáp nhé :)&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>HTML cơ bản - dành cho người chưa biết gì - Phần 1</title>
         <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
         <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
