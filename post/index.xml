@@ -6,16 +6,42 @@
     <description>Recent content in Posts on Lập Trình Dễ Òm.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Dec 2021 10:55:03 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Dec 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Javascript - Hoisting là gì?</title>
-      <link>https://www.laptrinhdeom.xyz/bai-viet/javascript-hoisting-la-gi/</link>
-      <pubDate>Sat, 11 Dec 2021 10:55:03 +0000</pubDate>
+      <title>Scope của biến trong javascript</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</link>
+      <pubDate>Sat, 11 Dec 2021 09:05:42 +0000</pubDate>
       
-      <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript-hoisting-la-gi/</guid>
-      <description>Hoisting trong Javascript là gì? Từ xưa giờ khi làm việc với javascript, thì chắc hẳn các bạn cũng nghe tới thuật ngữ Hoisting rồi đúng không.
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</guid>
+      <description>Xem thêm:
+ Var, let và const trong Javascript Hoisting trong Javascript   Scope (phạm vi) của biến trong Javascript như thế nào? Biến trong javascript luôn có phạm vi của nó, trong bài này mình sẽ giúp các bạn hiểu rõ về phạm vi (scope) của biến nhé.
+Về cơ bản, Javascript có 3 loại scope như sau:
+ Block scope Function scope Global scope  Chúng ta sẽ đi chi tiết về từng loại scope trên.</description>
+    </item>
+    
+    <item>
+      <title>Hoisting trong Javascript là gì?</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</link>
+      <pubDate>Fri, 10 Dec 2021 10:55:03 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</guid>
+      <description>Xem thêm:
+ Var, let và const trong Javascript Scope trong Javascript   Hoisting trong Javascript là gì? Từ xưa giờ khi làm việc với javascript, thì chắc hẳn các bạn cũng nghe tới thuật ngữ Hoisting rồi đúng không.
 Vậy Hoisting là cái quái gì vậy? nó có ăn được không? nó giúp ích gì cho chúng ta?
 Mình sẽ giúp các bạn hiểu rõ về nó để chúng ta có đủ kiến thức và sự tự tin khi làm việc với javascript hơn nhé :)</description>
+    </item>
+    
+    <item>
+      <title>Sự khác nhau giữa Var, Let và Const trong Javascript</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</link>
+      <pubDate>Thu, 09 Dec 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</guid>
+      <description>Xem thêm:
+ Scope của biến trong Javascript Hoisting trong Javascript   var, let và const trong Javascript Cách khai báo, khởi tạo biến trong Javascript Khi lập trình chúng ta thường phải sử dụng các biến để lưu trữ giá trị, dữ liệu&amp;hellip;
+Trong Javascript thì để khởi tạo, khai báo biến, chúng ta sẽ dùng var hoặc let hoặc const.
+Ví dụ:
+var hello = &amp;#34;Xin chào&amp;#34;; let name = &amp;#34;Lập trình Dễ òm&amp;#34;; const helloMessage = hello + &amp;#34; &amp;#34; + name; // Kết quả: &amp;#39;Xin chào Lập trình Dễ òm&amp;#39; Khá dễ hiểu phải không, vậy sự khác nhau giữa chúng là gì và khi nào nên dùng var, let và const?</description>
     </item>
     
     <item>

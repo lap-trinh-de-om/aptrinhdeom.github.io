@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>var, let, const on Lập Trình Dễ Òm.xyz</title>
+    <link>https://www.laptrinhdeom.xyz/tags/var-let-const/</link>
+    <description>Recent content in var, let, const on Lập Trình Dễ Òm.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Dec 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/tags/var-let-const/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sự khác nhau giữa Var, Let và Const trong Javascript</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</link>
+      <pubDate>Thu, 09 Dec 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</guid>
+      <description>Xem thêm:
+ Scope của biến trong Javascript Hoisting trong Javascript   var, let và const trong Javascript Cách khai báo, khởi tạo biến trong Javascript Khi lập trình chúng ta thường phải sử dụng các biến để lưu trữ giá trị, dữ liệu&amp;hellip;
+Trong Javascript thì để khởi tạo, khai báo biến, chúng ta sẽ dùng var hoặc let hoặc const.
+Ví dụ:
+var hello = &amp;#34;Xin chào&amp;#34;; let name = &amp;#34;Lập trình Dễ òm&amp;#34;; const helloMessage = hello + &amp;#34; &amp;#34; + name; // Kết quả: &amp;#39;Xin chào Lập trình Dễ òm&amp;#39; Khá dễ hiểu phải không, vậy sự khác nhau giữa chúng là gì và khi nào nên dùng var, let và const?</description>
+    </item>
+    
+  </channel>
+</rss>

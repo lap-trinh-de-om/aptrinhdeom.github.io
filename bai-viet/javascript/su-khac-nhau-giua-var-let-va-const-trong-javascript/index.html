@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Var, Let và Const trong Javascript là gì? và sự khác nhau giữa chúng như thế nào? Khi nào nên sử dụng var, let và const, chúng ta cùng tìm hiểu nào'><title>Sự khác nhau giữa Var, Let và Const trong Javascript</title>
+
+<link rel='canonical' href='https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Sự khác nhau giữa Var, Let và Const trong Javascript'>
+<meta property='og:description' content='Var, Let và Const trong Javascript là gì? và sự khác nhau giữa chúng như thế nào? Khi nào nên sử dụng var, let và const, chúng ta cùng tìm hiểu nào'>
+<meta property='og:url' content='https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/'>
+<meta property='og:site_name' content='Lập Trình Dễ Òm.xyz'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Javascript' /><meta property='article:tag' content='var, let, const' /><meta property='article:published_time' content='2021-12-09T09:05:42&#43;00:00'/><meta property='article:modified_time' content='2021-12-12T16:30:26&#43;00:00'/><meta property='og:image' content='https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/cover.jpg' />
+<meta name="twitter:title" content="Sự khác nhau giữa Var, Let và Const trong Javascript">
+<meta name="twitter:description" content="Var, Let và Const trong Javascript là gì? và sự khác nhau giữa chúng như thế nào? Khi nào nên sử dụng var, let và const, chúng ta cùng tìm hiểu nào"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/cover.jpg' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMYS7CXX5Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-VMYS7CXX5Q', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Quay lại</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/">
+                <img src="/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/cover_huf34b22938de457eef0efa20f6d497dff_120845_800x0_resize_q75_box.jpg"
+                        srcset="/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/cover_huf34b22938de457eef0efa20f6d497dff_120845_800x0_resize_q75_box.jpg 800w, /bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/cover_huf34b22938de457eef0efa20f6d497dff_120845_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="213" 
+                        loading="lazy"
+                        alt="Featured image of post Sự khác nhau giữa Var, Let và Const trong Javascript" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/javascript/" >
+                Javascript
+            </a>
+        
+            <a href="/categories/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh-web/" >
+                Học Lập trình web
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/">Sự khác nhau giữa Var, Let và Const trong Javascript</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Var, Let và Const trong Javascript là gì? và sự khác nhau giữa chúng như thế nào? Khi nào nên sử dụng var, let và const, chúng ta cùng tìm hiểu nào
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 09, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 phút để đọc
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <blockquote>
+<p>Xem thêm:</p>
+<ul>
+<li><a class="link" href="https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/" >Scope của biến trong Javascript</a></li>
+<li><a class="link" href="https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/" >Hoisting trong Javascript</a></li>
+</ul>
+</blockquote>
+<h1 id="var-let-và-const-trong-javascript">var, let và const trong Javascript</h1>
+<h2 id="cách-khai-báo-khởi-tạo-biến-trong-javascript">Cách khai báo, khởi tạo biến trong Javascript</h2>
+<p>Khi lập trình chúng ta thường phải sử dụng các biến để lưu trữ giá trị, dữ liệu&hellip;</p>
+<p>Trong Javascript thì để khởi tạo, khai báo biến, chúng ta sẽ dùng <strong>var</strong> hoặc <strong>let</strong> hoặc <strong>const</strong>.</p>
+<p><strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào&#34;</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;Lập trình Dễ òm&#34;</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">helloMessage</span> <span class="o">=</span> <span class="nx">hello</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="nx">name</span><span class="p">;</span>
+<span class="c1">// Kết quả: &#39;Xin chào Lập trình Dễ òm&#39;
+</span></code></pre></div><p>Khá dễ hiểu phải không, vậy sự khác nhau giữa chúng là gì và khi nào nên dùng <strong>var</strong>, <strong>let</strong> và <strong>const</strong>?</p>
+<p><strong>let</strong> và <strong>const</strong> là 2 từ khóa mới được giới thiệu trong <code>ES6</code> vào năm 2015, trước đó thì khởi tạo biến chỉ có 1 cách duy nhất là sử dụng từ khóa <strong>var</strong>.</p>
+<h2 id="var">var</h2>
+<h3 id="scope-của-var">Scope của var</h3>
+<ul>
+<li><strong>var</strong> có scope là <strong>global scope</strong> hoặc <strong>function scope</strong>.</li>
+<li>Nếu khởi tạo biến với var ở <strong>ngoài</strong> function thì nó có scope là <strong>global scope</strong>.</li>
+<li>Nếu khởi tạo biến với var ở <strong>trong</strong> function thì nó có scope là <strong>function scope</strong>.</li>
+</ul>
+<h3 id="khai-báo-lại-redeclared-và-thay-đổi-giá-trị">Khai báo lại (redeclared) và thay đổi giá trị</h3>
+<ul>
+<li>
+<p><strong>var</strong> cho phép chúng ta <strong>khai báo lại</strong>(redeclared) biến với cùng tên, nhưng cùng hoặc khác giá trị mà không bị lỗi gì.</p>
+<p><strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào&#34;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào bạn&#34;</span><span class="p">;</span>
+</code></pre></div></li>
+<li>
+<p>var cũng cho phép chúng ta thay đổi giá trị bất cứ khi nào cần.</p>
+<p><strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào&#34;</span><span class="p">;</span>
+<span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào bạn&#34;</span><span class="p">;</span>
+</code></pre></div></li>
+</ul>
+<h3 id="hoisting-của-var">Hoisting của var?</h3>
+<p><strong>Hoisting là gì?</strong> bạn hãy đọc thêm ở đây: <a class="link" href="https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/" >Hoisting trong Javascript</a></p>
+<p><strong>Hoisting</strong> là cơ chế của Javascript sẽ chuyển các phần khai báo của biến và hàm lên top của phạm vi của biến và hàm đó.</p>
+<p>Với <strong>var</strong> thì biến sẽ được hoisted với giá trị <strong>undefined</strong>.</p>
+<h3 id="lưu-ý-với-var">Lưu ý với var</h3>
+<p>Khi làm việc với <strong>var</strong>, bạn phải chú ý thật kỹ các lưu ý sau đây.</p>
+<ul>
+<li><strong>var</strong> không báo lỗi khi khai báo lại biến với cùng tên, nên rất khó phát hiện lỗi, có thể vô tình ghi đè giá trị của 1 biến nào đó phía trên mà chúng ta không biết. Điều này làm chúng ta mất nhiều khá thời gian để debug lỗi.</li>
+<li>Gán giá trị cho biến <strong>var</strong> ở <strong>global scope</strong> thì biến đó sẽ trở thành <strong>thuộc tính</strong> của object <strong>window</strong>.</li>
+</ul>
+<hr>
+<h2 id="let">let</h2>
+<h3 id="scope-của-let">Scope của let</h3>
+<ul>
+<li><strong>let</strong> là <strong>block scope</strong>.</li>
+<li><strong>block</strong> nghĩa là code được viết trong cặp dấu <code>{}</code>, ví dụ function, if/else, switch - case, for/while&hellip; Nghĩa là biến được khởi tạo với <strong>let</strong> trong block thì sẽ không thể sử dụng ở ngoài block đó, <strong>var</strong> thì có thể được nhé.</li>
+</ul>
+<p><strong>Ví dụ;</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// Biến hello sẽ KHÔNG thể được sử dụng ở đây
+</span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào&#34;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// Biến hello sẽ CÓ thể được sử dụng ở đây
+</span></code></pre></div><h3 id="khai-báo-lạiredeclared-và-thay-đổi-giá-trị">Khai báo lại(redeclared) và thay đổi giá trị</h3>
+<ul>
+<li>
+<p><strong>let</strong> KHÔNG cho phép khai báo lại(redeclared) biến với cùng tên với phía trên.</p>
+</li>
+<li>
+<p>Khi bạn cố tình redeclared biến thì sẽ nhận được lỗi này: <code>error: Identifier 'variableName' has already been declared</code>
+<strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào&#34;</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào bạn&#34;</span><span class="p">;</span>
+<span class="c1">// Kết quả: error: Identifier &#39;hello&#39; has already been declared
+</span></code></pre></div></li>
+<li>
+<p>Redeclared biến khác scope thì KHÔNG bị lỗi nhé.
+<strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào&#34;</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào bạn&#34;</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hello</span><span class="p">);</span> <span class="c1">// &#34;Xin chào bạn&#34;
+</span><span class="c1"></span><span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hello</span><span class="p">);</span> <span class="c1">// &#34;Xin chào&#34;
+</span></code></pre></div></li>
+<li>
+<p><strong>let</strong> cũng giống <strong>var</strong>, let CHO phép chúng ta thay đổi giá trị bất cứ lúc nào.
+<strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào&#34;</span><span class="p">;</span>
+<span class="nx">hello</span> <span class="o">=</span> <span class="s2">&#34;Xin chào bạn&#34;</span><span class="p">;</span>
+</code></pre></div></li>
+</ul>
+<h3 id="hoisting-của-let">Hoisting của let?</h3>
+<ul>
+<li>Cũng giống như <strong>var</strong>, <strong>let</strong> cũng được <strong>hoisted</strong> lên top của scope, <strong>NHƯNG</strong> không khởi tạo giá trị <strong>undefined</strong> như <strong>var</strong>.</li>
+<li>Nghĩa là bạn sẽ bị báo lỗi <code>Reference Error</code> khi sử dụng biến với let mà chưa khai báo ở phía trên.</li>
+</ul>
+<hr>
+<h2 id="const">const</h2>
+<h3 id="scope-của-const">Scope của const</h3>
+<p>Tương tự như <strong>let</strong>, <strong>const</strong> cũng có scope là <strong>block</strong>.</p>
+<h3 id="khai-báo-lại-và-thay-đổi-giá-trị">Khai báo lại và thay đổi giá trị</h3>
+<ul>
+<li>
+<p>const chỉ được khai báo và gán giá trị 1 lần duy nhất, giá trị của const là không thể thay đổi, nếu cố tình gán giá trị cho const, bạn sẽ nhận lỗi này: <code>error: Assignment to constant variable.</code></p>
+</li>
+<li>
+<p>const cũng không cho phép redeclared biến, bạn sẽ nhận được lỗi này khi cố gắng redeclare: <code>error: Identifier 'variableName' has already been declared</code>.</p>
+</li>
+</ul>
+<h3 id="hoisting-của-const">Hoisting của const?</h3>
+<p><strong>const hoisting</strong> giống y chang <strong>let</strong>, nghĩa là bạn sẽ bị lỗi khi sử dụng biến trước khi khai báo nó.</p>
+<h3 id="lưu-ý-với-const">Lưu ý với const</h3>
+<ul>
+<li>
+<p>Giá trị của biến với const không thể thay đổi, nhưng bạn có thể thay đổi thuộc tính (properties) của object
+<strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">employee</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">firstName</span><span class="o">:</span> <span class="s2">&#34;Lập trình&#34;</span><span class="p">,</span>
+  <span class="nx">lastName</span><span class="o">:</span> <span class="s2">&#34;Dễ òm&#34;</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="nx">employee</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">=</span> <span class="s2">&#34;Dễ òm phải không bạn&#34;</span><span class="p">;</span> <span class="c1">// hợp lệ
+</span></code></pre></div></li>
+<li>
+<p>Có thể thêm/xóa/sửa các phần tử của 1 array với const
+<strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">employees</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
+
+<span class="nx">employees</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span> <span class="c1">// [1,2,3,4,5]
+</span></code></pre></div></li>
+</ul>
+<hr>
+<h2 id="tóm-lượt-sự-khác-nhau-của-var-let-và-const">Tóm lượt sự khác nhau của var, let và const</h2>
+<ul>
+<li><strong>var</strong> là <strong>global scope</strong> hoặc <strong>function scope</strong>, <strong>let</strong> và <strong>const</strong> là <strong>block scope</strong>.</li>
+<li><strong>var</strong> <code>có thể</code> redeclared biến và gán lại giá trị, <strong>let</strong> <code>không thể</code> redeclared biến nhưng <code>có thể</code> gán lại giá trị, trong khi <strong>const</strong> thì <code>không thể</code> redeclared biến và cũng <code>không thể</code> gán lại giá trị.</li>
+<li>Cả 3 đều được <strong>hoisted</strong> lên top của scope. Nhưng <strong>var</strong> thì hoisted với giá trị <strong>undefined</strong>, trong khi đó <strong>let</strong> và <strong>const</strong> thì hoisted nhưng <strong>không có giá trị</strong>.</li>
+<li><strong>var</strong> và <strong>let</strong> có thể khởi tạo và không cần gán giá trị ban đầu, sau đó có thể gán giá trị khác, nhưng <strong>const</strong> thì bắt buộc phải gán giá trị ban đầu, và <strong>const</strong> không thể gán lại giá trị.</li>
+</ul>
+<hr>
+<p>Có thắc mắc gì các bạn cứ bình luận phía dưới nhé.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/javascript/">Javascript</a>
+        
+            <a href="/tags/var-let-const/">var, let, const</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Lập trình dễ òm.xyz</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            Cập nhật lần cuối Dec 12, 2021 16:30 UTC
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+    
+        
+    <p>
+  <i>Bình luận sử dụng Facebook hoặc Google bên dưới nhé :)</i>
+</p>
+
+<div id="graphcomment"></div>
+
+<script type="text/javascript">
+  var __semio__params = {
+    graphcommentId: "laptrinhdeom", 
+
+    behaviour: {
+      
+      
+    },
+  };
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params);
+  }
+
+  (function () {
+    var gc = document.createElement("script");
+    gc.type = "text/javascript";
+    gc.async = true;
+    gc.onload = __semio__onload;
+    gc.defer = true;
+    gc.src =
+      "https://integration.graphcomment.com/gc_graphlogin.js?" + Date.now();
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(gc);
+  })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 Lập Trình Dễ Òm.xyz
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://t.me/laptrinhdeom" target="_blank">Chém gió trên Telegram</a> <br/>
+        Đã xây dựng với  <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.4.0">Stack</a></b> được thiết kế <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Mục lục</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#cách-khai-báo-khởi-tạo-biến-trong-javascript">Cách khai báo, khởi tạo biến trong Javascript</a></li>
+    <li><a href="#var">var</a>
+      <ul>
+        <li><a href="#scope-của-var">Scope của var</a></li>
+        <li><a href="#khai-báo-lại-redeclared-và-thay-đổi-giá-trị">Khai báo lại (redeclared) và thay đổi giá trị</a></li>
+        <li><a href="#hoisting-của-var">Hoisting của var?</a></li>
+        <li><a href="#lưu-ý-với-var">Lưu ý với var</a></li>
+      </ul>
+    </li>
+    <li><a href="#let">let</a>
+      <ul>
+        <li><a href="#scope-của-let">Scope của let</a></li>
+        <li><a href="#khai-báo-lạiredeclared-và-thay-đổi-giá-trị">Khai báo lại(redeclared) và thay đổi giá trị</a></li>
+        <li><a href="#hoisting-của-let">Hoisting của let?</a></li>
+      </ul>
+    </li>
+    <li><a href="#const">const</a>
+      <ul>
+        <li><a href="#scope-của-const">Scope của const</a></li>
+        <li><a href="#khai-báo-lại-và-thay-đổi-giá-trị">Khai báo lại và thay đổi giá trị</a></li>
+        <li><a href="#hoisting-của-const">Hoisting của const?</a></li>
+        <li><a href="#lưu-ý-với-const">Lưu ý với const</a></li>
+      </ul>
+    </li>
+    <li><a href="#tóm-lượt-sự-khác-nhau-của-var-let-và-const">Tóm lượt sự khác nhau của var, let và const</a></li>
+  </ul>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

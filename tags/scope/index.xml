@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scope on Lập Trình Dễ Òm.xyz</title>
+    <link>https://www.laptrinhdeom.xyz/tags/scope/</link>
+    <description>Recent content in Scope on Lập Trình Dễ Òm.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Dec 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/tags/scope/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scope của biến trong javascript</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</link>
+      <pubDate>Sat, 11 Dec 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</guid>
+      <description>Xem thêm:
+ Var, let và const trong Javascript Hoisting trong Javascript   Scope (phạm vi) của biến trong Javascript như thế nào? Biến trong javascript luôn có phạm vi của nó, trong bài này mình sẽ giúp các bạn hiểu rõ về phạm vi (scope) của biến nhé.
+Về cơ bản, Javascript có 3 loại scope như sau:
+ Block scope Function scope Global scope  Chúng ta sẽ đi chi tiết về từng loại scope trên.</description>
+    </item>
+    
+  </channel>
+</rss>

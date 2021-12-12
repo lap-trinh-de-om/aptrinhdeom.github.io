@@ -6,13 +6,121 @@
         <description>Recent content on Lập Trình Dễ Òm.xyz</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 11 Dec 2021 10:55:03 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Javascript - Hoisting là gì?</title>
-        <link>https://www.laptrinhdeom.xyz/bai-viet/javascript-hoisting-la-gi/</link>
-        <pubDate>Sat, 11 Dec 2021 10:55:03 +0000</pubDate>
+        <lastBuildDate>Sat, 11 Dec 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Scope của biến trong javascript</title>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</link>
+        <pubDate>Sat, 11 Dec 2021 09:05:42 +0000</pubDate>
         
-        <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript-hoisting-la-gi/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/javascript-hoisting-la-gi/cover.jpg" alt="Featured image of post Javascript - Hoisting là gì?" /&gt;&lt;h1 id=&#34;hoisting-trong-javascript-là-gì&#34;&gt;Hoisting trong Javascript là gì?&lt;/h1&gt;
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/cover.jpg" alt="Featured image of post Scope của biến trong javascript" /&gt;&lt;blockquote&gt;
+&lt;p&gt;Xem thêm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/&#34; &gt;Var, let và const trong Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/&#34; &gt;Hoisting trong Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;scope-phạm-vi-của-biến-trong-javascript-như-thế-nào&#34;&gt;Scope (phạm vi) của biến trong Javascript như thế nào?&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Biến&lt;/code&gt; trong javascript luôn có &lt;code&gt;phạm vi&lt;/code&gt; của nó, trong bài này mình sẽ giúp các bạn hiểu rõ về phạm vi (&lt;code&gt;scope&lt;/code&gt;) của biến nhé.&lt;/p&gt;
+&lt;p&gt;Về cơ bản, Javascript có 3 loại scope như sau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Block scope&lt;/li&gt;
+&lt;li&gt;Function scope&lt;/li&gt;
+&lt;li&gt;Global scope&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chúng-ta-sẽ-đi-chi-tiết-về-từng-loại-scope-trên&#34;&gt;Chúng ta sẽ đi chi tiết về từng loại scope trên.&lt;/h2&gt;
+&lt;h2 id=&#34;block-scope&#34;&gt;Block scope&lt;/h2&gt;
+&lt;p&gt;Trước khi ES6 ra đời, thì biến được định nghĩa với từ khóa &lt;code&gt;var&lt;/code&gt; chỉ có 2 scopes là: &lt;code&gt;Global scope&lt;/code&gt; và &lt;code&gt;Function scope&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ES6 đã giới thiệu 2 từ khóa mới là &lt;code&gt;let&lt;/code&gt; và &lt;code&gt;const&lt;/code&gt;, là &lt;code&gt;Block scope&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Biến được khởi tạo với &lt;code&gt;let&lt;/code&gt; và &lt;code&gt;const&lt;/code&gt; trong cặp dấu &lt;code&gt;{}&lt;/code&gt; sẽ không thể truy cập từ bên ngoài block này.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;// Biến hello sẽ KHÔNG thể được sử dụng ở đây
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Biến được khởi tạo với &lt;code&gt;var&lt;/code&gt; thì không có &lt;code&gt;Block scope&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;// Biến hello sẽ CÓ thể được sử dụng ở đây
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;function-scope&#34;&gt;Function scope&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Biến được khởi tạo ở trong function thì được gọi là &lt;code&gt;Function scope&lt;/code&gt;, và KHÔNG thể sử dụng ở ngoài function.&lt;/li&gt;
+&lt;li&gt;Cả 3 &lt;code&gt;var&lt;/code&gt;, &lt;code&gt;let&lt;/code&gt;, &lt;code&gt;const&lt;/code&gt; đều giống nhau về Function scope.&lt;/li&gt;
+&lt;li&gt;Các function khác nhau CÓ THỂ sử dụng chung tên biến.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloVar&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào Var&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloLet&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào Let&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+  &lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloConst&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào Const&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;global-scope&#34;&gt;Global scope&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Biến được khởi tạo bên ngoài function thì được gọi là &lt;code&gt;Global scope&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Cả 3 &lt;code&gt;var&lt;/code&gt;, &lt;code&gt;let&lt;/code&gt;, &lt;code&gt;const&lt;/code&gt; đều có thể là GLOBAL scope.&lt;/li&gt;
+&lt;li&gt;Biến Global thì có thể sử dụng được trong tất cả function/block.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloVar&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào Var&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloLet&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào Let&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloConst&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào Const&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+
+&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;helloVar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;helloLet&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;helloConst&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;lưu-ý&#34;&gt;Lưu ý&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Gán giá trị&lt;/code&gt; cho biến mà biến đó &lt;code&gt;không&lt;/code&gt; được khởi tạo, thì biến sẽ &lt;code&gt;tự động&lt;/code&gt; trở thành &lt;code&gt;GLOBAL&lt;/code&gt; scope.
+&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Biến được khởi tạo ở Global scope với &lt;code&gt;var&lt;/code&gt; thì sẽ trở thành thuộc tính của &lt;code&gt;window&lt;/code&gt;.
+&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Xin chào
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;quan-trọng&#34;&gt;Quan trọng&lt;/h2&gt;
+&lt;p&gt;Các bạn hãy nhớ các điều sau để không gặp phải tình trạng rối tung khi code và debug nhé, để tránh việc làm các bạn stress :)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Đừng tạo biến GLOBAL bất chấp, bạn phải biết bạn đang tạo với mục đích gì.&lt;/li&gt;
+&lt;li&gt;Luôn ý thức được phạm vi của biến bạn đang khởi tạo sẽ ảnh hưởng như thế nào đến code của bạn.&lt;/li&gt;
+&lt;li&gt;code trong function/block của bạn có thể thay đổi giá trị của biến GLOBAL mà bạn không hề biết, hãy chắc chắn những gì bạn đang làm không ảnh hưởng đến toàn bộ website.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Nếu có thắc mắc gì thì các bạn hãy comment bên dưới để mình trả lời nhé.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Hoisting trong Javascript là gì?</title>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</link>
+        <pubDate>Fri, 10 Dec 2021 10:55:03 +0000</pubDate>
+        
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/cover.jpg" alt="Featured image of post Hoisting trong Javascript là gì?" /&gt;&lt;blockquote&gt;
+&lt;p&gt;Xem thêm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/&#34; &gt;Var, let và const trong Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/&#34; &gt;Scope trong Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;hoisting-trong-javascript-là-gì&#34;&gt;Hoisting trong Javascript là gì?&lt;/h1&gt;
 &lt;p&gt;Từ xưa giờ khi làm việc với javascript, thì chắc hẳn các bạn cũng nghe tới thuật ngữ &lt;code&gt;Hoisting&lt;/code&gt; rồi đúng không.&lt;/p&gt;
 &lt;p&gt;Vậy &lt;code&gt;Hoisting&lt;/code&gt; là cái quái gì vậy? nó có ăn được không? nó giúp ích gì cho chúng ta?&lt;/p&gt;
 &lt;p&gt;Mình sẽ giúp các bạn hiểu rõ về nó để chúng ta có đủ kiến thức và sự tự tin khi làm việc với javascript hơn nhé :)&lt;/p&gt;
@@ -20,6 +128,7 @@
 &lt;h2 id=&#34;định-nghĩa&#34;&gt;Định nghĩa:&lt;/h2&gt;
 &lt;p&gt;Hoisting nghe cao sang vậy thôi, chứ thật ra không có gì là cao siêu đâu nhé.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Hoisting&lt;/code&gt; là cơ chế của Javascript sẽ chuyển các phần khai báo của biến và hàm lên top của phạm vi của biến và hàm đó.&lt;/p&gt;
+&lt;p&gt;Nói 1 cách khác là 1 biến có thể được sử dụng trước khi nó được khởi tạo.&lt;/p&gt;
 &lt;h2 id=&#34;ví-dụ-1---variable&#34;&gt;Ví dụ 1 - variable:&lt;/h2&gt;
 &lt;p&gt;Định nghĩa chỉ có vậy, nó hơi khó hiểu, để mình thêm ví dụ để các bạn dễ hiểu hơn:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
@@ -55,6 +164,161 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;Nếu có thắc mắc gì thì các bạn cứ bình luận bên dưới để mình giải đáp nhé :)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Sự khác nhau giữa Var, Let và Const trong Javascript</title>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</link>
+        <pubDate>Thu, 09 Dec 2021 09:05:42 +0000</pubDate>
+        
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/cover.jpg" alt="Featured image of post Sự khác nhau giữa Var, Let và Const trong Javascript" /&gt;&lt;blockquote&gt;
+&lt;p&gt;Xem thêm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/&#34; &gt;Scope của biến trong Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/&#34; &gt;Hoisting trong Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;var-let-và-const-trong-javascript&#34;&gt;var, let và const trong Javascript&lt;/h1&gt;
+&lt;h2 id=&#34;cách-khai-báo-khởi-tạo-biến-trong-javascript&#34;&gt;Cách khai báo, khởi tạo biến trong Javascript&lt;/h2&gt;
+&lt;p&gt;Khi lập trình chúng ta thường phải sử dụng các biến để lưu trữ giá trị, dữ liệu&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Trong Javascript thì để khởi tạo, khai báo biến, chúng ta sẽ dùng &lt;strong&gt;var&lt;/strong&gt; hoặc &lt;strong&gt;let&lt;/strong&gt; hoặc &lt;strong&gt;const&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Lập trình Dễ òm&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloMessage&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;// Kết quả: &amp;#39;Xin chào Lập trình Dễ òm&amp;#39;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Khá dễ hiểu phải không, vậy sự khác nhau giữa chúng là gì và khi nào nên dùng &lt;strong&gt;var&lt;/strong&gt;, &lt;strong&gt;let&lt;/strong&gt; và &lt;strong&gt;const&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;let&lt;/strong&gt; và &lt;strong&gt;const&lt;/strong&gt; là 2 từ khóa mới được giới thiệu trong &lt;code&gt;ES6&lt;/code&gt; vào năm 2015, trước đó thì khởi tạo biến chỉ có 1 cách duy nhất là sử dụng từ khóa &lt;strong&gt;var&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;var&#34;&gt;var&lt;/h2&gt;
+&lt;h3 id=&#34;scope-của-var&#34;&gt;Scope của var&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;var&lt;/strong&gt; có scope là &lt;strong&gt;global scope&lt;/strong&gt; hoặc &lt;strong&gt;function scope&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Nếu khởi tạo biến với var ở &lt;strong&gt;ngoài&lt;/strong&gt; function thì nó có scope là &lt;strong&gt;global scope&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Nếu khởi tạo biến với var ở &lt;strong&gt;trong&lt;/strong&gt; function thì nó có scope là &lt;strong&gt;function scope&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;khai-báo-lại-redeclared-và-thay-đổi-giá-trị&#34;&gt;Khai báo lại (redeclared) và thay đổi giá trị&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;var&lt;/strong&gt; cho phép chúng ta &lt;strong&gt;khai báo lại&lt;/strong&gt;(redeclared) biến với cùng tên, nhưng cùng hoặc khác giá trị mà không bị lỗi gì.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;var cũng cho phép chúng ta thay đổi giá trị bất cứ khi nào cần.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hoisting-của-var&#34;&gt;Hoisting của var?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Hoisting là gì?&lt;/strong&gt; bạn hãy đọc thêm ở đây: &lt;a class=&#34;link&#34; href=&#34;https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/&#34; &gt;Hoisting trong Javascript&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hoisting&lt;/strong&gt; là cơ chế của Javascript sẽ chuyển các phần khai báo của biến và hàm lên top của phạm vi của biến và hàm đó.&lt;/p&gt;
+&lt;p&gt;Với &lt;strong&gt;var&lt;/strong&gt; thì biến sẽ được hoisted với giá trị &lt;strong&gt;undefined&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;lưu-ý-với-var&#34;&gt;Lưu ý với var&lt;/h3&gt;
+&lt;p&gt;Khi làm việc với &lt;strong&gt;var&lt;/strong&gt;, bạn phải chú ý thật kỹ các lưu ý sau đây.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;var&lt;/strong&gt; không báo lỗi khi khai báo lại biến với cùng tên, nên rất khó phát hiện lỗi, có thể vô tình ghi đè giá trị của 1 biến nào đó phía trên mà chúng ta không biết. Điều này làm chúng ta mất nhiều khá thời gian để debug lỗi.&lt;/li&gt;
+&lt;li&gt;Gán giá trị cho biến &lt;strong&gt;var&lt;/strong&gt; ở &lt;strong&gt;global scope&lt;/strong&gt; thì biến đó sẽ trở thành &lt;strong&gt;thuộc tính&lt;/strong&gt; của object &lt;strong&gt;window&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;let&#34;&gt;let&lt;/h2&gt;
+&lt;h3 id=&#34;scope-của-let&#34;&gt;Scope của let&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;let&lt;/strong&gt; là &lt;strong&gt;block scope&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;block&lt;/strong&gt; nghĩa là code được viết trong cặp dấu &lt;code&gt;{}&lt;/code&gt;, ví dụ function, if/else, switch - case, for/while&amp;hellip; Nghĩa là biến được khởi tạo với &lt;strong&gt;let&lt;/strong&gt; trong block thì sẽ không thể sử dụng ở ngoài block đó, &lt;strong&gt;var&lt;/strong&gt; thì có thể được nhé.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;// Biến hello sẽ KHÔNG thể được sử dụng ở đây
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;// Biến hello sẽ CÓ thể được sử dụng ở đây
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;khai-báo-lạiredeclared-và-thay-đổi-giá-trị&#34;&gt;Khai báo lại(redeclared) và thay đổi giá trị&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;let&lt;/strong&gt; KHÔNG cho phép khai báo lại(redeclared) biến với cùng tên với phía trên.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Khi bạn cố tình redeclared biến thì sẽ nhận được lỗi này: &lt;code&gt;error: Identifier &#39;variableName&#39; has already been declared&lt;/code&gt;
+&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;// Kết quả: error: Identifier &amp;#39;hello&amp;#39; has already been declared
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Redeclared biến khác scope thì KHÔNG bị lỗi nhé.
+&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// &amp;#34;Xin chào bạn&amp;#34;
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+
+&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// &amp;#34;Xin chào&amp;#34;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;let&lt;/strong&gt; cũng giống &lt;strong&gt;var&lt;/strong&gt;, let CHO phép chúng ta thay đổi giá trị bất cứ lúc nào.
+&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hoisting-của-let&#34;&gt;Hoisting của let?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Cũng giống như &lt;strong&gt;var&lt;/strong&gt;, &lt;strong&gt;let&lt;/strong&gt; cũng được &lt;strong&gt;hoisted&lt;/strong&gt; lên top của scope, &lt;strong&gt;NHƯNG&lt;/strong&gt; không khởi tạo giá trị &lt;strong&gt;undefined&lt;/strong&gt; như &lt;strong&gt;var&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Nghĩa là bạn sẽ bị báo lỗi &lt;code&gt;Reference Error&lt;/code&gt; khi sử dụng biến với let mà chưa khai báo ở phía trên.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;const&#34;&gt;const&lt;/h2&gt;
+&lt;h3 id=&#34;scope-của-const&#34;&gt;Scope của const&lt;/h3&gt;
+&lt;p&gt;Tương tự như &lt;strong&gt;let&lt;/strong&gt;, &lt;strong&gt;const&lt;/strong&gt; cũng có scope là &lt;strong&gt;block&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;khai-báo-lại-và-thay-đổi-giá-trị&#34;&gt;Khai báo lại và thay đổi giá trị&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;const chỉ được khai báo và gán giá trị 1 lần duy nhất, giá trị của const là không thể thay đổi, nếu cố tình gán giá trị cho const, bạn sẽ nhận lỗi này: &lt;code&gt;error: Assignment to constant variable.&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;const cũng không cho phép redeclared biến, bạn sẽ nhận được lỗi này khi cố gắng redeclare: &lt;code&gt;error: Identifier &#39;variableName&#39; has already been declared&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hoisting-của-const&#34;&gt;Hoisting của const?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;const hoisting&lt;/strong&gt; giống y chang &lt;strong&gt;let&lt;/strong&gt;, nghĩa là bạn sẽ bị lỗi khi sử dụng biến trước khi khai báo nó.&lt;/p&gt;
+&lt;h3 id=&#34;lưu-ý-với-const&#34;&gt;Lưu ý với const&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Giá trị của biến với const không thể thay đổi, nhưng bạn có thể thay đổi thuộc tính (properties) của object
+&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;employee&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;firstName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Lập trình&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;lastName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Dễ òm&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+
+&lt;span class=&#34;nx&#34;&gt;employee&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;lastName&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Dễ òm phải không bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// hợp lệ
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Có thể thêm/xóa/sửa các phần tử của 1 array với const
+&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;employees&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+
+&lt;span class=&#34;nx&#34;&gt;employees&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// [1,2,3,4,5]
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tóm-lượt-sự-khác-nhau-của-var-let-và-const&#34;&gt;Tóm lượt sự khác nhau của var, let và const&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;var&lt;/strong&gt; là &lt;strong&gt;global scope&lt;/strong&gt; hoặc &lt;strong&gt;function scope&lt;/strong&gt;, &lt;strong&gt;let&lt;/strong&gt; và &lt;strong&gt;const&lt;/strong&gt; là &lt;strong&gt;block scope&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;var&lt;/strong&gt; &lt;code&gt;có thể&lt;/code&gt; redeclared biến và gán lại giá trị, &lt;strong&gt;let&lt;/strong&gt; &lt;code&gt;không thể&lt;/code&gt; redeclared biến nhưng &lt;code&gt;có thể&lt;/code&gt; gán lại giá trị, trong khi &lt;strong&gt;const&lt;/strong&gt; thì &lt;code&gt;không thể&lt;/code&gt; redeclared biến và cũng &lt;code&gt;không thể&lt;/code&gt; gán lại giá trị.&lt;/li&gt;
+&lt;li&gt;Cả 3 đều được &lt;strong&gt;hoisted&lt;/strong&gt; lên top của scope. Nhưng &lt;strong&gt;var&lt;/strong&gt; thì hoisted với giá trị &lt;strong&gt;undefined&lt;/strong&gt;, trong khi đó &lt;strong&gt;let&lt;/strong&gt; và &lt;strong&gt;const&lt;/strong&gt; thì hoisted nhưng &lt;strong&gt;không có giá trị&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;var&lt;/strong&gt; và &lt;strong&gt;let&lt;/strong&gt; có thể khởi tạo và không cần gán giá trị ban đầu, sau đó có thể gán giá trị khác, nhưng &lt;strong&gt;const&lt;/strong&gt; thì bắt buộc phải gán giá trị ban đầu, và &lt;strong&gt;const&lt;/strong&gt; không thể gán lại giá trị.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Có thắc mắc gì các bạn cứ bình luận phía dưới nhé.&lt;/p&gt;
 </description>
         </item>
         <item>
