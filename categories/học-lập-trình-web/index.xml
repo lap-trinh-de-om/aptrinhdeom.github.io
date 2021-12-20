@@ -6,11 +6,33 @@
     <description>Recent content in Học Lập trình web on Lập Trình Dễ Òm.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Dec 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/categories/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh-web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Aug 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/categories/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh-web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#39;this&#39; keyword trong Javascript</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/this-keyword-trong-javascript/</link>
+      <pubDate>Sun, 22 Aug 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/this-keyword-trong-javascript/</guid>
+      <description>&amp;lsquo;this&amp;rsquo; keyword trong Javascript this trong Javascript liên quan đến đối tượng mà nó thuộc về.
+Hơi trừu tượng phải không, đừng lo, mình sẽ giải thích rõ hơn ở bên dưới nha.
+Tóm lượt về this this có giá trị khác nhau khi nó được sử dụng ở các ngữ cảnh khác nhau.
+ Khi ở global scope, this sẽ có giá trị là global object, trong trình duyệt global object chính là window.</description>
+    </item>
+    
+    <item>
+      <title>use strict hay strict mode trong Javascript là gì?</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/</link>
+      <pubDate>Sun, 15 Aug 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/</guid>
+      <description>Use strict là gì? Nó dùng để làm gì?   Use strict là khái niệm mới từ khi ES5 được phát hành, nó là 1 chuỗi bình thường, và được trình duyệt có version Javascript ES5 trở lên hiểu được, còn trình duyệt hỗ trợ Javascript version thấp hơn sẽ có vấn đề gì cả.
+  Bởi vì Javascript là ngôn ngữ lập trình khá dễ dãi, khai báo và dùng biến kiểu gì cũng được, hay nói 1 cách khác là vô tội vạ, khiến cho nhiều bugs phát sinh và khó kiểm soát việc khai báo và sử dụng biến.</description>
+    </item>
+    
     <item>
       <title>Scope của biến trong javascript</title>
       <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</link>
-      <pubDate>Sat, 11 Dec 2021 09:05:42 +0000</pubDate>
+      <pubDate>Wed, 11 Aug 2021 09:05:42 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</guid>
       <description>Xem thêm:
@@ -22,7 +44,7 @@ Về cơ bản, Javascript có 3 loại scope như sau:
     <item>
       <title>Hoisting trong Javascript là gì?</title>
       <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</link>
-      <pubDate>Fri, 10 Dec 2021 10:55:03 +0000</pubDate>
+      <pubDate>Tue, 10 Aug 2021 10:55:03 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</guid>
       <description>Xem thêm:
@@ -34,7 +56,7 @@ Mình sẽ giúp các bạn hiểu rõ về nó để chúng ta có đủ kiến
     <item>
       <title>Sự khác nhau giữa Var, Let và Const trong Javascript</title>
       <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</link>
-      <pubDate>Thu, 09 Dec 2021 09:05:42 +0000</pubDate>
+      <pubDate>Mon, 09 Aug 2021 09:05:42 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</guid>
       <description>Xem thêm:
@@ -45,23 +67,23 @@ var hello = &amp;#34;Xin chào&amp;#34;; let name = &amp;#34;Lập trình Dễ �
     </item>
     
     <item>
-      <title>HTML cơ bản - dành cho người chưa biết gì - Phần 1</title>
-      <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</guid>
-      <description>HTML là gì?  HTML là 1 trong những ngôn ngữ cơ bản nhất khi bắt đầu học lập trình web. HTML viết tắt của Hypertext Markup Language, là ngôn ngữ dùng để xây dựng khung sườn, cấu trúc các thành phần trên website. Thường kết hợp với CSS và Javascript để tạo thành website hoàn chỉnh.  HTML có thể làm được gì?  Xuất bản tài liệu: bao gồm tiêu đề, văn bản, bảng tính, danh sách, ảnh, video&amp;hellip; Truy xuất thông tin: thông qua các liên kết , nút hoặc ô nhập liệu .</description>
-    </item>
-    
-    <item>
       <title>HTML cơ bản - dành cho người chưa biết gì - Phần 2</title>
       <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</guid>
       <description>Cấu trúc cơ bản của website  Cấu trúc cơ bản của website 
 Trên đây là cấu trúc của 1 website thường thấy, nó sẽ bao gồm các thành phần như:
  Header: là thành phần chứa hình Logo, tên website, giới thiệu về website, hình ảnh giới thiệu về các hoạt động của chủ website. Menu: là thành phần chứa danh sách các liên kết đến các trang con của website, bao gồm: trang chủ, danh sách sản phẩm, danh sách bài viết, danh mục, liên hệ, giới thiệu&amp;hellip; Sidebar: là thành phần chứa menu dọc, bao gồm danh sách danh mục, các sản phẩm/bài viết nổi bật, bộ lọc sản phẩm/bài viết&amp;hellip; Content: là thành phần chứa nội dung chi tiết của website, nội dung của trang con bao gồm danh sách sản phẩm/bài viết của danh mục, chi tiết sản phẩm/bài viết, form nhập các thông tin liên hệ, bài viết giới thiệu&amp;hellip; Footer: là thành phần chứa các thông tin khác về website, như liên kết giống menu chính, liên kết đến các mạng xã hội facebook, twitter&amp;hellip;  Cấu trúc cơ bản HTML: Dưới đây là 1 cấu trúc cơ bản của 1 file HTML:</description>
+    </item>
+    
+    <item>
+      <title>HTML cơ bản - dành cho người chưa biết gì - Phần 1</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</guid>
+      <description>HTML là gì?  HTML là 1 trong những ngôn ngữ cơ bản nhất khi bắt đầu học lập trình web. HTML viết tắt của Hypertext Markup Language, là ngôn ngữ dùng để xây dựng khung sườn, cấu trúc các thành phần trên website. Thường kết hợp với CSS và Javascript để tạo thành website hoàn chỉnh.  HTML có thể làm được gì?  Xuất bản tài liệu: bao gồm tiêu đề, văn bản, bảng tính, danh sách, ảnh, video&amp;hellip; Truy xuất thông tin: thông qua các liên kết , nút hoặc ô nhập liệu .</description>
     </item>
     
   </channel>

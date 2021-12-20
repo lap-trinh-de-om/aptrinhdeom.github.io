@@ -6,11 +6,33 @@
     <description>Recent content in Javascript on Lập Trình Dễ Òm.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Dec 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Aug 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#39;this&#39; keyword trong Javascript</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/this-keyword-trong-javascript/</link>
+      <pubDate>Sun, 22 Aug 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/this-keyword-trong-javascript/</guid>
+      <description>&amp;lsquo;this&amp;rsquo; keyword trong Javascript this trong Javascript liên quan đến đối tượng mà nó thuộc về.
+Hơi trừu tượng phải không, đừng lo, mình sẽ giải thích rõ hơn ở bên dưới nha.
+Tóm lượt về this this có giá trị khác nhau khi nó được sử dụng ở các ngữ cảnh khác nhau.
+ Khi ở global scope, this sẽ có giá trị là global object, trong trình duyệt global object chính là window.</description>
+    </item>
+    
+    <item>
+      <title>use strict hay strict mode trong Javascript là gì?</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/</link>
+      <pubDate>Sun, 15 Aug 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/</guid>
+      <description>Use strict là gì? Nó dùng để làm gì?   Use strict là khái niệm mới từ khi ES5 được phát hành, nó là 1 chuỗi bình thường, và được trình duyệt có version Javascript ES5 trở lên hiểu được, còn trình duyệt hỗ trợ Javascript version thấp hơn sẽ có vấn đề gì cả.
+  Bởi vì Javascript là ngôn ngữ lập trình khá dễ dãi, khai báo và dùng biến kiểu gì cũng được, hay nói 1 cách khác là vô tội vạ, khiến cho nhiều bugs phát sinh và khó kiểm soát việc khai báo và sử dụng biến.</description>
+    </item>
+    
     <item>
       <title>Scope của biến trong javascript</title>
       <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</link>
-      <pubDate>Sat, 11 Dec 2021 09:05:42 +0000</pubDate>
+      <pubDate>Wed, 11 Aug 2021 09:05:42 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</guid>
       <description>Xem thêm:
@@ -22,7 +44,7 @@ Về cơ bản, Javascript có 3 loại scope như sau:
     <item>
       <title>Hoisting trong Javascript là gì?</title>
       <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</link>
-      <pubDate>Fri, 10 Dec 2021 10:55:03 +0000</pubDate>
+      <pubDate>Tue, 10 Aug 2021 10:55:03 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</guid>
       <description>Xem thêm:
@@ -34,7 +56,7 @@ Mình sẽ giúp các bạn hiểu rõ về nó để chúng ta có đủ kiến
     <item>
       <title>Sự khác nhau giữa Var, Let và Const trong Javascript</title>
       <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</link>
-      <pubDate>Thu, 09 Dec 2021 09:05:42 +0000</pubDate>
+      <pubDate>Mon, 09 Aug 2021 09:05:42 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</guid>
       <description>Xem thêm:

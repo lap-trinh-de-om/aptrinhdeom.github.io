@@ -6,20 +6,47 @@
     <description>Recent content in Tags on Lập Trình Dễ Òm.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Dec 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Aug 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Javascript</title>
       <link>https://www.laptrinhdeom.xyz/tags/javascript/</link>
-      <pubDate>Sat, 11 Dec 2021 09:05:42 +0000</pubDate>
+      <pubDate>Sun, 22 Aug 2021 09:05:42 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>var, let, const</title>
+      <link>https://www.laptrinhdeom.xyz/tags/var-let-const/</link>
+      <pubDate>Sun, 22 Aug 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/tags/var-let-const/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>strict mode</title>
+      <link>https://www.laptrinhdeom.xyz/tags/strict-mode/</link>
+      <pubDate>Sun, 15 Aug 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/tags/strict-mode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>use strict</title>
+      <link>https://www.laptrinhdeom.xyz/tags/use-strict/</link>
+      <pubDate>Sun, 15 Aug 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/tags/use-strict/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Scope</title>
       <link>https://www.laptrinhdeom.xyz/tags/scope/</link>
-      <pubDate>Sat, 11 Dec 2021 09:05:42 +0000</pubDate>
+      <pubDate>Wed, 11 Aug 2021 09:05:42 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/tags/scope/</guid>
       <description></description>
@@ -28,25 +55,16 @@
     <item>
       <title>Hoisting</title>
       <link>https://www.laptrinhdeom.xyz/tags/hoisting/</link>
-      <pubDate>Fri, 10 Dec 2021 10:55:03 +0000</pubDate>
+      <pubDate>Tue, 10 Aug 2021 10:55:03 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/tags/hoisting/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>var, let, const</title>
-      <link>https://www.laptrinhdeom.xyz/tags/var-let-const/</link>
-      <pubDate>Thu, 09 Dec 2021 09:05:42 +0000</pubDate>
-      
-      <guid>https://www.laptrinhdeom.xyz/tags/var-let-const/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>HTML Cơ bản</title>
       <link>https://www.laptrinhdeom.xyz/tags/html-c%C6%A1-b%E1%BA%A3n/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/tags/html-c%C6%A1-b%E1%BA%A3n/</guid>
       <description></description>
@@ -55,7 +73,7 @@
     <item>
       <title>Học HTML</title>
       <link>https://www.laptrinhdeom.xyz/tags/h%E1%BB%8Dc-html/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/tags/h%E1%BB%8Dc-html/</guid>
       <description></description>
@@ -64,7 +82,7 @@
     <item>
       <title>Học Lập trình web</title>
       <link>https://www.laptrinhdeom.xyz/tags/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh-web/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/tags/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh-web/</guid>
       <description></description>

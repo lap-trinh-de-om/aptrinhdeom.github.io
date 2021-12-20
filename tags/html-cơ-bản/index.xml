@@ -6,25 +6,25 @@
     <description>Recent content in HTML Cơ bản on Lập Trình Dễ Òm.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/tags/html-c%C6%A1-b%E1%BA%A3n/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HTML cơ bản - dành cho người chưa biết gì - Phần 1</title>
-      <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</guid>
-      <description>HTML là gì?  HTML là 1 trong những ngôn ngữ cơ bản nhất khi bắt đầu học lập trình web. HTML viết tắt của Hypertext Markup Language, là ngôn ngữ dùng để xây dựng khung sườn, cấu trúc các thành phần trên website. Thường kết hợp với CSS và Javascript để tạo thành website hoàn chỉnh.  HTML có thể làm được gì?  Xuất bản tài liệu: bao gồm tiêu đề, văn bản, bảng tính, danh sách, ảnh, video&amp;hellip; Truy xuất thông tin: thông qua các liên kết , nút hoặc ô nhập liệu .</description>
-    </item>
-    
+    <lastBuildDate>Sat, 24 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/tags/html-c%C6%A1-b%E1%BA%A3n/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTML cơ bản - dành cho người chưa biết gì - Phần 2</title>
       <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</guid>
       <description>Cấu trúc cơ bản của website  Cấu trúc cơ bản của website 
 Trên đây là cấu trúc của 1 website thường thấy, nó sẽ bao gồm các thành phần như:
  Header: là thành phần chứa hình Logo, tên website, giới thiệu về website, hình ảnh giới thiệu về các hoạt động của chủ website. Menu: là thành phần chứa danh sách các liên kết đến các trang con của website, bao gồm: trang chủ, danh sách sản phẩm, danh sách bài viết, danh mục, liên hệ, giới thiệu&amp;hellip; Sidebar: là thành phần chứa menu dọc, bao gồm danh sách danh mục, các sản phẩm/bài viết nổi bật, bộ lọc sản phẩm/bài viết&amp;hellip; Content: là thành phần chứa nội dung chi tiết của website, nội dung của trang con bao gồm danh sách sản phẩm/bài viết của danh mục, chi tiết sản phẩm/bài viết, form nhập các thông tin liên hệ, bài viết giới thiệu&amp;hellip; Footer: là thành phần chứa các thông tin khác về website, như liên kết giống menu chính, liên kết đến các mạng xã hội facebook, twitter&amp;hellip;  Cấu trúc cơ bản HTML: Dưới đây là 1 cấu trúc cơ bản của 1 file HTML:</description>
+    </item>
+    
+    <item>
+      <title>HTML cơ bản - dành cho người chưa biết gì - Phần 1</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</guid>
+      <description>HTML là gì?  HTML là 1 trong những ngôn ngữ cơ bản nhất khi bắt đầu học lập trình web. HTML viết tắt của Hypertext Markup Language, là ngôn ngữ dùng để xây dựng khung sườn, cấu trúc các thành phần trên website. Thường kết hợp với CSS và Javascript để tạo thành website hoàn chỉnh.  HTML có thể làm được gì?  Xuất bản tài liệu: bao gồm tiêu đề, văn bản, bảng tính, danh sách, ảnh, video&amp;hellip; Truy xuất thông tin: thông qua các liên kết , nút hoặc ô nhập liệu .</description>
     </item>
     
   </channel>

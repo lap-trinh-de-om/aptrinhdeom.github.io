@@ -6,10 +6,151 @@
         <description>Recent content on Lập Trình Dễ Òm.xyz</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 11 Dec 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 22 Aug 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>&#39;this&#39; keyword trong Javascript</title>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/this-keyword-trong-javascript/</link>
+        <pubDate>Sun, 22 Aug 2021 09:05:42 +0000</pubDate>
+        
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/this-keyword-trong-javascript/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/this-keyword-trong-javascript/cover.jpg" alt="Featured image of post &#39;this&#39; keyword trong Javascript" /&gt;&lt;h2 id=&#34;this-keyword-trong-javascript&#34;&gt;&amp;lsquo;this&amp;rsquo; keyword trong Javascript&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;this&lt;/code&gt;&lt;/strong&gt; trong Javascript liên quan đến đối tượng mà nó thuộc về.&lt;/p&gt;
+&lt;p&gt;Hơi trừu tượng phải không, đừng lo, mình sẽ giải thích rõ hơn ở bên dưới nha.&lt;/p&gt;
+&lt;h2 id=&#34;tóm-lượt-về-this&#34;&gt;Tóm lượt về this&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;this&lt;/code&gt;&lt;/strong&gt; có &lt;strong&gt;giá trị khác nhau&lt;/strong&gt; khi nó được &lt;strong&gt;sử dụng&lt;/strong&gt; ở các &lt;strong&gt;ngữ cảnh khác nhau&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Khi ở &lt;code&gt;global scope&lt;/code&gt;, &lt;strong&gt;this&lt;/strong&gt; sẽ có giá trị là &lt;strong&gt;global object&lt;/strong&gt;, trong trình duyệt global object chính là &lt;strong&gt;window&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Trong &lt;code&gt;function&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;this (trong normal mode) sẽ có giá trị là &lt;strong&gt;global object&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;this (trong strict mode) sẽ có giá trị là &lt;strong&gt;undefined&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Trong phương thức &lt;code&gt;object&lt;/code&gt;, this sẽ có giá trị là chính &lt;strong&gt;object&lt;/strong&gt; đó.
+Ví dụ:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;person&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;firstName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Lập trình&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;lastName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Dễ òm&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;fullName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;firstName&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;lastName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// this là object `person`
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Trong các &lt;code&gt;sự kiện&lt;/code&gt;, như &lt;code&gt;onClick&lt;/code&gt; của &lt;strong&gt;button&lt;/strong&gt;, &lt;code&gt;onChange&lt;/code&gt; của &lt;strong&gt;input&lt;/strong&gt;&amp;hellip;, thì this sẽ có giá trị chính &lt;code&gt;element&lt;/code&gt; (button/input) đó.
+Ví dụ:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;button&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;onclick&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;this.style.display=&amp;#39;none&amp;#39;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Học&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;lập&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;trình&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;web&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Trong &lt;code&gt;call&lt;/code&gt;, &lt;code&gt;apply&lt;/code&gt;, thì this có giá trị là bất cứ đối tượng nào được đưa vào trong 2 functions này.
+Ví dụ:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;person1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;fullName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;firstName&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;lastName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;person2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;firstName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Lập trình&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;lastName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Dễ òm&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;person1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fullName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;call&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;person2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// this của phương thức fullName trong person1 sẽ là person2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>use strict hay strict mode trong Javascript là gì?</title>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/</link>
+        <pubDate>Sun, 15 Aug 2021 09:05:42 +0000</pubDate>
+        
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/cover.jpg" alt="Featured image of post use strict hay strict mode trong Javascript là gì?" /&gt;&lt;h2 id=&#34;use-strict-là-gì-nó-dùng-để-làm-gì&#34;&gt;Use strict là gì? Nó dùng để làm gì?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Use strict&lt;/strong&gt; là khái niệm mới từ khi ES5 được phát hành, nó là 1 chuỗi bình thường, và được trình duyệt có version Javascript ES5 trở lên hiểu được, còn trình duyệt hỗ trợ Javascript version thấp hơn sẽ có vấn đề gì cả.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bởi vì Javascript là ngôn ngữ lập trình khá dễ dãi, khai báo và dùng biến kiểu gì cũng được, hay nói 1 cách khác là vô tội vạ, khiến cho nhiều bugs phát sinh và khó kiểm soát việc khai báo và sử dụng biến.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;use strict&lt;/strong&gt; được sinh ra để báo với Javascript rằng nó phải tuân theo &lt;strong&gt;strict mode&lt;/strong&gt;. Với chế độ này thì bạn không thể sử dụng biến trước khi khai báo (nếu không có use strict thì bạn sẽ có thể sử dụng biến trước khi khai báo chúng).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cách-khai-báo&#34;&gt;Cách khai báo&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;&amp;quot;use strict;&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Đơn giản vậy thôi, bạn để dòng trên ở trên cùng của file javascript của bạn là được nhé, tất cả code javascript của bạn ở phía dưới sẽ là &lt;strong&gt;strict mode&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ví dụ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;use strict;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Lỗi, vì bạn chưa khai báo biến hello mà đã gán giá trị cho nó.
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;c1&#34;&gt;// ------------------------
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// vẫn lỗi, vì bạn chưa khai báo biến hello mà đã gán giá trị cho nó.
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Ví dụ 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Không bị lỗi nhé
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;use strict;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào bạn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// lỗi, vì use strict được đặt trong function này.
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tại-sao-lại-phải-dùng-strict-mode&#34;&gt;Tại sao lại phải dùng strict mode?&lt;/h2&gt;
+&lt;p&gt;Có vài lý do sau đây mà chúng ta nên sử dụng strict mode khi code:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tránh việc lập trình viên vô tình tạo ra 1 biến global scope mà họ không hề biết.
+&lt;ul&gt;
+&lt;li&gt;Vì trong chế độ bình thường, thì lập trình viên quên mất, nên tạo ra 1 biến global scope bằng cách không để var/let/const cho nó.&lt;/li&gt;
+&lt;li&gt;Sau đó có logic phía dưới lại update giá trị cho biến global này, dẫn đến việc có thể vô tình tạo ra bug nào đó, khiến chúng ta mất khá nhiều thời gian để debug để tìm ra vấn đề.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tạo cho chúng ta thói quen lập trình tốt hơn, tư duy cấu trúc và logic khi lập trình, phải khai báo biến trước khi sử dụng.&lt;/li&gt;
+&lt;li&gt;Strict mode giúp chúng ta tránh việc code logic vô tội vạ, như: gán giá trị cho biến không được gán, sử dụng biến hoặc object hoặc thuộc tính không tồn tại&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;các-trường-hợp-javascript-báo-lỗi-khi-sử-dụng-use-strict&#34;&gt;Các trường hợp Javascript báo lỗi khi sử dụng use strict:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sử dụng biến chưa được khai báo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;use strict;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Lỗi, vì bạn chưa khai báo biến hello mà đã gán giá trị cho nó.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Delete 1 biến hoặc 1 object hoặc 1 function&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;use strict&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;delete&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Lỗi
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;delete&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Lỗi
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sử dụng các keyword làm tên biến:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;use strict&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;eval&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Lỗi
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;arguments&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Xin chào&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Lỗi
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Các tự khóa (keyword) không thể sử dụng làm tên biến:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;kr&#34;&gt;implements&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;interface&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;package&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;private&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;protected&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;public&lt;/span&gt;
+&lt;span class=&#34;kr&#34;&gt;static&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;yield&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;eval&lt;/span&gt;
+&lt;span class=&#34;nx&#34;&gt;arguments&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Scope của biến trong javascript</title>
         <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</link>
-        <pubDate>Sat, 11 Dec 2021 09:05:42 +0000</pubDate>
+        <pubDate>Wed, 11 Aug 2021 09:05:42 +0000</pubDate>
         
         <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/</guid>
         <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/javascript/scope-cua-bien-trong-javascript/cover.jpg" alt="Featured image of post Scope của biến trong javascript" /&gt;&lt;blockquote&gt;
@@ -110,7 +251,7 @@
         <item>
         <title>Hoisting trong Javascript là gì?</title>
         <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</link>
-        <pubDate>Fri, 10 Dec 2021 10:55:03 +0000</pubDate>
+        <pubDate>Tue, 10 Aug 2021 10:55:03 +0000</pubDate>
         
         <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/</guid>
         <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/javascript/hoisting-trong-javascript-la-gi/cover.jpg" alt="Featured image of post Hoisting trong Javascript là gì?" /&gt;&lt;blockquote&gt;
@@ -169,7 +310,7 @@
         <item>
         <title>Sự khác nhau giữa Var, Let và Const trong Javascript</title>
         <link>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</link>
-        <pubDate>Thu, 09 Dec 2021 09:05:42 +0000</pubDate>
+        <pubDate>Mon, 09 Aug 2021 09:05:42 +0000</pubDate>
         
         <guid>https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/</guid>
         <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/javascript/su-khac-nhau-giua-var-let-va-const-trong-javascript/cover.jpg" alt="Featured image of post Sự khác nhau giữa Var, Let và Const trong Javascript" /&gt;&lt;blockquote&gt;
@@ -322,131 +463,9 @@
 </description>
         </item>
         <item>
-        <title>HTML cơ bản - dành cho người chưa biết gì - Phần 1</title>
-        <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
-        <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</guid>
-        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/cover.jpeg" alt="Featured image of post HTML cơ bản - dành cho người chưa biết gì - Phần 1" /&gt;&lt;h2 id=&#34;html-là-gì&#34;&gt;HTML là gì?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;HTML&lt;/strong&gt; là 1 trong những &lt;strong&gt;ngôn ngữ&lt;/strong&gt; &lt;strong&gt;cơ bản&lt;/strong&gt; nhất khi bắt đầu học &lt;strong&gt;lập trình web&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;HTML&lt;/strong&gt; viết tắt của &lt;strong&gt;H&lt;/strong&gt;yper&lt;strong&gt;t&lt;/strong&gt;ext &lt;strong&gt;M&lt;/strong&gt;arkup &lt;strong&gt;L&lt;/strong&gt;anguage, là ngôn ngữ dùng để xây dựng khung sườn, cấu trúc các thành phần trên website.&lt;/li&gt;
-&lt;li&gt;Thường &lt;strong&gt;kết hợp&lt;/strong&gt; với &lt;strong&gt;CSS&lt;/strong&gt; và &lt;strong&gt;Javascript&lt;/strong&gt; để tạo thành website hoàn chỉnh.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;html-có-thể-làm-được-gì&#34;&gt;HTML có thể làm được gì?&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Xuất bản tài liệu:&lt;/strong&gt; bao gồm tiêu đề, văn bản, bảng tính, danh sách, ảnh, video&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Truy xuất thông tin:&lt;/strong&gt; thông qua các liên kết &lt;!-- raw HTML omitted --&gt;, nút &lt;!-- raw HTML omitted --&gt; hoặc ô nhập liệu &lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Thiết kế các form:&lt;/strong&gt; để thực hiện các giao dịch với người dùng, sử dụng để tìm kiếm thông tin, đặt chỗ, đặt hàng và thanh toán trực tuyến&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Hiển thị nhiều thông tin khác:&lt;/strong&gt; Bao gồm bảng tính, âm thanh và các ứng dụng khác&amp;hellip;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;công-cụ-lập-trình-html&#34;&gt;Công cụ lập trình HTML:&lt;/h2&gt;
-&lt;p&gt;Có rất rất nhiều IDE/Editors mà các bạn có thể sử dụng để lập trình HTML/CSS, mình chỉ liệt kê 1 số IDE/Editor ở đây để các bạn có thể tham khảo và sử dụng nhé.&lt;/p&gt;
-&lt;h3 id=&#34;1-vscodehttpscodevisualstudiocom-visual-studio-code&#34;&gt;1. &lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;VSCode&lt;/a&gt;: (Visual Studio Code)&lt;/h3&gt;
-&lt;p&gt;&lt;figure 
-	
-		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 145; 
-			flex-basis: 349px&#34;
-	&gt;
-	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled.png&#34; data-size=&#34;940x645&#34;&gt;
-		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled.png&#34;
-			width=&#34;940&#34;
-			height=&#34;645&#34;
-			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;Visual Studio Code&#34;&gt;
-	&lt;/a&gt;
-	
-	&lt;figcaption&gt;Visual Studio Code&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Ưu điểm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Miễn phí, do Microsoft phát triển và bảo trì.&lt;/li&gt;
-&lt;li&gt;Nhẹ, ít tốn tài nguyên.&lt;/li&gt;
-&lt;li&gt;Chạy đa nền tảng: Mac, Linux, Windows.&lt;/li&gt;
-&lt;li&gt;Cài đặt dễ dàng, dễ sử dụng.&lt;/li&gt;
-&lt;li&gt;Hệ thống plugins, extensions mạnh mẽ với hàng ngàn extensions để hỗ trợ giúp dễ dàng làm việc hơn.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nhược điểm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nhẹ nhưng vẫn tốn nhiều tài nguyên so với Sublime Text.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-sublime-texthttpswwwsublimetextcom&#34;&gt;2. &lt;a class=&#34;link&#34; href=&#34;https://www.sublimetext.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Sublime Text&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;figure 
-	
-		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 184; 
-			flex-basis: 443px&#34;
-	&gt;
-	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1.png&#34; data-size=&#34;2560x1386&#34;&gt;
-		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1.png&#34;
-			width=&#34;2560&#34;
-			height=&#34;1386&#34;
-			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;Sublime Text&#34;&gt;
-	&lt;/a&gt;
-	
-	&lt;figcaption&gt;Sublime Text&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Ưu điểm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nhẹ hơn VSCode, ít tốn tài nguyên so với IDE khác&lt;/li&gt;
-&lt;li&gt;Chạy đa nền tảng: Mac, Linux, Windows.&lt;/li&gt;
-&lt;li&gt;Cài đặt dễ dàng, dễ sử dụng.&lt;/li&gt;
-&lt;li&gt;Hệ thống plugins, extensions mạnh mẽ.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nhược điểm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Phải trả phí mới sử dụng tốt.&lt;/li&gt;
-&lt;li&gt;Cài đặt plugins không thân thiện như VSCode.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;3-atomhttpsatomio&#34;&gt;3. &lt;a class=&#34;link&#34; href=&#34;https://atom.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Atom&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;figure 
-	
-		class=&#34;gallery-image&#34; 
-		style=&#34;
-			flex-grow: 159; 
-			flex-basis: 383px&#34;
-	&gt;
-	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2.png&#34; data-size=&#34;1560x976&#34;&gt;
-		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2.png&#34;
-			width=&#34;1560&#34;
-			height=&#34;976&#34;
-			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_1024x0_resize_box_3.png 1024w&#34;
-			loading=&#34;lazy&#34;
-			alt=&#34;Atom&#34;&gt;
-	&lt;/a&gt;
-	
-	&lt;figcaption&gt;Atom&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Ưu điểm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Miễn phí, do Github phát triển và bảo trì.&lt;/li&gt;
-&lt;li&gt;Chạy đa nền tảng: Mac, Linux, Windows.&lt;/li&gt;
-&lt;li&gt;Giao diện đẹp mắt.&lt;/li&gt;
-&lt;li&gt;Cài đặt dễ dàng, dễ sử dụng.&lt;/li&gt;
-&lt;li&gt;Hệ thống plugins, extensions mạnh mẽ với hàng ngàn extensions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nhược điểm:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Tốn nhiều tài nguyên hơn các IDE ở trên&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
         <title>HTML cơ bản - dành cho người chưa biết gì - Phần 2</title>
         <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</link>
-        <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
         
         <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/</guid>
         <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-2/cover.jpeg" alt="Featured image of post HTML cơ bản - dành cho người chưa biết gì - Phần 2" /&gt;&lt;h2 id=&#34;cấu-trúc-cơ-bản-của-website&#34;&gt;Cấu trúc cơ bản của website&lt;/h2&gt;
@@ -693,6 +712,128 @@ Chúng ta sẽ từ từ tìm hiểu dần qua các ví dụ và phần CSS nhé
 &lt;p&gt;Tiếp đến, các bạn sẽ học về CSS cơ bản - dành cho người chưa biết gì nhé, để có thể hiểu và lập trình website hoàn chỉnh.*&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>HTML cơ bản - dành cho người chưa biết gì - Phần 1</title>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</link>
+        <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/cover.jpeg" alt="Featured image of post HTML cơ bản - dành cho người chưa biết gì - Phần 1" /&gt;&lt;h2 id=&#34;html-là-gì&#34;&gt;HTML là gì?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HTML&lt;/strong&gt; là 1 trong những &lt;strong&gt;ngôn ngữ&lt;/strong&gt; &lt;strong&gt;cơ bản&lt;/strong&gt; nhất khi bắt đầu học &lt;strong&gt;lập trình web&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTML&lt;/strong&gt; viết tắt của &lt;strong&gt;H&lt;/strong&gt;yper&lt;strong&gt;t&lt;/strong&gt;ext &lt;strong&gt;M&lt;/strong&gt;arkup &lt;strong&gt;L&lt;/strong&gt;anguage, là ngôn ngữ dùng để xây dựng khung sườn, cấu trúc các thành phần trên website.&lt;/li&gt;
+&lt;li&gt;Thường &lt;strong&gt;kết hợp&lt;/strong&gt; với &lt;strong&gt;CSS&lt;/strong&gt; và &lt;strong&gt;Javascript&lt;/strong&gt; để tạo thành website hoàn chỉnh.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;html-có-thể-làm-được-gì&#34;&gt;HTML có thể làm được gì?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Xuất bản tài liệu:&lt;/strong&gt; bao gồm tiêu đề, văn bản, bảng tính, danh sách, ảnh, video&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Truy xuất thông tin:&lt;/strong&gt; thông qua các liên kết &lt;!-- raw HTML omitted --&gt;, nút &lt;!-- raw HTML omitted --&gt; hoặc ô nhập liệu &lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Thiết kế các form:&lt;/strong&gt; để thực hiện các giao dịch với người dùng, sử dụng để tìm kiếm thông tin, đặt chỗ, đặt hàng và thanh toán trực tuyến&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hiển thị nhiều thông tin khác:&lt;/strong&gt; Bao gồm bảng tính, âm thanh và các ứng dụng khác&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;công-cụ-lập-trình-html&#34;&gt;Công cụ lập trình HTML:&lt;/h2&gt;
+&lt;p&gt;Có rất rất nhiều IDE/Editors mà các bạn có thể sử dụng để lập trình HTML/CSS, mình chỉ liệt kê 1 số IDE/Editor ở đây để các bạn có thể tham khảo và sử dụng nhé.&lt;/p&gt;
+&lt;h3 id=&#34;1-vscodehttpscodevisualstudiocom-visual-studio-code&#34;&gt;1. &lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VSCode&lt;/a&gt;: (Visual Studio Code)&lt;/h3&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 145; 
+			flex-basis: 349px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled.png&#34; data-size=&#34;940x645&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled.png&#34;
+			width=&#34;940&#34;
+			height=&#34;645&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled_hu1014fe5970bbb3ccb3b8bb9f351a17b0_224557_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Visual Studio Code&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Visual Studio Code&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Ưu điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Miễn phí, do Microsoft phát triển và bảo trì.&lt;/li&gt;
+&lt;li&gt;Nhẹ, ít tốn tài nguyên.&lt;/li&gt;
+&lt;li&gt;Chạy đa nền tảng: Mac, Linux, Windows.&lt;/li&gt;
+&lt;li&gt;Cài đặt dễ dàng, dễ sử dụng.&lt;/li&gt;
+&lt;li&gt;Hệ thống plugins, extensions mạnh mẽ với hàng ngàn extensions để hỗ trợ giúp dễ dàng làm việc hơn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nhược điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nhẹ nhưng vẫn tốn nhiều tài nguyên so với Sublime Text.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-sublime-texthttpswwwsublimetextcom&#34;&gt;2. &lt;a class=&#34;link&#34; href=&#34;https://www.sublimetext.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sublime Text&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 184; 
+			flex-basis: 443px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1.png&#34; data-size=&#34;2560x1386&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1.png&#34;
+			width=&#34;2560&#34;
+			height=&#34;1386&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-1_huae718949d0eb1c4723d0ebb472d5d45d_878400_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Sublime Text&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Sublime Text&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Ưu điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nhẹ hơn VSCode, ít tốn tài nguyên so với IDE khác&lt;/li&gt;
+&lt;li&gt;Chạy đa nền tảng: Mac, Linux, Windows.&lt;/li&gt;
+&lt;li&gt;Cài đặt dễ dàng, dễ sử dụng.&lt;/li&gt;
+&lt;li&gt;Hệ thống plugins, extensions mạnh mẽ.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nhược điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Phải trả phí mới sử dụng tốt.&lt;/li&gt;
+&lt;li&gt;Cài đặt plugins không thân thiện như VSCode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-atomhttpsatomio&#34;&gt;3. &lt;a class=&#34;link&#34; href=&#34;https://atom.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Atom&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 159; 
+			flex-basis: 383px&#34;
+	&gt;
+	&lt;a href=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2.png&#34; data-size=&#34;1560x976&#34;&gt;
+		&lt;img src=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2.png&#34;
+			width=&#34;1560&#34;
+			height=&#34;976&#34;
+			srcset=&#34;https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_480x0_resize_box_3.png 480w, https://www.laptrinhdeom.xyz/bai-viet/html-co-ban-danh-cho-nguoi-chua-biet-gi-phan-1/Untitled-2_huf222db264259aefdfdb68f16e56b335f_171288_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Atom&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Atom&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Ưu điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Miễn phí, do Github phát triển và bảo trì.&lt;/li&gt;
+&lt;li&gt;Chạy đa nền tảng: Mac, Linux, Windows.&lt;/li&gt;
+&lt;li&gt;Giao diện đẹp mắt.&lt;/li&gt;
+&lt;li&gt;Cài đặt dễ dàng, dễ sử dụng.&lt;/li&gt;
+&lt;li&gt;Hệ thống plugins, extensions mạnh mẽ với hàng ngàn extensions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nhược điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tốn nhiều tài nguyên hơn các IDE ở trên&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

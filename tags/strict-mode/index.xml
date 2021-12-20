@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>strict mode on Lập Trình Dễ Òm.xyz</title>
+    <link>https://www.laptrinhdeom.xyz/tags/strict-mode/</link>
+    <description>Recent content in strict mode on Lập Trình Dễ Òm.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Aug 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/tags/strict-mode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>use strict hay strict mode trong Javascript là gì?</title>
+      <link>https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/</link>
+      <pubDate>Sun, 15 Aug 2021 09:05:42 +0000</pubDate>
+      
+      <guid>https://www.laptrinhdeom.xyz/bai-viet/use-strict-hay-strict-mode-trong-javascript-la-gi/</guid>
+      <description>Use strict là gì? Nó dùng để làm gì?   Use strict là khái niệm mới từ khi ES5 được phát hành, nó là 1 chuỗi bình thường, và được trình duyệt có version Javascript ES5 trở lên hiểu được, còn trình duyệt hỗ trợ Javascript version thấp hơn sẽ có vấn đề gì cả.
+  Bởi vì Javascript là ngôn ngữ lập trình khá dễ dãi, khai báo và dùng biến kiểu gì cũng được, hay nói 1 cách khác là vô tội vạ, khiến cho nhiều bugs phát sinh và khó kiểm soát việc khai báo và sử dụng biến.</description>
+    </item>
+    
+  </channel>
+</rss>
