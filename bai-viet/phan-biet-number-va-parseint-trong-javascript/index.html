@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Sự khác nhau giữa Number và parseInt trong javascript là gì? cùng tìm hiểu để biết khi nào nên dùng Number và parseInt nhé'><title>Phân biệt Number và parseInt trong javascript</title>
+
+<link rel='canonical' href='https://www.laptrinhdeom.xyz/bai-viet/phan-biet-number-va-parseint-trong-javascript/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Phân biệt Number và parseInt trong javascript'>
+<meta property='og:description' content='Sự khác nhau giữa Number và parseInt trong javascript là gì? cùng tìm hiểu để biết khi nào nên dùng Number và parseInt nhé'>
+<meta property='og:url' content='https://www.laptrinhdeom.xyz/bai-viet/phan-biet-number-va-parseint-trong-javascript/'>
+<meta property='og:site_name' content='Lập Trình Dễ Òm.xyz'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Javascript' /><meta property='article:tag' content='number' /><meta property='article:tag' content='parseInt' /><meta property='article:published_time' content='2021-08-24T09:05:42&#43;00:00'/><meta property='article:modified_time' content='2021-08-24T09:05:42&#43;00:00'/><meta property='og:image' content='https://www.laptrinhdeom.xyz/bai-viet/phan-biet-number-va-parseint-trong-javascript/cover.jpg' />
+<meta name="twitter:title" content="Phân biệt Number và parseInt trong javascript">
+<meta name="twitter:description" content="Sự khác nhau giữa Number và parseInt trong javascript là gì? cùng tìm hiểu để biết khi nào nên dùng Number và parseInt nhé"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://www.laptrinhdeom.xyz/bai-viet/phan-biet-number-va-parseint-trong-javascript/cover.jpg' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMYS7CXX5Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-VMYS7CXX5Q', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Quay lại</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/bai-viet/phan-biet-number-va-parseint-trong-javascript/">
+                <img src="/bai-viet/phan-biet-number-va-parseint-trong-javascript/cover_huf5a8b140c2d61068f3e598727d7df66b_104594_800x0_resize_q75_box.jpg"
+                        srcset="/bai-viet/phan-biet-number-va-parseint-trong-javascript/cover_huf5a8b140c2d61068f3e598727d7df66b_104594_800x0_resize_q75_box.jpg 800w, /bai-viet/phan-biet-number-va-parseint-trong-javascript/cover_huf5a8b140c2d61068f3e598727d7df66b_104594_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="213" 
+                        loading="lazy"
+                        alt="Featured image of post Phân biệt Number và parseInt trong javascript" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/javascript/" >
+                Javascript
+            </a>
+        
+            <a href="/categories/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh-web/" >
+                Học Lập trình web
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/bai-viet/phan-biet-number-va-parseint-trong-javascript/">Phân biệt Number và parseInt trong javascript</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Sự khác nhau giữa Number và parseInt trong javascript là gì? cùng tìm hiểu để biết khi nào nên dùng Number và parseInt nhé
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 24, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 phút để đọc
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h2 id="công-dụng-của-number-và-parseint-là-gì">Công dụng của Number và parseInt là gì?</h2>
+<ul>
+<li>Nói về công dụng thì <code>Number</code> và <code>parseInt</code> đều dùng để <strong>chuyển đổi</strong> 1 kiểu dữ liệu khác <strong><code>sang kiểu số</code></strong>.</li>
+<li>Nếu convert số nguyên thì cả 2 đều như nhau.</li>
+</ul>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Number</span><span class="p">(</span><span class="s2">&#34;123&#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123
+</span><span class="c1"></span><span class="nb">parseInt</span><span class="p">(</span><span class="s2">&#34;123&#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123
+</span></code></pre></div><h2 id="giống-nhau">Giống nhau</h2>
+<h3 id="convert-string-của-số-nguyên">Convert string của số nguyên</h3>
+<ul>
+<li>
+<p>Cả 2 đều có thể convert string là số nguyên sang số nguyên.
+Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Number</span><span class="p">(</span><span class="s2">&#34;12345&#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123.25
+</span><span class="c1"></span><span class="nb">parseInt</span><span class="p">(</span><span class="s2">&#34;12345&#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123
+</span></code></pre></div></li>
+</ul>
+<h3 id="tự-trim-khoảng-trắng">Tự trim khoảng trắng</h3>
+<ul>
+<li>Cả 2 đều tự trim khoảng trắng trước và sau để convert sang số
+Ví dụ:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Number</span><span class="p">(</span><span class="s2">&#34;   123   &#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123
+</span><span class="c1"></span><span class="nb">parseInt</span><span class="p">(</span><span class="s2">&#34;   123   &#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123
+</span></code></pre></div></li>
+</ul>
+<h2 id="khác-nhau">Khác nhau</h2>
+<h3 id="chuyển-đổi-convert-số-thực">Chuyển đổi (Convert) số thực</h3>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Number</span><span class="p">(</span><span class="s2">&#34;123.25&#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123.25
+</span><span class="c1"></span><span class="nb">parseInt</span><span class="p">(</span><span class="s2">&#34;123.35&#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123
+</span></code></pre></div><p>Như bạnd đã thấy, kết quả của 2 dòng trên sẽ khác nhau:</p>
+<ul>
+<li><code>Number</code> có thể convert string của số thực thành <code>số thực</code>.</li>
+<li><code>parseInt</code> convert số thực thành <code>số nguyên</code>.</li>
+</ul>
+<h3 id="chuyển-đổi-boolean">Chuyển đổi Boolean</h3>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Number</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span> <span class="c1">// =&gt; 1
+</span><span class="c1"></span><span class="nb">Number</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span> <span class="c1">// =&gt; 0
+</span><span class="c1"></span>
+<span class="nb">parseInt</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span> <span class="c1">// =&gt; NaN
+</span><span class="c1"></span><span class="nb">parseInt</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span> <span class="c1">// =&gt; NaN
+</span></code></pre></div><ul>
+<li><code>Number</code> convert boolean thành <code>số 0 hoặc 1</code>.</li>
+<li><code>parseInt</code> không thể convert boolean, nên nó trả về giá trị <code>NaN</code>.</li>
+</ul>
+<h3 id="chuyển-đổi-string-gồm-số-và-ký-tự">Chuyển đổi String (gồm số và ký tự)</h3>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Number</span><span class="p">(</span><span class="s2">&#34;abc123&#34;</span><span class="p">);</span> <span class="c1">// =&gt; NaN
+</span><span class="c1"></span><span class="nb">parseInt</span><span class="p">(</span><span class="s2">&#34;abc123&#34;</span><span class="p">);</span> <span class="c1">// =&gt; NaN
+</span><span class="c1"></span>
+<span class="nb">Number</span><span class="p">(</span><span class="s2">&#34;123abc&#34;</span><span class="p">);</span> <span class="c1">// =&gt; NaN
+</span><span class="c1"></span><span class="nb">parseInt</span><span class="p">(</span><span class="s2">&#34;123abc&#34;</span><span class="p">);</span> <span class="c1">// =&gt; 123
+</span></code></pre></div><ul>
+<li><code>Number</code> không thể convert chuỗi <code>123abc</code> hay <code>abc123</code> thành số được, nó luôn trả về giá trị <code>NaN</code>.</li>
+<li><code>parseInt</code> không thể convert chuỗi <code>abc123</code>, nhưng lại có thể convert chuỗi <code>123abc</code>, nghĩa là parseInt sẽ lấy các ký tự là số ở đầu để convert sang số.</li>
+</ul>
+<h2 id="kết">Kết</h2>
+<p>Hy vọng thông qua các ví dụ trên, các bạn có thể hình dung được sự khác nhau của <code>Number</code> và <code>parseInt</code> rồi nhé, để biết được khi nào nên sử dụng cái nào cho phù hợp.</p>
+<p>Nếu có bất cứ thắc mắc nào, các bạn hãy bình luận bên dưới nhé.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/javascript/">Javascript</a>
+        
+            <a href="/tags/number/">number</a>
+        
+            <a href="/tags/parseint/">parseInt</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Lập trình dễ òm.xyz</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+    
+        
+    <p>
+  <i>Bình luận sử dụng Facebook hoặc Google bên dưới nhé :)</i>
+</p>
+
+<div id="graphcomment"></div>
+
+<script type="text/javascript">
+  var __semio__params = {
+    graphcommentId: "laptrinhdeom", 
+
+    behaviour: {
+      
+      
+    },
+  };
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params);
+  }
+
+  (function () {
+    var gc = document.createElement("script");
+    gc.type = "text/javascript";
+    gc.async = true;
+    gc.onload = __semio__onload;
+    gc.defer = true;
+    gc.src =
+      "https://integration.graphcomment.com/gc_graphlogin.js?" + Date.now();
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(gc);
+  })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 Lập Trình Dễ Òm.xyz
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://t.me/laptrinhdeom" target="_blank">Chém gió trên Telegram</a> <br/>
+        Đã xây dựng với  <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.4.0">Stack</a></b> được thiết kế <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Mục lục</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#công-dụng-của-number-và-parseint-là-gì">Công dụng của Number và parseInt là gì?</a></li>
+    <li><a href="#giống-nhau">Giống nhau</a>
+      <ul>
+        <li><a href="#convert-string-của-số-nguyên">Convert string của số nguyên</a></li>
+        <li><a href="#tự-trim-khoảng-trắng">Tự trim khoảng trắng</a></li>
+      </ul>
+    </li>
+    <li><a href="#khác-nhau">Khác nhau</a>
+      <ul>
+        <li><a href="#chuyển-đổi-convert-số-thực">Chuyển đổi (Convert) số thực</a></li>
+        <li><a href="#chuyển-đổi-boolean">Chuyển đổi Boolean</a></li>
+        <li><a href="#chuyển-đổi-string-gồm-số-và-ký-tự">Chuyển đổi String (gồm số và ký tự)</a></li>
+      </ul>
+    </li>
+    <li><a href="#kết">Kết</a></li>
+  </ul>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

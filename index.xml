@@ -6,7 +6,76 @@
         <description>Recent content on Lập Trình Dễ Òm.xyz</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 22 Aug 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 24 Aug 2021 09:05:42 +0000</lastBuildDate><atom:link href="https://www.laptrinhdeom.xyz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Phân biệt Number và parseInt trong javascript</title>
+        <link>https://www.laptrinhdeom.xyz/bai-viet/phan-biet-number-va-parseint-trong-javascript/</link>
+        <pubDate>Tue, 24 Aug 2021 09:05:42 +0000</pubDate>
+        
+        <guid>https://www.laptrinhdeom.xyz/bai-viet/phan-biet-number-va-parseint-trong-javascript/</guid>
+        <description>&lt;img src="https://www.laptrinhdeom.xyz/bai-viet/phan-biet-number-va-parseint-trong-javascript/cover.jpg" alt="Featured image of post Phân biệt Number và parseInt trong javascript" /&gt;&lt;h2 id=&#34;công-dụng-của-number-và-parseint-là-gì&#34;&gt;Công dụng của Number và parseInt là gì?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nói về công dụng thì &lt;code&gt;Number&lt;/code&gt; và &lt;code&gt;parseInt&lt;/code&gt; đều dùng để &lt;strong&gt;chuyển đổi&lt;/strong&gt; 1 kiểu dữ liệu khác &lt;strong&gt;&lt;code&gt;sang kiểu số&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Nếu convert số nguyên thì cả 2 đều như nhau.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ví dụ:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;123&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;123&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;giống-nhau&#34;&gt;Giống nhau&lt;/h2&gt;
+&lt;h3 id=&#34;convert-string-của-số-nguyên&#34;&gt;Convert string của số nguyên&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cả 2 đều có thể convert string là số nguyên sang số nguyên.
+Ví dụ:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;12345&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123.25
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;12345&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tự-trim-khoảng-trắng&#34;&gt;Tự trim khoảng trắng&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Cả 2 đều tự trim khoảng trắng trước và sau để convert sang số
+Ví dụ:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;   123   &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;   123   &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;khác-nhau&#34;&gt;Khác nhau&lt;/h2&gt;
+&lt;h3 id=&#34;chuyển-đổi-convert-số-thực&#34;&gt;Chuyển đổi (Convert) số thực&lt;/h3&gt;
+&lt;p&gt;Ví dụ:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;123.25&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123.25
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;123.35&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Như bạnd đã thấy, kết quả của 2 dòng trên sẽ khác nhau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Number&lt;/code&gt; có thể convert string của số thực thành &lt;code&gt;số thực&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt&lt;/code&gt; convert số thực thành &lt;code&gt;số nguyên&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chuyển-đổi-boolean&#34;&gt;Chuyển đổi Boolean&lt;/h3&gt;
+&lt;p&gt;Ví dụ:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 1
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 0
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; NaN
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; NaN
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Number&lt;/code&gt; convert boolean thành &lt;code&gt;số 0 hoặc 1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt&lt;/code&gt; không thể convert boolean, nên nó trả về giá trị &lt;code&gt;NaN&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chuyển-đổi-string-gồm-số-và-ký-tự&#34;&gt;Chuyển đổi String (gồm số và ký tự)&lt;/h3&gt;
+&lt;p&gt;Ví dụ:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;abc123&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; NaN
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;abc123&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; NaN
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;Number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;123abc&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; NaN
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;123abc&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// =&amp;gt; 123
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Number&lt;/code&gt; không thể convert chuỗi &lt;code&gt;123abc&lt;/code&gt; hay &lt;code&gt;abc123&lt;/code&gt; thành số được, nó luôn trả về giá trị &lt;code&gt;NaN&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt&lt;/code&gt; không thể convert chuỗi &lt;code&gt;abc123&lt;/code&gt;, nhưng lại có thể convert chuỗi &lt;code&gt;123abc&lt;/code&gt;, nghĩa là parseInt sẽ lấy các ký tự là số ở đầu để convert sang số.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;kết&#34;&gt;Kết&lt;/h2&gt;
+&lt;p&gt;Hy vọng thông qua các ví dụ trên, các bạn có thể hình dung được sự khác nhau của &lt;code&gt;Number&lt;/code&gt; và &lt;code&gt;parseInt&lt;/code&gt; rồi nhé, để biết được khi nào nên sử dụng cái nào cho phù hợp.&lt;/p&gt;
+&lt;p&gt;Nếu có bất cứ thắc mắc nào, các bạn hãy bình luận bên dưới nhé.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>&#39;this&#39; keyword trong Javascript</title>
         <link>https://www.laptrinhdeom.xyz/bai-viet/this-keyword-trong-javascript/</link>
         <pubDate>Sun, 22 Aug 2021 09:05:42 +0000</pubDate>
